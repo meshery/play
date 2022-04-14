@@ -1,6 +1,7 @@
-# The Cloud Native Playground
-### Launch and Learn with Meshery
-
+<h1 align="center">The Cloud Native Playground</h1>
+<p align="center"><img src="https://raw.githubusercontent.com/meshery/play/master/.github/readme/images/meshery-playground.png" width="80%" />
+<h3 align="center">Launch and Learn with Meshery</h3>
+</p>
 
 <div>&nbsp;</div>
 
