@@ -1,0 +1,15 @@
+{
+  "short_name": "play | Cloud Native Manager for Kubernetes and Service Mesh",
+  "name": "play - The cloud native playground for kubernetes and service mesh.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3c494F",
+  "background_color": "#FFFFFF"
+}
