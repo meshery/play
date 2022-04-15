@@ -16,3 +16,27 @@
 
 # IDEs
 .vscode/*
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+site/node_modules
+site/.pnp
+site/.pnp.js
+
+# testing
+site/coverage
+
+# production
+site/build
+
+# misc
+site/.DS_Store
+site/.env.local
+site/.env.development.local
+site/.env.test.local
+site/.env.production.local
+
+site/npm-debug.log*
+site/yarn-debug.log*
+site/yarn-error.log*

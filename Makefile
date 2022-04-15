@@ -13,12 +13,14 @@ proto:
 
 
 
+setup-libs:
+	cd site; npm install; cd ..
 
-site:
-	$(jekyll) serve --drafts --livereload
+site-dev:
+	cd site; npm run start; cd ..
 
 build:
-	$(jekyll) build --drafts
+	cd site; npm run build; cd ..
 
 docker:
 	docker run --name site -d --rm -p 4000:4000 -v `pwd`:"/srv/jekyll" jekyll/jekyll:4.0.0 bash -c "bundle install; jekyll serve --drafts --livereload"
