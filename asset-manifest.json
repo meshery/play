@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.8cf39b31.css",
-    "main.js": "./static/js/main.4e61ff8a.js",
+    "main.js": "./static/js/main.8a0a78c8.js",
     "static/js/787.94abb569.chunk.js": "./static/js/787.94abb569.chunk.js",
-    "static/media/meshery-playground.png": "./static/media/meshery-playground.5a06bdaaeff3590819e1.png",
+    "static/media/meshery-playground.png": "./static/media/meshery-playground.4bbae69013d7a41d9386.png",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
     "static/media/QanelasSoftBoldItalic.otf": "./static/media/QanelasSoftBoldItalic.52c37ed9cc5710337d41.otf",
@@ -28,11 +28,11 @@
     "static/media/meshery-light-text.svg": "./static/media/meshery-light-text.9cb2a00eec1881085a176fd930ef54d3.svg",
     "index.html": "./index.html",
     "main.8cf39b31.css.map": "./static/css/main.8cf39b31.css.map",
-    "main.4e61ff8a.js.map": "./static/js/main.4e61ff8a.js.map",
+    "main.8a0a78c8.js.map": "./static/js/main.8a0a78c8.js.map",
     "787.94abb569.chunk.js.map": "./static/js/787.94abb569.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8cf39b31.css",
-    "static/js/main.4e61ff8a.js"
+    "static/js/main.8a0a78c8.js"
   ]
 }
