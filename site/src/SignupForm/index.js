@@ -14,7 +14,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
-      axios.post("", {
+      axios.post("https://hook.integromat.com/bklgspwelgqkvbdj4coxompc62d78ngi", {
         memberFormOne,
       });
     }
@@ -25,7 +25,7 @@ const SignupForm = () => {
     return (
       <>         
         <p className="desc-text">
-          Sign up for the early access of Meshery Play ground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
+          Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
         </p>
         <Formik
           initialValues={{
@@ -38,6 +38,7 @@ const SignupForm = () => {
             twitter: "",
             linkedin: "",
             role: "",
+            form: "play",
           }}
           onSubmit={values => {
             setMemberFormOne(values);
