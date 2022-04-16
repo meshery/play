@@ -12,24 +12,19 @@ export const Header = styled.header`
     flex: auto;
     padding: 1.5rem 10rem;
     transition: all 0.3s ease 0s;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
 
   .scrolled { 
     box-shadow: rgba(0, 179, 159, 0.2) 0px 10px 25px;
   }
 
-  .logo {
-    display: flex;
-    h1 {
-      border-right: 0.125rem solid #3C494F;
-      padding-right: 0.25rem;
-      font-size: 2.5rem;
-    }
-    img {
-      width: 15rem;
-      height: auto;
-      margin-left: 0.25rem;
-    }
+  img.logo {
+    align-self: center;
+    max-width: 400px;
+    height: auto;
   }
 
   .signup-btn {
@@ -39,20 +34,18 @@ export const Header = styled.header`
     background-color: #00B39F;
     color: #FFF;
     border-radius: 0.5rem;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 850px) {
+    img.logo {
+      max-width: 320px;
+    }
   }
 
   @media screen and (max-width: 768px) {
-    
-    padding: 1.5rem 6rem;
-
-    .logo {
-      align-self: center;
-      h1 {
-        font-size: 1.5rem;
-      }
-      img {
-        width: 10rem;
-      }
+    img.logo {
+      max-width: 250px;        
     }
 
     .signup-btn {
@@ -60,8 +53,10 @@ export const Header = styled.header`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    padding: 1.5rem 2rem;
+  @media screen and (max-width: 568px) {
+    img.logo {
+      max-width: 200px;        
+    }
   }
 `
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SignupForm from "./SignupForm";
 import { Header, Main } from './App.style.js';
-import mesheryLogo from './assets/images/meshery-logo-light-text-side.svg';
+import mesheryLogo from './assets/images/meshery-learn-logo.png';
 import mesheryPlayground from "./assets/images/meshery-playground.png";
 
 const App = () => {
@@ -17,10 +17,7 @@ const App = () => {
     <>
       <Header>
         <nav className={scroll ? "scrolled" : ""}>
-          <div className="logo">
-            <h1>play</h1>
-            <img src={mesheryLogo} alt="Meshery Logo" />
-          </div>
+            <img className="logo" src={mesheryLogo} alt="Meshery Logo" />
           <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
         </nav>
       </Header>
