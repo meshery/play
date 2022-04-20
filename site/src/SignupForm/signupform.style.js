@@ -26,31 +26,43 @@ const SignupFormWrapper = styled.section`
 		margin: 0rem 0rem 0rem 0rem;
 		padding: 1rem;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-flow: column wrap;
+		align-content: flex-start;
+		justify-content: flex-start;
 		background-color: #1E2117;
 		color: #ccc;
 
 		.form-group {
-			column-gap: 10px;
+			column-gap: 2px;
 			display: flex;
-			align-self: stretch ;
-			justify-content: center;
+			flex-flow: row wrap;
+			align-self: center;
+			align-content: flex-end;
+			justify-content: flex-end;
+
 		}
 		.form-field {
+			display: flex;
+			flex-flow: row wrap;
+
+			align-content: flex-start;
+			justify-content: flex-start;
 			font-weight: 600;
-			min-width: 40%;
 			margin: auto;
 			text-align: right ;
 		}
 
 		.text-field {
-			flex-basis: max-content;
+			display: flex;
+			align-self: flex-start;
+			text-align: left ;
+
 			border: 1px solid gray;
 			border-radius: 0.45rem;
 			padding: .5rem;
 			font-size: 1rem;
-			min-width: 50%;
+			width: 30%;
+
 		}
 		.form-radio {
 			display: flex;

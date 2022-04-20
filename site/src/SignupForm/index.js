@@ -65,7 +65,6 @@ const SignupForm = () => {
               <Field type="text" className="text-field" id="occupation" name="occupation" />
               </div>
               <div className="form-group">
-
               <label htmlFor="org" className="form-field">Org / Company / School<span className="required-sign">*</span></label>
               <Field type="text" className="text-field" id="org" name="org" />
             </div>
@@ -91,9 +90,9 @@ const SignupForm = () => {
                 <Field type="url" placeholder="https://www.linkedin.com/" className="text-field" id="linkedin" name="linkedin" />
             </div>
             </div>
-            <p>
+            <div className="form-group">
             <label htmlFor="role" className="form-field">What role best identifies you?<span className="required-sign">*</span></label>
-            </p>
+            </div>
             <div role="group" className="form-radio"  aria-labelledby="my-radio-group">
               <label>
                 <Field type="radio" name="role" value="Architect" />
