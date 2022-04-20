@@ -11,11 +11,10 @@ const SignupFormWrapper = styled.section`
 	}
 
   .accounts{
-    p{
-			width: 85%;
+    p {
 			font-size: 0.9rem;
 			line-height: 0.9rem;
-			color: #3C494F;
+			color: #aaa;
     }
     .accounts_group{
       margin: 0 1rem 0 1rem;
@@ -23,26 +22,40 @@ const SignupFormWrapper = styled.section`
   }
 
 	.form {
-		font-size: 1.1125rem;
-		margin: 0 1rem 1rem;
+		font-size: .8725rem;
+		margin: 0rem 0rem 0rem 0rem;
 		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #1E2117;
+		color: #ccc;
 
-		label {
-			display: block;
+		.form-group {
+			column-gap: 10px;
+			display: flex;
+			align-self: stretch ;
+			justify-content: center;
 		}
-		
-		.form-name {
+		.form-field {
 			font-weight: 600;
-			margin: 1.5rem 0 0.5rem 0.25rem;
-			display: block;
+			min-width: 40%;
+			margin: auto;
+			text-align: right ;
 		}
 
 		.text-field {
-			width: 85%;
-			border: 1px solid black;
-			border-radius: 0.75rem;
-			padding: 1rem .5rem;
-			font-size: 1.25rem;
+			flex-basis: max-content;
+			border: 1px solid gray;
+			border-radius: 0.45rem;
+			padding: .5rem;
+			font-size: 1rem;
+			min-width: 50%;
+		}
+		.form-radio {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		input[type="radio" i] {

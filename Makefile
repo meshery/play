@@ -8,6 +8,7 @@ site-dev:
 build:
 	cd site; npm run build; cd ..
 
+## Build and run site
 site:
 	cd site; npm start; cd..
 

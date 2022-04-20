@@ -46,35 +46,55 @@ const SignupForm = () => {
           }}
         >
           <Form className="form" method="post">
-            <label htmlFor="email" className="form-name">Email Address <span className="required-sign">*</span></label>
-            <Field type="text" className="text-field" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
-            <label htmlFor="fname" className="form-name">First Name <span className="required-sign">*</span></label>
-            <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
-            <label htmlFor="lname" className="form-name">Last Name <span className="required-sign">*</span></label>
-            <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
-            <label htmlFor="occupation" className="form-name">Occupation / Title<span className="required-sign">*</span></label>
-            <Field type="text" className="text-field" id="occupation" name="occupation" />
-            <label htmlFor="org" className="form-name">Organization / Company / School<span className="required-sign">*</span></label>
-            <Field type="text" className="text-field" id="org" name="org" />
+
+            <div className="form-group">
+              <label htmlFor="fname" className="form-field">First Name<span className="required-sign">*</span></label>
+              <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+            </div>
+            <div className="form-group">
+
+              <label htmlFor="lname" className="form-field">Last Name<span className="required-sign">*</span></label>
+              <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email" className="form-field">Email Address <span className="required-sign">*</span></label>
+              <Field type="text" className="text-field" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="occupation" className="form-field">Occupation / Title<span className="required-sign">*</span></label>
+              <Field type="text" className="text-field" id="occupation" name="occupation" />
+              </div>
+              <div className="form-group">
+
+              <label htmlFor="org" className="form-field">Org / Company / School<span className="required-sign">*</span></label>
+              <Field type="text" className="text-field" id="org" name="org" />
+            </div>
             <div  className="accounts">
-              <label className="form-name">Account(s) to Connect</label>
+              <label className="form-field">Account(s) to Connect</label>
               <p>
                 Choose between Twitter, Google, LinkedIn, and GitHub, provide the username/handle of your user account for your preferred identity provider. When enrolled, participants will receive a free Meshery Cloud account and have full access to the Meshery Playground early access program for each of the following user accounts that you provide. Please provide at least one account.
               </p>
-              <div className="accounts_group">
-                <label htmlFor="google" className="form-name">Google</label>
+              <div className="form-group">
+                <label htmlFor="google" className="form-field">Google</label>
                 <Field type="text" placeholder="my-address@gmail.com" className="text-field" id="google" name="google" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                <label htmlFor="github" className="form-name">GitHub</label>
-                <Field type="url" placeholder="https://github.com/" className="text-field" id="github" name="github" pattern="http(s?)(:\/\/)((www.)?)github.com(\/)([a-zA-z0-9\-_]+)" />
-                <label htmlFor="twitter" className="form-name">Twitter</label>
-                <Field type="url" placeholder="https://twitter.com/" className="text-field" id="twitter" name="twitter" pattern="http(s?)(:\/\/)((www.)?)twitter.com(\/)([a-zA-z0-9\-_]+)" />
-                <label htmlFor="linkedin" className="form-name">Linkedin</label>
-                <Field type="url" placeholder="https://www.linkedin.com/" className="text-field" id="linkedin" name="linkedin" />
               </div>
+              <div className="form-group">
+                <label htmlFor="github" className="form-field">GitHub</label>
+                <Field type="url" placeholder="https://github.com/" className="text-field" id="github" name="github" pattern="http(s?)(:\/\/)((www.)?)github.com(\/)([a-zA-z0-9\-_]+)" />
+                </div>
+                <div className="form-group">
+                <label htmlFor="twitter" className="form-field">Twitter</label>
+                <Field type="url" placeholder="https://twitter.com/" className="text-field" id="twitter" name="twitter" pattern="http(s?)(:\/\/)((www.)?)twitter.com(\/)([a-zA-z0-9\-_]+)" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="linkedin" className="form-field">Linkedin</label>
+                <Field type="url" placeholder="https://www.linkedin.com/" className="text-field" id="linkedin" name="linkedin" />
             </div>
-
-            <label htmlFor="role" className="form-name">What role best identifies you?<span className="required-sign">*</span></label>
-            <div role="group" aria-labelledby="my-radio-group">
+            </div>
+            <p>
+            <label htmlFor="role" className="form-field">What role best identifies you?<span className="required-sign">*</span></label>
+            </p>
+            <div role="group" className="form-radio"  aria-labelledby="my-radio-group">
               <label>
                 <Field type="radio" name="role" value="Architect" />
                   Architect

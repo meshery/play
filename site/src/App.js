@@ -26,6 +26,11 @@ const App = () => {
           <h1>
             The Cloud Native Playground
           </h1>
+          <h2>Coming soon...</h2>
+          <p className="desc-text">
+            The cloud native playground contains a set of learning paths with an application networking centric ciricullum featuring training on ten different service meshes.
+          </p>
+      
           <figure>
             <img src={mesheryPlayground} alt="Meshery Playground" className="meshery-plaground" />
             <figcaption>Launch and Learn with Meshery</figcaption>
