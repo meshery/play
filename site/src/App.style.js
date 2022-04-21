@@ -85,6 +85,10 @@ export const Main = styled.main`
 
   .form {
     margin: 4rem auto;
+    h2{
+      font-size: 2.7rem;
+      margin-left: 2rem;
+    }
   }
 
   .join-community {

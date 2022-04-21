@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 const SignupFormWrapper = styled.section`
-
+.Form-page{
+	display:flex;
+	margin: 0 4rem;
+}
 	.required-sign {
 		color: #8B0000;
 	}
-
 	.desc-text {
 		margin: 1rem auto;
+		p{
+		font-size: 1.5rem;
+		}
 	}
-
   .accounts{
     p {
 			font-size: 0.9rem;
@@ -19,11 +23,22 @@ const SignupFormWrapper = styled.section`
     .accounts_group{
       margin: 0 1rem 0 1rem;
     }
-  }
-
-	.form {
+  } 
+  .form-container{
+	//   width: 100rem;
+	  margin: 1rem;
+  .form-title {
+	padding: 1rem;
+	text-align: center;
+	background-color: #00b39f;
+	color: white;
+	width: 100%;
+	box-shadow: 0px 0px 5px 2px ${props => props.theme.primaryLightColor};
+}
+	.form1 {
 		font-size: .8725rem;
-		margin: 0rem 0rem 0rem 0rem;
+		box-shadow: 0px 10px 10px 2px rgba(0, 179, 159, 0.5);
+		width: 100%;
 		padding: 1rem;
 		display: flex;
 		flex-flow: column wrap;
@@ -31,53 +46,43 @@ const SignupFormWrapper = styled.section`
 		justify-content: flex-start;
 		background-color: #1E2117;
 		color: #ccc;
+		label {
+            display: block;
+        }
+        
+        .form-name {
+            font-weight: 600;
+            margin: 20px 0px 5px 3px;
+            display: block;
 
-		.form-group {
-			column-gap: 2px;
-			display: flex;
-			flex-flow: row wrap;
-			align-self: center;
-			align-content: flex-end;
-			justify-content: flex-end;
+        }
 
-		}
-		.form-field {
-			display: flex;
-			flex-flow: row wrap;
+        .text-field {
+            width: 95%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1rem .5rem;
+            font-size: .85rem;
+        }
 
-			align-content: flex-start;
-			justify-content: flex-start;
-			font-weight: 600;
-			margin: auto;
-			text-align: right ;
-		}
+        .text-field:focus {
+          border: 2px solid #00B39F;
 
-		.text-field {
-			display: flex;
-			align-self: flex-start;
-			text-align: left ;
+        }
 
-			border: 1px solid gray;
-			border-radius: 0.45rem;
-			padding: .5rem;
-			font-size: 1rem;
-			width: 30%;
+        .form-select {
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1rem .5rem;
+        }
 
-		}
-		.form-radio {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		input[type="radio" i] {
-			margin: 0.5rem;
-		}
-
-		.text-field:focus {
-			border: 2px solid #00B39F;
-		}
-
+        .form-check {
+          width: 20px;
+          height: 20px;
+          border-radius: 15px;
+          margin: 2px 10px !important;
+        }
 		.submit-btn {
 			margin: 3rem auto;
 			padding: 1rem 1.5rem;
@@ -92,19 +97,17 @@ const SignupFormWrapper = styled.section`
 				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 			}
 		}
-
 		@media only screen and (max-width: 600px) {
 			.submit-btn {
 				width: 50%;
 			}
 		}
-
     @media only screen and (max-width: 300px) {
 			margin-left: 0;
 			margin-right: 0;
 		}
   }
-
+}
 	.thankyou-box {
 		text-align: center;
 		padding: 2rem;
@@ -115,17 +118,14 @@ const SignupFormWrapper = styled.section`
 		h2, h3 {
 			color: #FFF;
 		}
-
 		h2{
 			margin-top: 1rem;
 			margin-bottom: 2rem;
 		}
-
 		p {
 			margin-top: .85rem;
 			color: #FFF;
 		}
-
 		img {
 			width: 10rem;
 		}
