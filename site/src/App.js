@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import SignupForm from "./SignupForm";
+import SignupForm from "./components/SignupForm";
 import { Header, Main } from './App.style.js';
 import mesheryLogo from './assets/images/meshery-learn-logo.png';
 import mesheryPlayground from "./assets/images/meshery-playground.png";

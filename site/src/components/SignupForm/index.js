@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Field, Formik, Form } from "formik";
 import axios from "axios";
-import MesheryText from "../assets/images/meshery-light-text.svg"
+import MesheryText from "../../assets/images/meshery-light-text.svg"
 import SignupFormWrapper from "./signupform.style.js";
 
 
