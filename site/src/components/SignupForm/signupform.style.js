@@ -84,6 +84,16 @@ const SignupFormWrapper = styled.section`
             padding: 1rem .5rem;
         }
 
+		.formRight select {
+			background: none repeat scroll 0 0 #FFFFFF;
+			border: 1px solid black;
+			border-radius: 10px;
+			height: 50px;
+			padding: 1rem .5rem;
+			width: 100%;
+			font-size: .85rem;
+		}
+
         .form-check {
           width: 20px;
           height: 20px;
