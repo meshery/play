@@ -8,7 +8,7 @@ const DiscussWrapper = styled.div`
         font-weight: 500;
     }
     h2 span{
-        color:${props => props.theme.secondaryColor};
+        color:#fff;
     }
     .logo{
         width: 200px;
@@ -18,11 +18,11 @@ const DiscussWrapper = styled.div`
         text-align: center;
         p { 
             text-align: center;
-            color: ${props => props.theme.white};
+            color: #fff;
             padding: 0px 3.125rem;
         }
         h2 {
-            color: ${props => props.theme.white};  
+            color: #fff;  
         }
         h1 {
             padding: 1.25rem 0px;

@@ -1,7 +1,7 @@
 import React from "react";
 import DiscussWrapper from "./discuss.style";
 
-const Discuss = "../../assets/images/discuss/layer5-discuss-white.png";
+import Discuss from "../../assets/images/layer5-discuss-white.png";
 
 const DiscussCallout = () => {
   return (

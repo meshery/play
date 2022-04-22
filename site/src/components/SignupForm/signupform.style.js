@@ -9,12 +9,13 @@ const SignupFormWrapper = styled.section`
 		color: #8B0000;
 	}
 	.desc-text {
-		margin: 1rem auto;
+		margin: 3rem;
 		p{
 		font-size: 1.5rem;
 		}
 	}
   .accounts{
+	  margin-top: 1rem;
     p {
 			font-size: 0.9rem;
 			line-height: 0.9rem;
@@ -25,7 +26,7 @@ const SignupFormWrapper = styled.section`
     }
   } 
   .form-container{
-	//   width: 100rem;
+	  width: 200rem;
 	  margin: 1rem;
   .form-title {
 	padding: 1rem;
@@ -54,7 +55,7 @@ const SignupFormWrapper = styled.section`
             font-weight: 600;
             margin: 20px 0px 5px 3px;
             display: block;
-
+            
         }
 
         .text-field {
@@ -63,12 +64,18 @@ const SignupFormWrapper = styled.section`
             border-radius: 10px;
             padding: 1rem .5rem;
             font-size: .85rem;
+			margin-top: 0.5rem;
         }
 
         .text-field:focus {
           border: 2px solid #00B39F;
 
         }
+
+		.form-field{
+			margin-top: 0.5rem;
+			font-size: 1rem;
+		}
 
         .form-select {
             width: 150px;
