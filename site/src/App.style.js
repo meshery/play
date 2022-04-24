@@ -67,6 +67,7 @@ export const Main = styled.main`
 
   h1 {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   figure {

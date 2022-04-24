@@ -13,7 +13,6 @@ const SignupForm = () => {
 
   const [formSubmitted, setSubmit] = useState(false);
 
-  const [selected, setSelected] = useState(null); 
 
   useEffect(() => {
     if (formSubmitted) {
@@ -102,8 +101,8 @@ const SignupForm = () => {
             <div className="form-group">
             <label For="role" className="form-name">What role best identifies you?<span className="required-sign">*</span></label>
                       <div className="formRight">
-                        <select onChange={(e) => setSelected(e.target.value || null)} value={selected || ""}>
-                        <option value="" disabled>Select</option>
+                        <select>
+                        <option selected disabled>Select</option>
                           <option value="Architect">Architect</option>
                           <option value="Business Operations">Business Operations</option>
                           <option value="Developer">Developer</option>

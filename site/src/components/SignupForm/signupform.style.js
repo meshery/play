@@ -4,14 +4,17 @@ const SignupFormWrapper = styled.section`
 .Form-page{
 	display:flex;
 	margin: 0 4rem;
+	@media only screen and (max-width: 900px){
+		display: block;
+	}
 }
 	.required-sign {
 		color: #8B0000;
 	}
 	.desc-text {
-		margin: 3rem;
+		margin: 1rem;
 		p{
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		}
 	}
   .accounts{
@@ -26,8 +29,14 @@ const SignupFormWrapper = styled.section`
     }
   } 
   .form-container{
-	  width: 180rem;
+	  width: 170rem;
 	  margin: 1rem;
+       
+	  @media only screen and (max-width: 1000px){
+		width: 100%;
+		margin: 2rem 0 ;
+	}
+
   .form-title {
 	padding: 1rem;
 	text-align: center;
@@ -76,13 +85,6 @@ const SignupFormWrapper = styled.section`
 			font-size: 0.9rem;
 		}
 
-        .form-select {
-            width: 150px;
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 1rem .5rem;
-        }
-
 		.formRight select {
 			background: none repeat scroll 0 0 #FFFFFF;
 			border: 1px solid black;
@@ -91,14 +93,9 @@ const SignupFormWrapper = styled.section`
 			padding: 1rem .5rem;
 			width: 100%;
 			font-size: .85rem;
+			
 		}
-
-        .form-check {
-          width: 20px;
-          height: 20px;
-          border-radius: 15px;
-          margin: 2px 10px !important;
-        }
+		
 		.submit-btn {
 			margin: 3rem auto;
 			padding: 1rem 1.5rem;
