@@ -198,9 +198,6 @@ const Footer = () => {
                 </ul>
       </h3>
       </div>
-      <div class="feed">
-							<a class="twitter-timeline" data-height="230" href="https://twitter.com/mesheryio?ref_src=twsrc%5Etfw">Tweets by mesheryio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
     </div>
     <div class="container flex copyright">
 					<div class="text">&copy; 2022 The Meshery Authors</div>
