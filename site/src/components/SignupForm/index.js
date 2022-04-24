@@ -30,7 +30,7 @@ const SignupForm = () => {
         <p>
           Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
         </p>
-        <img src={mesheryCloud} className="meshery-home" />
+        <img src={mesheryCloud} alt="meshery_homepage" className="meshery-home" />
         <DiscussCallout />
         </div>
         <div className="form-container">

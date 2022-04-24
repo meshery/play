@@ -16,7 +16,7 @@ const DiscussCallout = () => {
                     <h2>Join the Conversation</h2>
                     <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
        
-                    <button><img className="logo" src={Discuss} /></button>
+                    <button><img className="logo" alt="logo" src={Discuss} /></button>
                 
                   </div>
                 </div> 

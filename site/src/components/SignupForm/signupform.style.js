@@ -4,7 +4,7 @@ const SignupFormWrapper = styled.section`
 .Form-page{
 	display:flex;
 	margin: 0 4rem;
-	@media only screen and (max-width: 900px){
+	@media only screen and (max-width: 992px){
 		display: block;
 	}
 }
@@ -29,24 +29,22 @@ const SignupFormWrapper = styled.section`
     }
   } 
   .form-container{
-	  width: 170rem;
 	  margin: 1rem;
+	  box-shadow: 0px 1px 11px 2px rgb(30 33 23 / 50%)
        
 	  @media only screen and (max-width: 1000px){
-		width: 100%;
 		margin: 2rem 0 ;
 	}
 
   .form-title {
+    width: 100%;
 	padding: 1rem;
 	text-align: center;
 	background-color: #00b39f;
 	color: white;
-	width: 100%;
-}
+   }
 	.form1 {
 		font-size: .8725rem;
-		box-shadow: 0px 10px 10px 2px rgba(30, 33, 23, 0.5);
 		width: 100%;
 		padding: 1rem;
 		display: flex;
@@ -73,6 +71,7 @@ const SignupFormWrapper = styled.section`
             padding: 1rem .5rem;
             font-size: .85rem;
 			margin-top: 0.5rem;
+			margin-right: 0.5rem;
         }
 
         .text-field:focus {
