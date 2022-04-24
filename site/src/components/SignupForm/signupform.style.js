@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SignupFormWrapper = styled.section`
 .Form-page{
 	display:flex;
-	margin: 0 4rem;
+	margin: 0 1rem;
 	@media only screen and (max-width: 992px){
 		display: block;
 	}

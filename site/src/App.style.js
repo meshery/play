@@ -62,7 +62,7 @@ export const Header = styled.header`
 
 export const Main = styled.main`
 
-  max-width: 80%;
+  max-width: 75%;
   margin: 5rem auto;
 
   h1 {
@@ -87,7 +87,6 @@ export const Main = styled.main`
   .form {
     margin: 4rem auto;
     h2{
-      font-size: 2.7rem;
       margin-left: 2rem;
     }
   }
