@@ -17,7 +17,7 @@ const SignupFormWrapper = styled.section`
   .accounts{
 	  margin-top: 1rem;
     p {
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 			line-height: 0.9rem;
 			color: #aaa;
     }
@@ -26,7 +26,7 @@ const SignupFormWrapper = styled.section`
     }
   } 
   .form-container{
-	  width: 200rem;
+	  width: 180rem;
 	  margin: 1rem;
   .form-title {
 	padding: 1rem;
@@ -34,11 +34,10 @@ const SignupFormWrapper = styled.section`
 	background-color: #00b39f;
 	color: white;
 	width: 100%;
-	box-shadow: 0px 0px 5px 2px ${props => props.theme.primaryLightColor};
 }
 	.form1 {
 		font-size: .8725rem;
-		box-shadow: 0px 10px 10px 2px rgba(0, 179, 159, 0.5);
+		box-shadow: 0px 10px 10px 2px rgba(30, 33, 23, 0.5);
 		width: 100%;
 		padding: 1rem;
 		display: flex;
@@ -74,7 +73,7 @@ const SignupFormWrapper = styled.section`
 
 		.form-field{
 			margin-top: 0.5rem;
-			font-size: 1rem;
+			font-size: 0.9rem;
 		}
 
         .form-select {
