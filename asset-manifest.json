@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.8cf39b31.css",
-    "main.js": "./static/js/main.6729d093.js",
-    "static/js/787.94abb569.chunk.js": "./static/js/787.94abb569.chunk.js",
+    "main.js": "./static/js/main.725ae0fb.js",
+    "static/js/787.b82d7c21.chunk.js": "./static/js/787.b82d7c21.chunk.js",
     "static/media/meshery-playground.png": "./static/media/meshery-playground.4bbae69013d7a41d9386.png",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
@@ -26,13 +26,18 @@
     "static/media/QanelasSoftRegular.otf": "./static/media/QanelasSoftRegular.6917692db33119190d17.otf",
     "static/media/meshery-learn-logo.png": "./static/media/meshery-learn-logo.efec189ffa6454acfae6.png",
     "static/media/meshery-light-text.svg": "./static/media/meshery-light-text.9cb2a00eec1881085a176fd930ef54d3.svg",
+    "static/media/slack.svg": "./static/media/slack.0b6bfe903e2a0f132a35bc6b4af39f6f.svg",
+    "static/media/docker.svg": "./static/media/docker.294e4ef13e8d16cc0812f421ada97a71.svg",
+    "static/media/twitter.svg": "./static/media/twitter.affeeb3555d006e4d4b8bdf5b2a86048.svg",
+    "static/media/github.svg": "./static/media/github.4fc0796482288278ba7897731ea3a2d6.svg",
     "index.html": "./index.html",
+    "static/media/youtube.svg": "./static/media/youtube.e5e6132f56bf262c7b7ce8b0fe25d38e.svg",
     "main.8cf39b31.css.map": "./static/css/main.8cf39b31.css.map",
-    "main.6729d093.js.map": "./static/js/main.6729d093.js.map",
-    "787.94abb569.chunk.js.map": "./static/js/787.94abb569.chunk.js.map"
+    "main.725ae0fb.js.map": "./static/js/main.725ae0fb.js.map",
+    "787.b82d7c21.chunk.js.map": "./static/js/787.b82d7c21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8cf39b31.css",
-    "static/js/main.6729d093.js"
+    "static/js/main.725ae0fb.js"
   ]
 }
