@@ -78,6 +78,10 @@ export const Main = styled.main`
   h1 {
     text-align: center;
   }
+  h3 {
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+  }
 
   figure {
     margin: 2rem auto;
