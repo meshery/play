@@ -37,7 +37,12 @@ export const Header = styled.header`
     white-space: nowrap;
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 900px) {
+    
+    nav {
+      padding: 1.5rem 5rem;
+    }
+    
     img.logo {
       max-width: 320px;
     }
@@ -54,6 +59,11 @@ export const Header = styled.header`
   }
 
   @media screen and (max-width: 568px) {
+
+    nav {
+      padding: 1.5rem 2.5rem;
+    }
+
     img.logo {
       max-width: 200px;        
     }
