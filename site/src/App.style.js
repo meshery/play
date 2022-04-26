@@ -79,7 +79,7 @@ export const Main = styled.main`
     text-align: center;
     margin-bottom: 2rem;
   }
-  h3 {
+  .cmng-soon-txt {
     margin-top: -3rem;
     margin-bottom: 1rem;
   }
@@ -100,9 +100,6 @@ export const Main = styled.main`
 
   .form {
     margin: 4rem auto;
-    h2{
-      margin-left: 2rem;
-    }
   }
 
   .join-community {
