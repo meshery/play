@@ -99,25 +99,57 @@ const SignupForm = () => {
             </div>
             </div>
             <div className="form-group">
-            <label For="role" className="form-name">What role best identifies you?<span className="required-sign">*</span></label>
-                      <div className="formRight">
-                        <select>
-                        <option selected disabled>Select</option>
-                          <option value="Architect">Architect</option>
-                          <option value="Business Operations">Business Operations</option>
-                          <option value="Developer">Developer</option>
-                          <option value="DevOps">DevOps/SRE/Sysadmin </option>
-                          <option value="Executive">Executive</option>
-                          <option value="IT Operations">IT Operations</option>
-                          <option value="Media"> Media/Analyst</option>
-                          <option value="Product Manage">Product Manage</option>
-                          <option value="Professor">Professor/Academic</option>
-                          <option value="Sales Marketing">Sales Marketing</option>
-                          <option value="Student">Student</option>
-                          <option value="Other">Other</option>
-
-                        </select>
-                        </div>
+            <label htmlFor="role" className="form-field">What role best identifies you?<span className="required-sign">*</span></label>
+            </div>
+            <div role="group" className="form-radio"  aria-labelledby="my-radio-group">
+              <label>
+              <Field type="radio" name="role" value="Architect" />
+                  Architect
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Business Operations" />
+                  Business Operations
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Developer" />
+                  Developer
+              </label>
+              <label>
+                <Field type="radio" name="role" value="DevOps" />
+                  DevOps/SRE/Sysadmin
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Executive" />
+                  Executive
+              </label>
+              <label>
+                <Field type="radio" name="role" value="IT Operations" />
+                  IT Operations
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Media" />
+                  Media/Analyst
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Product Manager" />
+                  Product Manager
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Professor" />
+                  Professor/Academic
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Sales Marketing" />
+                  Sales Marketing
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Student" />
+                  Student
+              </label>
+              <label>
+                <Field type="radio" name="role" value="Other" />
+                  Other
+              </label>
             </div>
             <button type="submit" className="submit-btn">Submit</button>
           </Form>
