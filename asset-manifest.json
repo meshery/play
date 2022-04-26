@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.8cf39b31.css",
-    "main.js": "./static/js/main.03c98961.js",
+    "main.js": "./static/js/main.bdf3e8b4.js",
     "static/js/787.b82d7c21.chunk.js": "./static/js/787.b82d7c21.chunk.js",
     "static/media/meshery-cloud.png": "./static/media/meshery-cloud.0dd2d4e9395bf7808e7f.png",
     "static/media/meshery-playground.png": "./static/media/meshery-playground.4bbae69013d7a41d9386.png",
@@ -35,11 +35,11 @@
     "index.html": "./index.html",
     "static/media/youtube.svg": "./static/media/youtube.e5e6132f56bf262c7b7ce8b0fe25d38e.svg",
     "main.8cf39b31.css.map": "./static/css/main.8cf39b31.css.map",
-    "main.03c98961.js.map": "./static/js/main.03c98961.js.map",
+    "main.bdf3e8b4.js.map": "./static/js/main.bdf3e8b4.js.map",
     "787.b82d7c21.chunk.js.map": "./static/js/787.b82d7c21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8cf39b31.css",
-    "static/js/main.03c98961.js"
+    "static/js/main.bdf3e8b4.js"
   ]
 }
