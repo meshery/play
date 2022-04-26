@@ -72,11 +72,12 @@ export const Header = styled.header`
 
 export const Main = styled.main`
 
-  max-width: 80%;
+  max-width: 75%;
   margin: 5rem auto;
 
   h1 {
     text-align: center;
+    margin-bottom: 2rem;
   }
   h3 {
     margin-top: -3rem;
@@ -99,6 +100,9 @@ export const Main = styled.main`
 
   .form {
     margin: 4rem auto;
+    h2{
+      margin-left: 2rem;
+    }
   }
 
   .join-community {

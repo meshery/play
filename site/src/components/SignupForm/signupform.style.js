@@ -1,29 +1,51 @@
 import styled from "styled-components";
 
 const SignupFormWrapper = styled.section`
-
+.Form-page{
+	display:flex;
+	margin: 0 1rem;
+	@media only screen and (max-width: 992px){
+		display: block;
+	}
+}
 	.required-sign {
 		color: #8B0000;
 	}
-
 	.desc-text {
-		margin: 1rem auto;
+		margin: 1rem;
+		p{
+		font-size: 1.35rem;
+		}
 	}
-
   .accounts{
+	  margin-top: 1rem;
     p {
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 			line-height: 0.9rem;
 			color: #aaa;
     }
     .accounts_group{
       margin: 0 1rem 0 1rem;
     }
-  }
+  } 
+  .form-container{
+	  margin: 1rem;
+	  box-shadow: 0px 1px 11px 2px rgb(30 33 23 / 50%)
+       
+	  @media only screen and (max-width: 1000px){
+		margin: 2rem 0 ;
+	}
 
-	.form {
+  .form-title {
+    width: 100%;
+	padding: 1rem;
+	text-align: center;
+	background-color: #00b39f;
+	color: white;
+   }
+	.form1 {
 		font-size: .8725rem;
-		margin: 0rem 0rem 0rem 0rem;
+		width: 100%;
 		padding: 1rem;
 		display: flex;
 		flex-flow: column wrap;
@@ -31,53 +53,48 @@ const SignupFormWrapper = styled.section`
 		justify-content: flex-start;
 		background-color: #1E2117;
 		color: #ccc;
+		label {
+            display: block;
+        }
+        
+        .form-name {
+            font-weight: 600;
+            margin: 20px 0px 5px 3px;
+            display: block;
+            
+        }
 
-		.form-group {
-			column-gap: 2px;
-			display: flex;
-			flex-flow: row wrap;
-			align-self: center;
-			align-content: flex-end;
-			justify-content: flex-end;
+        .text-field {
+            width: 95%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1rem .5rem;
+            font-size: .85rem;
+			margin-top: 0.5rem;
+			margin-right: 0.5rem;
+        }
 
-		}
-		.form-field {
-			display: flex;
-			flex-flow: row wrap;
+        .text-field:focus {
+          border: 2px solid #00B39F;
 
-			align-content: flex-start;
-			justify-content: flex-start;
-			font-weight: 600;
-			margin: auto;
-			text-align: right ;
-		}
+        }
 
-		.text-field {
-			display: flex;
-			align-self: flex-start;
-			text-align: left ;
-
-			border: 1px solid gray;
-			border-radius: 0.45rem;
-			padding: .5rem;
-			font-size: 1rem;
-			width: 30%;
-
-		}
-		.form-radio {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+		.form-field{
+			margin-top: 0.5rem;
+			font-size: 0.9rem;
 		}
 
-		input[type="radio" i] {
-			margin: 0.5rem;
+		.formRight select {
+			background: none repeat scroll 0 0 #FFFFFF;
+			border: 1px solid black;
+			border-radius: 10px;
+			height: 50px;
+			padding: 1rem .5rem;
+			width: 100%;
+			font-size: .85rem;
+			
 		}
-
-		.text-field:focus {
-			border: 2px solid #00B39F;
-		}
-
+		
 		.submit-btn {
 			margin: 3rem auto;
 			padding: 1rem 1.5rem;
@@ -92,19 +109,17 @@ const SignupFormWrapper = styled.section`
 				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 			}
 		}
-
 		@media only screen and (max-width: 600px) {
 			.submit-btn {
 				width: 50%;
 			}
 		}
-
     @media only screen and (max-width: 300px) {
 			margin-left: 0;
 			margin-right: 0;
 		}
   }
-
+}
 	.thankyou-box {
 		text-align: center;
 		padding: 2rem;
@@ -115,17 +130,14 @@ const SignupFormWrapper = styled.section`
 		h2, h3 {
 			color: #FFF;
 		}
-
 		h2{
 			margin-top: 1rem;
 			margin-bottom: 2rem;
 		}
-
 		p {
 			margin-top: .85rem;
 			color: #FFF;
 		}
-
 		img {
 			width: 10rem;
 		}

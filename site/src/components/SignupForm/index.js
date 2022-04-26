@@ -3,7 +3,8 @@ import { Field, Formik, Form } from "formik";
 import axios from "axios";
 import MesheryText from "../../assets/images/meshery-light-text.svg"
 import SignupFormWrapper from "./signupform.style.js";
-
+import DiscussCallout from "../Discuss-Callout";
+import mesheryCloud from "../../assets/images/meshery-cloud.png";
 
 const SignupForm = () => {
 
@@ -11,6 +12,7 @@ const SignupForm = () => {
   const [memberFormOne, setMemberFormOne] = useState({});
 
   const [formSubmitted, setSubmit] = useState(false);
+
 
   useEffect(() => {
     if (formSubmitted) {
@@ -23,10 +25,16 @@ const SignupForm = () => {
 
   const PlayFormComponent = () => {
     return (
-      <>         
-        <p className="desc-text">
+      <div className= "Form-page">   
+      <div className="desc-text">      
+        <p>
           Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
         </p>
+        <img src={mesheryCloud} alt="meshery_homepage" className="meshery-home" />
+        <DiscussCallout />
+        </div>
+        <div className="form-container">
+        <h3 className="form-title">Apply For the Beta Program</h3>
         <Formik
           initialValues={{
             firstname: "",
@@ -45,7 +53,7 @@ const SignupForm = () => {
             setSubmit(true);
           }}
         >
-          <Form className="form" method="post">
+          <Form className="form1" method="post">
 
             <div className="form-group">
               <label htmlFor="fname" className="form-field">First Name<span className="required-sign">*</span></label>
@@ -95,7 +103,7 @@ const SignupForm = () => {
             </div>
             <div role="group" className="form-radio"  aria-labelledby="my-radio-group">
               <label>
-                <Field type="radio" name="role" value="Architect" />
+              <Field type="radio" name="role" value="Architect" />
                   Architect
               </label>
               <label>
@@ -146,7 +154,8 @@ const SignupForm = () => {
             <button type="submit" className="submit-btn">Submit</button>
           </Form>
         </Formik>
-      </>
+        </div>
+      </div>
     );
   };
 
