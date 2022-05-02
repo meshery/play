@@ -16,7 +16,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
-      axios.post("https://hook.integromat.com/bklgspwelgqkvbdj4coxompc62d78ngi", {
+      axios.post("https://hook.us1.make.com/gguommoyd14634ur9xs7l37widuoa7e9", {
         memberFormOne,
       });
       window.scrollTo({
