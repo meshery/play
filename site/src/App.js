@@ -18,7 +18,7 @@ const App = () => {
     <>
       <Header>
         <nav className={scroll ? "scrolled" : ""}>
-            <img className="logo" src={mesheryLogo} alt="Meshery Logo" />
+          <img className="logo" src={mesheryLogo} alt="Meshery Logo" />
           <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
         </nav>
       </Header>
@@ -31,10 +31,10 @@ const App = () => {
           <p className="desc-text">
             The cloud native playground contains a set of learning paths with an application networking centric ciricullum featuring training on ten different service meshes.
           </p>
-      
+
           <figure>
             <img src={mesheryPlayground} alt="Meshery Playground" className="meshery-plaground" />
-            <figcaption>Launch and Learn with Meshery</figcaption>
+            <figcaption>Launch and learn with Meshery</figcaption>
           </figure>
         </section>
         <section className="form" id="signup-form">

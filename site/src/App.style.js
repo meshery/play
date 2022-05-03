@@ -75,6 +75,10 @@ export const Main = styled.main`
   max-width: 75%;
   margin: 5rem auto;
 
+  p {
+			font-size: 1.35rem;
+  }
+
   h1 {
     text-align: center;
     margin-bottom: 2rem;
@@ -90,12 +94,16 @@ export const Main = styled.main`
     width: 80%;
 
     img {
-      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+      margin-top: 1rem;
+      border-radius: 2.5%;
+      box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
     }
     figcaption {
       margin-top: 0.5rem;
-      font-weight: 600;
+      margin-left: 1.5rem;
+      font-weight: 500;
       font-style: italic;
+      text-align: center;
     }
   }
 
@@ -115,6 +123,17 @@ export const Main = styled.main`
       border-radius: 0.5rem;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    figure {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    figure {
+      width: 100%;
+    }
+}
 `
 
 
