@@ -82,6 +82,7 @@ export const Main = styled.main`
   .cmng-soon-txt {
     margin-top: -3rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   figure {
