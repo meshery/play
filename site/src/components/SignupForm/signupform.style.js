@@ -10,7 +10,7 @@ const SignupFormWrapper = styled.section`
 	}
 
 	.required-sign {
-		color: #8B0000;
+		color: #b30000;
 	}
 
 	.desc-text {
@@ -37,6 +37,18 @@ const SignupFormWrapper = styled.section`
     .accounts_group{
       margin: 0 1rem 0 1rem;
     }
+  }
+
+  select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  
+  /* For IE10 */
+  select::-ms-expand {
+    display: none;
   }
 
   .form-container{
