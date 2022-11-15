@@ -118,23 +118,6 @@ const SignupForm = () => {
                 <label htmlFor="org" className="form-field">Org / Company / School <span className="required-sign">*</span></label>
                 <Field type="text" className="text-field" id="org" name="org" />
               </div>
-              <div className="accounts">
-                <label className="form-field">Account(s) to Connect</label>
-                <p>
-                  Choose between Twitter, Google, LinkedIn, and GitHub, provide the username/handle of your user account for your preferred identity provider. When enrolled, participants will receive a free Meshery Cloud account and have full access to the Meshery Playground early access program for each of the following user accounts that you provide. Please provide at least one account.
-                </p>
-                {validateAccounts && <p style={{ margin: "0px", color: "red" }}>{errorAccounts}</p>}
-                <div className="accounts_group">
-                    <label htmlFor="google" className="form-name">Google</label>
-                    <Field type="email" className="text-field" id="google" name="google" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                    <label htmlFor="github" className="form-name">GitHub</label>
-                    <Field type="text" className="text-field" id="github" name="github" />
-                    <label htmlFor="twitter" className="form-name">Twitter</label>
-                    <Field type="text" className="text-field" id="twitter" name="twitter" />
-                    <label htmlFor="linkedin" className="form-name">Linkedin</label>
-                    <Field type="text" className="text-field" id="linkedin" name="linkedin" />
-                  </div>
-              </div>
               <div className="form-group">
                 <label htmlFor="role" className="form-field">What role best identifies you? <span className="required-sign">*</span></label>
               </div>
