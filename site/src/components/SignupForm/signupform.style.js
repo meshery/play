@@ -53,6 +53,7 @@ const SignupFormWrapper = styled.section`
 
   .form-container{
 	  margin: 1rem;
+	  height: 100%;
 		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
        
 	  @media only screen and (max-width: 1024px){
@@ -68,11 +69,12 @@ const SignupFormWrapper = styled.section`
 
 		.form1 {
 			font-size: .8725rem;
-			padding: 1rem;
+			padding: 2rem;
 			display: flex;
+			min-width: 20rem;
 			flex-flow: column wrap;
-			align-content: flex-start;
-			justify-content: flex-start;
+			align-content: fcenter;
+			justify-content: center;
 			background-color: #1E2117;
 			color: #ccc;
 
