@@ -30,7 +30,7 @@ const SignupForm = () => {
 
   const PlayFormComponent = () => {
     return (
-      <div className= "form-page">
+      <div className="form-page">
         <div className="desc-text">
           <p>
             Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
@@ -39,7 +39,7 @@ const SignupForm = () => {
           <DiscussCallout />
         </div>
         <div className="form-container">
-          <h3 className="form-title">Apply For the Beta Program</h3>
+          <h3 className="form-title">Get early access</h3>
           <Formik
             initialValues={{
               firstname: "",
@@ -63,11 +63,11 @@ const SignupForm = () => {
 
               <div className="form-group">
                 <label htmlFor="fname" className="form-field">First Name<span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+                <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
               </div>
               <div className="form-group">
                 <label htmlFor="lname" className="form-field">Last Name<span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+                <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
               </div>
               <div className="form-group">
                 <label htmlFor="email" className="form-field">Email Address <span className="required-sign">*</span></label>
@@ -76,8 +76,8 @@ const SignupForm = () => {
               <div className="form-group">
                 <label htmlFor="occupation" className="form-field">Occupation / Title<span className="required-sign">*</span></label>
                 <Field type="text" className="text-field" id="occupation" name="occupation" />
-                </div>
-                <div className="form-group">
+              </div>
+              <div className="form-group">
                 <label htmlFor="org" className="form-field">Org / Company / School<span className="required-sign">*</span></label>
                 <Field type="text" className="text-field" id="org" name="org" />
               </div>
@@ -93,8 +93,8 @@ const SignupForm = () => {
                 <div className="form-group">
                   <label htmlFor="github" className="form-field">GitHub</label>
                   <Field type="url" placeholder="https://github.com/" className="text-field" id="github" name="github" pattern="http(s?)(:\/\/)((www.)?)github.com(\/)([a-zA-z0-9\-_]+)" />
-                  </div>
-                  <div className="form-group">
+                </div>
+                <div className="form-group">
                   <label htmlFor="twitter" className="form-field">Twitter</label>
                   <Field type="url" placeholder="https://twitter.com/" className="text-field" id="twitter" name="twitter" pattern="http(s?)(:\/\/)((www.)?)twitter.com(\/)([a-zA-z0-9\-_]+)" />
                 </div>
@@ -106,7 +106,7 @@ const SignupForm = () => {
               <div className="form-group">
                 <label htmlFor="role" className="form-field">What role best identifies you?<span className="required-sign">*</span></label>
               </div>
-              <div className="form-select"  aria-labelledby="select">
+              <div className="form-select" aria-labelledby="select">
                 <span className="custom-arrow"><span className="down-arrow"></span></span>
                 <Field as="select" name="role">
                   <option>Select your role</option>
@@ -147,9 +147,9 @@ const SignupForm = () => {
 
   return (
     <SignupFormWrapper>
-        {
-          !formSubmitted ? <PlayFormComponent /> : <ThankYou /> 
-        }
+      {
+        !formSubmitted ? <PlayFormComponent /> : <ThankYou />
+      }
     </SignupFormWrapper>
   );
 };
