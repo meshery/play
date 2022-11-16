@@ -21,10 +21,10 @@ const SignupForm = () => {
   const [org, setOrg] = useState("");
   const [occupation, setOccupation] = useState("");
   const [role, setRole] = useState("");
-  const [google, setGoogleAccount] = useState("");
-  const [github, setGithubAccount] = useState("");
-  const [twitter, setTwitterAccount] = useState("");
-  const [linkedin, setLinkedinAccount] = useState("");
+  // const [google, setGoogleAccount] = useState("");
+  // const [github, setGithubAccount] = useState("");
+  // const [twitter, setTwitterAccount] = useState("");
+  // const [linkedin, setLinkedinAccount] = useState("");
 
   const errorAccounts = "Please provide at least one account";
   const errorRole = "Please select role as applicable";
@@ -62,15 +62,15 @@ const SignupForm = () => {
               email: email,
               occupation: occupation,
               org: org,
-              google: google,
-              github: github,
-              twitter: twitter,
-              linkedin: linkedin,
+              // google: google,
+              // github: github,
+              // twitter: twitter,
+              // linkedin: linkedin,
               role: role,
               form: "play",
             }}
             onSubmit={values => {
-              if ((values.google || values.github || values.twitter || values.linkedin) && values.role) {
+              if (values.role && values.email) {
                 setMemberFormOne(values);
                 setSubmit(true);
               } else {
@@ -79,20 +79,20 @@ const SignupForm = () => {
                 } else {
                   setValidateRole(false);
                 }
-                if (!(values.google || values.github || values.twitter || values.linkedin)) {
-                  setValidateAccounts(true);
-                } else {
-                  setValidateAccounts(false);
-                }
+                // if (!(values.google || values.github || values.twitter || values.linkedin)) {
+                //   setValidateAccounts(true);
+                // } else {
+                //   setValidateAccounts(false);
+                // }
                 setFirstName(values.firstname);
                 setEmail(values.email);
                 setLastName(values.lastname);
                 setOccupation(values.occupation);
                 setOrg(values.org);
-                setGoogleAccount(values.google);
-                setTwitterAccount(values.twitter);
-                setGithubAccount(values.github);
-                setLinkedinAccount(values.linkedin);
+                // setGoogleAccount(values.google);
+                // setTwitterAccount(values.twitter);
+                // setGithubAccount(values.github);
+                // setLinkedinAccount(values.linkedin);
                 setRole(values.role);
               }
             }}
