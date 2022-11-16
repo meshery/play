@@ -86,7 +86,9 @@ export const Main = styled.main`
   .cmng-soon-txt {
     margin-top: -3rem;
     margin-bottom: 1rem;
+    font-weight: 300;
     text-align: center;
+    font-style: italic;
   }
 
   figure {
@@ -99,7 +101,7 @@ export const Main = styled.main`
       box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
     }
     figcaption {
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
       margin-left: 1.5rem;
       font-weight: 500;
       font-style: italic;

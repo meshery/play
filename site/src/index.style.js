@@ -7,10 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     color: #ffffff;
   }
 
+
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Qanelas Soft', 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.125rem;

@@ -45,7 +45,7 @@ const SignupForm = () => {
 
   const PlayFormComponent = () => {
     return (
-      <div className= "form-page">
+      <div className="form-page">
         <div className="desc-text">
           <p>
             Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
@@ -54,7 +54,7 @@ const SignupForm = () => {
           <DiscussCallout />
         </div>
         <div className="form-container">
-          <h3 className="form-title">Apply For the Beta Program</h3>
+          <h3 className="form-title">Get early access</h3>
           <Formik
             initialValues={{
               firstname: firstname,
@@ -162,9 +162,9 @@ const SignupForm = () => {
 
   return (
     <SignupFormWrapper>
-        {
-          !formSubmitted ? <PlayFormComponent /> : <ThankYou /> 
-        }
+      {
+        !formSubmitted ? <PlayFormComponent /> : <ThankYou />
+      }
     </SignupFormWrapper>
   );
 };
