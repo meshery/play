@@ -7,15 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     color: #ffffff;
   }
 
-  @font-face {
-      font-family: "Qanelas Soft Regular";
-      src: url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.eot"); /* IE9*/
-      src: url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.woff2") format("woff2"), /* chrome firefox */
-      url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.woff") format("woff"), /* chrome firefox */
-      url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("https://db.onlinewebfonts.com/t/5173256ffa3e08c4cbed8986369258a6.svg#Qanelas Soft") format("svg"); /* iOS 4.1- */
-  }
 
   body {
     margin: 0;
