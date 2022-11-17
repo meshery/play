@@ -71,7 +71,7 @@ const SignupFormWrapper = styled.section`
 			font-size: .8725rem;
 			padding: 2rem;
 			display: flex;
-			min-width: 20rem;
+			min-width: 12rem;
 			flex-flow: column wrap;
 			align-content: fcenter;
 			justify-content: center;
