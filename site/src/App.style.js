@@ -124,6 +124,11 @@ export const Main = styled.main`
       margin: auto;
       border-radius: 0.5rem;
     }
+    @media screen and (max-width: 480px) {
+      a{
+        width: 15rem;
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {
