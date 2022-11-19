@@ -119,7 +119,7 @@ export const Main = styled.main`
       display: block;
       background: #EBC017;
       color: #FFF;
-      width: 18rem;
+      width: 16rem;
       padding: 1rem;
       margin: auto;
       border-radius: 0.5rem;

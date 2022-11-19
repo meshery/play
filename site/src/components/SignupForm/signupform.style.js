@@ -77,6 +77,10 @@ const SignupFormWrapper = styled.section`
 			justify-content: center;
 			background-color: #1E2117;
 			color: #ccc;
+			
+			@media only screen and (max-width: 568px){
+				min-width: 14rem
+			}
 
 			label {
 				display: block;
