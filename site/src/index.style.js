@@ -15,12 +15,13 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.125rem;
+    background: ${({ theme }) => theme.body};
     color: #3C494F;
   }
 
   h1, h2, h3, h4, h5 {
     font-family: 'Qanelas Soft', 'Open Sans', sans-serif;
-    color: #1E2117;
+    color: ${({ theme }) => theme.text};
     margin: 0;
     line-height: normal;
   }
@@ -71,6 +72,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
+    color: ${({ theme }) => theme.text};
     margin: 0 0 1rem 0;
     font-size: 1.125rem;
     font-weight: 400;
@@ -95,3 +97,17 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
   }
 `;
+
+
+export const lightTheme = {
+  body: '#FFF',
+  text: '#363537',
+  toggleBorder: '#FFF',
+  background: '#363537',
+}
+export const darkTheme = {
+  body: '#000000',
+  text: '#FAFAFA',
+  toggleBorder: '#6B8096',
+  background: '#999',
+}

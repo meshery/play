@@ -8,6 +8,7 @@ export const Header = styled.header`
   z-index: 1;
 
   nav {
+    background: ${({ theme }) => theme.body};
     display: flex;
     flex: auto;
     padding: 1.5rem 10rem;
@@ -55,6 +56,7 @@ export const Header = styled.header`
 
     .signup-btn {
       padding: 0.75rem;
+      margin-left: auto;
     }
   }
 

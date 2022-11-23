@@ -2,8 +2,13 @@ import { useState, useEffect } from "react";
 import SignupForm from "./components/SignupForm";
 import { Header, Main } from './App.style.js';
 import mesheryLogo from './assets/images/meshery-learn-logo.png';
+import mesheryLogoLight from './assets/images/meshry-learn-logo-light.png';
 import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
+import { useDarkMode } from "./components/useDarkMode";
+import { Toggle } from "./components/Toggle";
 
 const App = () => {
 
@@ -14,11 +19,21 @@ const App = () => {
     );
   }, []);
 
+
+  const [ theme, toggleTheme ] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight;
+
+
   return (
     <>
+    <ThemeProvider theme={themeMode}>
+    <GlobalStyle />
       <Header>
+
         <nav className={scroll ? "scrolled" : ""}>
-          <img className="logo" src={mesheryLogo} alt="Meshery Logo" />
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+          <img className="logo" src={Logo} alt="Meshery Logo" />
           <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
         </nav>
       </Header>
@@ -51,6 +66,7 @@ const App = () => {
         </section>
       </Main>
       <Footer />
+      </ThemeProvider>
     </>
   );
 }
