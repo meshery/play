@@ -40,3 +40,7 @@ site/.env.production.local
 site/npm-debug.log*
 site/yarn-debug.log*
 site/yarn-error.log*
+
+.DS_Store
+.github/.DS_Store
+

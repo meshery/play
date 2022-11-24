@@ -13,7 +13,7 @@ const SignupForm = () => {
 
   const [formSubmitted, setSubmit] = useState(false);
 
-  const [validateAccounts, setValidateAccounts] = useState(false);
+  // const [validateAccounts, setValidateAccounts] = useState(false);
   const [validateRole, setValidateRole] = useState(false);
   const [email, setEmail] = useState("");
   const [firstname, setFirstName] = useState("");
@@ -26,7 +26,7 @@ const SignupForm = () => {
   // const [twitter, setTwitterAccount] = useState("");
   // const [linkedin, setLinkedinAccount] = useState("");
 
-  const errorAccounts = "Please provide at least one account";
+  // const errorAccounts = "Please provide at least one account";
   const errorRole = "Please select role as applicable";
 
   useEffect(() => {
