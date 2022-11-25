@@ -30,7 +30,7 @@ export const Header = styled.header`
 
   .signup-btn {
     margin: 0 0 0 auto;
-    padding: 1.25rem;
+    padding: 1rem 1.5rem;
     text-align: center;
     background-color: #00B39F;
     color: #FFF;
@@ -55,8 +55,7 @@ export const Header = styled.header`
     }
 
     .signup-btn {
-      padding: 0.75rem;
-      margin-left: auto;
+      padding: 0.70rem 1rem;
     }
   }
 
@@ -68,6 +67,16 @@ export const Header = styled.header`
 
     img.logo {
       max-width: 200px;        
+    }
+  }
+
+  @media screen and (max-width: 368px){
+    .signup-btn {
+      padding: 7px;
+    }
+
+    nav {
+      padding: 1.3rem 0.6rem;
     }
   }
 `
@@ -121,7 +130,7 @@ export const Main = styled.main`
       display: block;
       background: #EBC017;
       color: #FFF;
-      width: 18rem;
+      width: 14rem;
       padding: 1rem;
       margin: auto;
       border-radius: 0.5rem;
@@ -137,7 +146,17 @@ export const Main = styled.main`
     figure {
       width: 100%;
     }
-}
+  }
+
+  @media screen and (max-width: 344px){
+    .join-community {
+      a {
+        width: 12rem;
+      }
+    }
+  }
+
+
 `
 
 

@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 const SignupFormWrapper = styled.section`
 
+* {
+	box-sizing: border-box;
+}
+
 	.form-page{
 		display:flex;
 		@media only screen and (max-width: 1024px){
@@ -78,6 +82,10 @@ const SignupFormWrapper = styled.section`
 			background-color: #1E2117;
 			color: #ccc;
 
+			@media only screen and (max-width: 568px){
+				min-width: 8rem
+			}
+
 			label {
 				display: block;
 			}
@@ -89,13 +97,12 @@ const SignupFormWrapper = styled.section`
 			}
 
 			.text-field {
-				width: 95%;
+				width: 100%;
 				border: 1px solid black;
 				border-radius: 10px;
 				padding: 1rem .5rem;
 				font-size: .85rem;
 				margin-top: 0.5rem;
-				margin-right: 0.5rem;
 				
 				&:focus {
 					border: 2px solid #00B39F;
@@ -105,10 +112,6 @@ const SignupFormWrapper = styled.section`
 			.form-field{
 				margin-top: 1rem;
 				font-size: 0.9rem;
-			}
-
-			.form-select {
-				margin-right: 0.5rem;
 			}
 
 			select {
@@ -161,9 +164,6 @@ const SignupFormWrapper = styled.section`
 				&:hover {
 					cursor: pointer;
 					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-				}
-				@media only screen and (max-width: 600px) {
-						width: 50%;
 				}
 			}
 
