@@ -7,9 +7,9 @@ Not sure where to start? First, see the [newcomers welcome guide](https://docs.g
 
 **Sections**
 - <a name="contributing">General Contribution Flow</a>
-  - <a name="#how-to-contribute">How to Contribute</a>
+  - <a href="#how-to-contribute">How to Contribute</a>
   - <a href="#commit-signing">Developer Certificate of Origin</a>
-  - <a name="#contributing-docs">Documentation Contribution Flow</a>
+  - <a href="#contributing-docs">Documentation Contribution Flow</a>
 
 Relevant coding style guidelines are the Go Code Review Comments and the Formatting and style section of Peter Bourgon's Go: Best Practices for Production Environments.
 
