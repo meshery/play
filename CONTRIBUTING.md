@@ -7,10 +7,9 @@ Not sure where to start? First, see the [newcomers welcome guide](https://docs.g
 
 **Sections**
 - <a name="contributing">General Contribution Flow</a>
-  - <a name="how-to-contribute">How to Contribute</a>
+  - <a name="#how-to-contribute">How to Contribute</a>
   - <a href="#commit-signing">Developer Certificate of Origin</a>
-  - <a name="contributing-docs">Documentation Contribution Flow</a>
-- <a name="maintaining"> Reviews</a>
+  - <a name="#contributing-docs">Documentation Contribution Flow</a>
 
 Relevant coding style guidelines are the Go Code Review Comments and the Formatting and style section of Peter Bourgon's Go: Best Practices for Production Environments.
 
@@ -22,7 +21,8 @@ In order to contribute to Meshery Play, please follow the fork-and-pull request 
 ### Prerequisites
 Make sure you have the following prerequisites installed on your operating system before you start contributing:
 
-- [Nodejs and npm] (https://nodejs.org/en/)
+- [Nodejs and npm](https://nodejs.org/en/)
+
 To verify run:
 ```
 node -v
@@ -33,35 +33,44 @@ npm -v
 
 ### Set up your Local Development Environment
 Follow the following instructions to start contributing.
+
 1. Fork this repository.
+
 2. Clone your forked copy of the project.
 ```
 git clone https://github.com/<your-github-username>/play.git
 ```
+
 3. Navigate to the project directory.
 ```
 cd play
 ```
+
 4. Add a reference(remote) to the original repository.
 ```
 git remote add upstream https://github.com/meshery/play.git
 ```
+
 5. Check the remotes for this repository.
 ```
 git remote -v
 ```
+
 6. Always take a pull from the upstream repository to your master branch to keep it at par with the main project (updated repository).
 ```
 git pull upstream master
 ```
-7. Create a new branch. Follow [this] guideline when naming your branches. (https://docs.meshery.io/project/contributing/contributing-gitflow#create-a-new-branch-give-your-branch-its-own-simple-informative-name)
+
+7. Create a new branch. Follow [this](https://docs.meshery.io/project/contributing/contributing-gitflow#create-a-new-branch-give-your-branch-its-own-simple-informative-name) guideline when naming your branches.
 ```
 git checkout -b <your_branch_name>
 ```
+
 8. Install the dependencies for running the site.
 ```
 make site-setup
 ```
+
 9. Make the desired changes.
 
 10. Run the site locally to preview changes.
