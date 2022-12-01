@@ -39,7 +39,7 @@ Follow the following instructions to start contributing.
 **2.** Clone your forked copy of the project.
 
 ```
-git clone https://github.com/<your-github-username>/play.git
+git clone git@github.com:<your-github-username>/play.git
 ```
 
 **3.** Navigate to the project directory.
@@ -110,7 +110,7 @@ git commit -s -m "<commit subject>"
 
 ```
 git checkout master
-git fetch origin master
+git fetch upstream/master
 git merge upstream/master
 git push origin
 ```
