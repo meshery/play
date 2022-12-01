@@ -110,7 +110,7 @@ git commit -s -m "<commit subject>"
 
 ```
 git checkout master
-git fetch upstream/master
+git fetch upstream master
 git merge upstream/master
 git push origin
 ```
