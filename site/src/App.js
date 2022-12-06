@@ -60,8 +60,8 @@ const App = () => {
         <section className="join-community">
           <div>
             <h1>Join the community!</h1>
-            <p>Checkout the Layer5 community by joining us on Slack</p>
-            <a href="http://slack.layer5.io/" >Join Our Talented Community</a>
+            <p>Engage in the Meshery community by joining us on Slack</p>
+            <a href="http://slack.layer5.io/" >Join Our Open Source Community</a>
           </div>
         </section>
       </Main>
