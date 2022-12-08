@@ -153,7 +153,7 @@ const SignupForm = () => {
         <div className="thankyou-box">
           <h2>Thank you for your interest in Meshery Playground early access program!</h2>
           <p>You are now signed up for the Meshery Playground early access program and your position on the waiting list is confirmed. Please wait patiently for a response from the Meshery team.</p>
-          <p>If you have any questions in the meantime, please send an email to <a href="mailto:meshmap@layer5.io">meshmap@layer5.io</a>.</p>
+          <p>If you have any questions in the meantime, please send an email to <a href="mailto:playground@meshery.io">playground@meshery.io</a>.</p>
           <h3 className="white">- Team <img src={MesheryText} alt="Meshery" /></h3>
         </div>
       </>
