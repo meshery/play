@@ -48,7 +48,7 @@ const SignupForm = () => {
       <div className="form-page">
         <div className="desc-text">
           <p>
-            Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the Layer5 team will send you additional information about the early access program.
+            Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the maintainers team will send you additional information about the early access program.
           </p>
           <img src={mesheryCloud} alt="Meshery Homepage" className="meshery-home" />
           <DiscussCallout />
@@ -100,11 +100,11 @@ const SignupForm = () => {
             <Form className="form1" method="post">
               <div className="form-group">
                 <label htmlFor="firstname" className="form-field">First Name <span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+                <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
               </div>
               <div className="form-group">
                 <label htmlFor="lastname" className="form-field">Last Name <span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32"  pattern="[A-Za-z]{1,32}" required />
+                <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
               </div>
               <div className="form-group">
                 <label htmlFor="email" className="form-field">Email Address <span className="required-sign">*</span></label>
@@ -113,8 +113,8 @@ const SignupForm = () => {
               <div className="form-group">
                 <label htmlFor="occupation" className="form-field">Occupation / Title <span className="required-sign">*</span></label>
                 <Field type="text" className="text-field" id="occupation" name="occupation" />
-                </div>
-                <div className="form-group">
+              </div>
+              <div className="form-group">
                 <label htmlFor="org" className="form-field">Org / Company / School <span className="required-sign">*</span></label>
                 <Field type="text" className="text-field" id="org" name="org" />
               </div>
@@ -122,7 +122,7 @@ const SignupForm = () => {
                 <label htmlFor="role" className="form-field">What role best identifies you? <span className="required-sign">*</span></label>
               </div>
               {validateRole && <p style={{ margin: "0px", color: "red", fontSize: "12px" }}>{errorRole}</p>}
-              <div className="form-select"  aria-labelledby="select">
+              <div className="form-select" aria-labelledby="select">
                 <Field as="select" name="role">
                   <option>Select your role</option>
                   <option value="Architect">Architect</option>
@@ -153,7 +153,7 @@ const SignupForm = () => {
         <div className="thankyou-box">
           <h2>Thank you for your interest in Meshery Playground early access program!</h2>
           <p>You are now signed up for the Meshery Playground early access program and your position on the waiting list is confirmed. Please wait patiently for a response from the Meshery team.</p>
-          <p>If you have any questions in the meantime, please send an email to <a href="mailto:meshmap@layer5.io">meshmap@layer5.io</a>.</p>
+          <p>If you have any questions in the meantime, please send an email to <a href="mailto:playground@meshery.io">playground@meshery.io</a>.</p>
           <h3 className="white">- Team <img src={MesheryText} alt="Meshery" /></h3>
         </div>
       </>
