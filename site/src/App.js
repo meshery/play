@@ -36,7 +36,7 @@ const App = () => {
             <img src={mesheryPlayground} alt="Meshery Playground" className="meshery-plaground" />
             <figcaption>Launch and learn with Meshery</figcaption>
           </figure>
-          <p>The cloud native playground contains a set of learning paths that incorporate an application networking centric ciricullum featuring training on 100+ integrations.</p>
+          <p>The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 100+ integrations.</p>
         </section>
         <section className="form" id="signup-form">
           <h2>Sign up for the early access of cloud native playground!</h2>
