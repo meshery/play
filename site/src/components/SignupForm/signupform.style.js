@@ -9,10 +9,10 @@ const SignupFormWrapper = styled.section`
 	.form-page{
 		display:flex;
 		justify-content: center;
-		align-items: center;
-		flex-direction:column;
+		padding-top: 1rem;
 		@media only screen and (max-width: 1024px){
 			display:flex;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -22,6 +22,8 @@ const SignupFormWrapper = styled.section`
 
 	.desc-text {
 		margin: 1rem;
+		width: 50%;
+		text-align: justify;
 		p{
 			font-size: 1.35rem;
 		}
@@ -31,6 +33,8 @@ const SignupFormWrapper = styled.section`
 				display: none;
 			}
 			margin: 1rem 1rem 2rem 1rem;
+			width: 100%;
+			text-align: start;
 		}
 	}
 

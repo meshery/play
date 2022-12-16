@@ -58,6 +58,7 @@ const SignupForm = () => {
             alt="Meshery Homepage"
             className="meshery-home"
           /> */}
+        <DiscussCallout />
         </div>
         <div className="form-container">
           <h3 className="form-title">Get early access</h3>
@@ -199,7 +200,6 @@ const SignupForm = () => {
             </Form>
           </Formik>
         </div>
-        <DiscussCallout />
       </div>
     );
   };
