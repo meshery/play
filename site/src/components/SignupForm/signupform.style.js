@@ -8,6 +8,8 @@ const SignupFormWrapper = styled.section`
 
 	.form-page{
 		display:flex;
+		justify-content: center;
+		align-items: center;
 		flex-direction:column;
 		@media only screen and (max-width: 1024px){
 			display:flex;
@@ -59,10 +61,12 @@ const SignupFormWrapper = styled.section`
   .form-container{
 	  margin: 1rem;
 	  height: 100%;
+	  width: 50%;
 		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
        
 	  @media only screen and (max-width: 1024px){
 			margin: 2rem 0 ;
+			width: 90%;
 		}
 
 		.form-title {
