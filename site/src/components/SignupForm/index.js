@@ -4,7 +4,6 @@ import axios from "axios";
 import MesheryText from "../../assets/images/meshery-light-text.svg";
 import SignupFormWrapper from "./signupform.style.js";
 import DiscussCallout from "../Discuss-Callout";
-// import mesheryCloud from "../../assets/images/meshery-cloud.png";
 
 const SignupForm = () => {
   // Form values
