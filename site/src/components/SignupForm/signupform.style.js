@@ -9,7 +9,7 @@ const SignupFormWrapper = styled.section`
 	.form-page{
 		display:flex;
 		justify-content: center;
-		padding-top: 1rem;
+		margin-top: 2rem;
 		@media only screen and (max-width: 1024px){
 			display:flex;
 			flex-wrap: wrap;
@@ -29,8 +29,8 @@ const SignupFormWrapper = styled.section`
 		}
 
 		@media screen and (max-width: 1024px) {
-			img, div {
-				display: none;
+			div {
+				displya: block;
 			}
 			margin: 1rem 1rem 2rem 1rem;
 			width: 100%;
