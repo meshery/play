@@ -52,11 +52,6 @@ const SignupForm = () => {
             familiarize with Meshery, the maintainers team will send you
             additional information about the early access program.
           </p>
-          {/* <img
-            src={mesheryCloud}
-            alt="Meshery Homepage"
-            className="meshery-home"
-          /> */}
         </div>
         <div className="form-container">
           <h3 className="form-title">Get early access</h3>
