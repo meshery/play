@@ -8,8 +8,11 @@ const SignupFormWrapper = styled.section`
 
 	.form-page{
 		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
 		@media only screen and (max-width: 1024px){
-			display: block;
+			display:flex;
 		}
 	}
 

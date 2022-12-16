@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Field, Formik, Form } from "formik";
 import axios from "axios";
-import MesheryText from "../../assets/images/meshery-light-text.svg"
+import MesheryText from "../../assets/images/meshery-light-text.svg";
 import SignupFormWrapper from "./signupform.style.js";
 import DiscussCallout from "../Discuss-Callout";
-import mesheryCloud from "../../assets/images/meshery-cloud.png";
+// import mesheryCloud from "../../assets/images/meshery-cloud.png";
 
 const SignupForm = () => {
-
   // Form values
   const [memberFormOne, setMemberFormOne] = useState({});
 
@@ -32,25 +31,33 @@ const SignupForm = () => {
   useEffect(() => {
     if (formSubmitted) {
       axios.post("https://hook.us1.make.com/gguommoyd14634ur9xs7l37widuoa7e9", {
-        memberFormOne,
+        memberFormOne
       });
       window.scrollTo({
         top: 800,
         left: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
     }
   }, [formSubmitted, memberFormOne]);
-
 
   const PlayFormComponent = () => {
     return (
       <div className="form-page">
         <div className="desc-text">
           <p>
-            Sign up for the early access of Meshery Playground today. Your request for access will be processed as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. In the meantime to help you familiarize with Meshery, the maintainers team will send you additional information about the early access program.
+            Sign up for the early access of Meshery Playground today. Your
+            request for access will be processed as quickly as possible. Due to
+            the large influx of program participation requests, it may take some
+            time before system access is granted. In the meantime to help you
+            familiarize with Meshery, the maintainers team will send you
+            additional information about the early access program.
           </p>
-          <img src={mesheryCloud} alt="Meshery Homepage" className="meshery-home" />
+          {/* <img
+            src={mesheryCloud}
+            alt="Meshery Homepage"
+            className="meshery-home"
+          /> */}
           <DiscussCallout />
         </div>
         <div className="form-container">
@@ -67,9 +74,9 @@ const SignupForm = () => {
               // twitter: twitter,
               // linkedin: linkedin,
               role: role,
-              form: "play",
+              form: "play"
             }}
-            onSubmit={values => {
+            onSubmit={(values) => {
               if (values.role && values.email) {
                 setMemberFormOne(values);
                 setSubmit(true);
@@ -99,34 +106,82 @@ const SignupForm = () => {
           >
             <Form className="form1" method="post">
               <div className="form-group">
-                <label htmlFor="firstname" className="form-field">First Name <span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="firstname" name="firstname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
+                <label htmlFor="firstname" className="form-field">
+                  First Name <span className="required-sign">*</span>
+                </label>
+                <Field
+                  type="text"
+                  className="text-field"
+                  id="firstname"
+                  name="firstname"
+                  maxLength="32"
+                  pattern="[A-Za-z]{1,32}"
+                  required
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="lastname" className="form-field">Last Name <span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="lastname" name="lastname" maxLength="32" pattern="[A-Za-z]{1,32}" required />
+                <label htmlFor="lastname" className="form-field">
+                  Last Name <span className="required-sign">*</span>
+                </label>
+                <Field
+                  type="text"
+                  className="text-field"
+                  id="lastname"
+                  name="lastname"
+                  maxLength="32"
+                  pattern="[A-Za-z]{1,32}"
+                  required
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="email" className="form-field">Email Address <span className="required-sign">*</span></label>
-                <Field type="email" className="text-field" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                <label htmlFor="email" className="form-field">
+                  Email Address <span className="required-sign">*</span>
+                </label>
+                <Field
+                  type="email"
+                  className="text-field"
+                  id="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="occupation" className="form-field">Occupation / Title <span className="required-sign">*</span></label>
-                <Field type="text" className="text-field" id="occupation" name="occupation" />
+                <label htmlFor="occupation" className="form-field">
+                  Occupation / Title <span className="required-sign">*</span>
+                </label>
+                <Field
+                  type="text"
+                  className="text-field"
+                  id="occupation"
+                  name="occupation"
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="org" className="form-field">Org / Company / School <span className="required-sign">*</span></label>
+                <label htmlFor="org" className="form-field">
+                  Org / Company / School{" "}
+                  <span className="required-sign">*</span>
+                </label>
                 <Field type="text" className="text-field" id="org" name="org" />
               </div>
               <div className="form-group">
-                <label htmlFor="role" className="form-field">What role best identifies you? <span className="required-sign">*</span></label>
+                <label htmlFor="role" className="form-field">
+                  What role best identifies you?{" "}
+                  <span className="required-sign">*</span>
+                </label>
               </div>
-              {validateRole && <p style={{ margin: "0px", color: "red", fontSize: "12px" }}>{errorRole}</p>}
+              {validateRole && (
+                <p style={{ margin: "0px", color: "red", fontSize: "12px" }}>
+                  {errorRole}
+                </p>
+              )}
               <div className="form-select" aria-labelledby="select">
                 <Field as="select" name="role">
                   <option>Select your role</option>
                   <option value="Architect">Architect</option>
-                  <option value="Business Operations">Business Operations</option>
+                  <option value="Business Operations">
+                    Business Operations
+                  </option>
                   <option value="Developer">Developer</option>
                   <option value="DevOps">DevOps</option>
                   <option value="Executive">Executive</option>
@@ -139,7 +194,9 @@ const SignupForm = () => {
                   <option value="Other">Other</option>
                 </Field>
               </div>
-              <button type="submit" className="submit-btn">Submit</button>
+              <button type="submit" className="submit-btn">
+                Submit
+              </button>
             </Form>
           </Formik>
         </div>
@@ -151,10 +208,22 @@ const SignupForm = () => {
     return (
       <>
         <div className="thankyou-box">
-          <h2>Thank you for your interest in Meshery Playground early access program!</h2>
-          <p>You are now signed up for the Meshery Playground early access program and your position on the waiting list is confirmed. Please wait patiently for a response from the Meshery team.</p>
-          <p>If you have any questions in the meantime, please send an email to <a href="mailto:playground@meshery.io">playground@meshery.io</a>.</p>
-          <h3 className="white">- Team <img src={MesheryText} alt="Meshery" /></h3>
+          <h2>
+            Thank you for your interest in Meshery Playground early access
+            program!
+          </h2>
+          <p>
+            You are now signed up for the Meshery Playground early access
+            program and your position on the waiting list is confirmed. Please
+            wait patiently for a response from the Meshery team.
+          </p>
+          <p>
+            If you have any questions in the meantime, please send an email to{" "}
+            <a href="mailto:playground@meshery.io">playground@meshery.io</a>.
+          </p>
+          <h3 className="white">
+            - Team <img src={MesheryText} alt="Meshery" />
+          </h3>
         </div>
       </>
     );
@@ -162,9 +231,7 @@ const SignupForm = () => {
 
   return (
     <SignupFormWrapper>
-      {
-        !formSubmitted ? <PlayFormComponent /> : <ThankYou />
-      }
+      {!formSubmitted ? <PlayFormComponent /> : <ThankYou />}
     </SignupFormWrapper>
   );
 };
