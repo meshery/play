@@ -48,7 +48,6 @@ const SignupForm = () => {
   useEffect(() => (window.onresize = updateSize), []);
 
   const PlayFormComponent = () => {
-    console.log(showCallout);
     return (
       <div className="form-page">
         <div className="desc-text">
