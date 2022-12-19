@@ -46,7 +46,7 @@ const App = () => {
           <div>
             <h1>Join the community!</h1>
             <p>Engage in the Meshery community by joining us on Slack</p>
-            <a href="http://slack.layer5.io/" >Join Our Open Source Community</a>
+            <a href="https://slack.layer5.io/" >Join Our Open Source Community</a>
           </div>
         </section>
       </Main>
