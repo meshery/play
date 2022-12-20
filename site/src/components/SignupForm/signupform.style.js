@@ -42,7 +42,9 @@ const SignupFormWrapper = styled.section`
 	.desc-callout{
 		@media screen and (max-width: 1024px){
 			position: relative;
-			top: 930px;
+			top: 62rem;
+			width: fit-content;
+			margin: auto;
 		}
 	}
 
@@ -80,7 +82,7 @@ const SignupFormWrapper = styled.section`
 			margin: 2rem 0 ;
 			width: 90%;
 			position: relative;
-			bottom: 230px;
+			bottom: 16rem;
 		}
 
 		.form-title {
