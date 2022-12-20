@@ -24,8 +24,9 @@ const SignupFormWrapper = styled.section`
 		margin: 1rem;
 		width: 50%;
 		text-align: justify;
-		p{
+		p:first-child{
 			font-size: 1.35rem;
+			margin-bottom: 3rem;
 		}
 
 		@media screen and (max-width: 1024px) {
@@ -35,6 +36,13 @@ const SignupFormWrapper = styled.section`
 			margin: 1rem 1rem 2rem 1rem;
 			width: 100%;
 			text-align: start;
+		}
+	}
+
+	.desc-callout{
+		@media screen and (max-width: 1024px){
+			position: relative;
+			top: 930px;
 		}
 	}
 
@@ -71,6 +79,8 @@ const SignupFormWrapper = styled.section`
 	  @media only screen and (max-width: 1024px){
 			margin: 2rem 0 ;
 			width: 90%;
+			position: relative;
+			bottom: 230px;
 		}
 
 		.form-title {
