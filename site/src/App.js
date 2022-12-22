@@ -51,7 +51,7 @@ const App = () => {
             <img src={mesheryPlayground} alt="Meshery Playground" className="meshery-plaground" />
             <figcaption>Launch and learn with Meshery</figcaption>
           </figure>
-          <p>The cloud native playground contains a set of learning paths that incorporate an application networking centric ciricullum featuring training on 100+ integrations.</p>
+          <p>The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 100+ integrations.</p>
         </section>
         <section className="form" id="signup-form">
           <h2>Sign up for the early access of cloud native playground!</h2>
@@ -61,7 +61,7 @@ const App = () => {
           <div>
             <h1>Join the community!</h1>
             <p>Engage in the Meshery community by joining us on Slack</p>
-            <a href="http://slack.layer5.io/" >Join Our Open Source Community</a>
+            <a href="https://slack.layer5.io/" >Join Our Open Source Community</a>
           </div>
         </section>
       </Main>

@@ -8,8 +8,11 @@ const SignupFormWrapper = styled.section`
 
 	.form-page{
 		display:flex;
+		justify-content: center;
+		margin-top: 2rem;
 		@media only screen and (max-width: 1024px){
-			display: block;
+			display:flex;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -19,15 +22,29 @@ const SignupFormWrapper = styled.section`
 
 	.desc-text {
 		margin: 1rem;
-		p{
+		width: 50%;
+		text-align: justify;
+		p:first-child{
 			font-size: 1.35rem;
+			margin-bottom: 3rem;
 		}
 
 		@media screen and (max-width: 1024px) {
-			img, div {
-				display: none;
+			div {
+				displya: block;
 			}
 			margin: 1rem 1rem 2rem 1rem;
+			width: 100%;
+			text-align: start;
+		}
+	}
+
+	.desc-callout{
+		@media screen and (max-width: 1024px){
+			position: relative;
+			top: 58rem;
+			width: fit-content;
+			margin: auto;
 		}
 	}
 
@@ -58,10 +75,14 @@ const SignupFormWrapper = styled.section`
   .form-container{
 	  margin: 1rem;
 	  height: 100%;
+	  width: 50%;
 		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
        
 	  @media only screen and (max-width: 1024px){
 			margin: 2rem 0 ;
+			width: 90%;
+			position: relative;
+			bottom: 16rem;
 		}
 
 		.form-title {

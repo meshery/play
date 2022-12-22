@@ -44,7 +44,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="/service-mesh-landscape"
+                href="https://slack.layer5.io/"
               >
                 Slack
               </a>
@@ -193,7 +193,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://meshery.io/service-mesh-interface"
+                href="https://slack.layer5.io/"
               >
                 <img src={SlackIcon} alt="Slack Icon" />
                 Slack
