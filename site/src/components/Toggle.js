@@ -4,20 +4,21 @@ const mystyle = {
   position: "absolute",
   top: "2rem",
   right: "4rem",
-  transition: "all .5s linear",
+  transition: "all .5s ease 0s",
+  cursor: "pointer",
 };
 
 export const Toggle = ({ theme, toggleTheme }) => {
   return (
     <div className="darkmodebtn" onClick={toggleTheme} style={mystyle}>
-      {theme === "light" ? (
+      {theme === "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="#212121"
+          fill="rgb(0,179,159)"
+          stroke="none"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -31,8 +32,8 @@ export const Toggle = ({ theme, toggleTheme }) => {
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="#fff"
+          fill="rgb(60, 73, 79)"
+          stroke="rgb(60, 73, 79)"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
