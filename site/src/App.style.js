@@ -15,7 +15,7 @@ export const Header = styled.header`
     transition: all 0.3s ease 0s;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: flex-end;
   }
 
   .scrolled { 
@@ -27,7 +27,14 @@ export const Header = styled.header`
     max-width: 400px;
     height: auto;
   }
-
+  .themeToggle {
+    margin: auto;
+    padding: auto .5rem;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
   }
@@ -72,7 +79,10 @@ export const Header = styled.header`
     nav {
       padding: 1.5rem 5rem;
     }
-    
+    .themeToggle > svg {
+      width: 32px;
+      height: 32px;
+    }
     img.logo {
       max-width: 320px;
     }
@@ -89,6 +99,10 @@ export const Header = styled.header`
     .login-btn {
       padding: 0.70rem 1rem;
       margin-left: .5rem;
+    }
+    .themeToggle > svg {
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -109,6 +123,10 @@ export const Header = styled.header`
     }
     .login-btn {
       padding: 7px;
+    }
+    .themeToggle > svg {
+      width: 16px;
+      height: 16px;
     }
     nav {
       padding: 1.3rem 0.6rem;

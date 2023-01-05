@@ -1,21 +1,17 @@
-import React from "react";
 
-const mystyle = {
-  position: "absolute",
-  top: "2rem",
-  right: "4rem",
+const toggleStyle = {
   transition: "all .5s ease 0s",
   cursor: "pointer",
 };
 
-export const Toggle = ({ theme, toggleTheme }) => {
+export const Toggle = ({ theme, toggleTheme, height, width }) => {
   return (
-    <div className="darkmodebtn" onClick={toggleTheme} style={mystyle}>
+    <div className="themeToggle" onClick={toggleTheme} style={toggleStyle}>
       {theme === "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
+          width="auto"
+          height="auto"
           viewBox="0 0 24 24"
           fill="rgb(0,179,159)"
           stroke="none"
@@ -29,8 +25,8 @@ export const Toggle = ({ theme, toggleTheme }) => {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
+          width="auto"
+          height="auto"
           viewBox="0 0 24 24"
           fill="rgb(60, 73, 79)"
           stroke="rgb(60, 73, 79)"
