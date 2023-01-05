@@ -27,6 +27,9 @@ export const Header = styled.header`
     height: auto;
   }
 
+  .signup-btn, .login-btn {
+    font-size: calc(16px + 6 * ((50vw - 320px) / 680));
+  }
   .signup-btn {
     margin: 0 0 0 auto;
     padding: 1rem 1.5rem;
@@ -34,7 +37,7 @@ export const Header = styled.header`
     color: #FFF;
     background: rgba(235, 192, 23, 1);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(235, 192, 23, 0.3);
@@ -53,7 +56,7 @@ export const Header = styled.header`
     white-space: nowrap;
     background: rgba(0, 179, 159, 1);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 179, 159, 0.3);
@@ -63,7 +66,7 @@ export const Header = styled.header`
     background-color: #00D3A9;
     color: #FFF;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 975px) {
     
     nav {
       padding: 1.5rem 5rem;
@@ -82,12 +85,16 @@ export const Header = styled.header`
     .signup-btn {
       padding: 0.70rem 1rem;
     }
+    .login-btn {
+      padding: 0.70rem 1rem;
+      margin-left: .5rem;
+    }
   }
 
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 615px) {
 
     nav {
-      padding: 1.5rem 2.5rem;
+      padding: 1.5rem 1.5rem;
     }
 
     img.logo {
@@ -99,7 +106,9 @@ export const Header = styled.header`
     .signup-btn {
       padding: 7px;
     }
-
+    .login-btn {
+      padding: 7px;
+    }
     nav {
       padding: 1.3rem 0.6rem;
     }
