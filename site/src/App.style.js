@@ -94,7 +94,7 @@ export const Main = styled.main`
     text-align: center;
     margin-bottom: 2rem;
   }
-  .cmng-soon-txt {
+  .try-now-txt {
     margin-top: -3rem;
     margin-bottom: 1rem;
     font-weight: 300;
