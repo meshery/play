@@ -35,6 +35,7 @@ const App = () => {
         <Toggle theme={theme} toggleTheme={toggleTheme} />
           <img className="logo" src={Logo} alt="Meshery Logo" />
           <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
+          <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
         </nav>
       </Header>
       <Main>

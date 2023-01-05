@@ -174,7 +174,7 @@ const SignupFormWrapper = styled.section`
 			}
 			
 			.submit-btn {
-				margin: 3rem auto;
+				margin: 1.5rem auto 0rem auto;
 				padding: 1rem 1.5rem;
 				font-size: 1.35rem;
 				display: block;

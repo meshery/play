@@ -15,13 +15,11 @@ const DiscussCallout = () => {
                   <div className="section-title">
                     <h2>Join the Conversation</h2>
                     <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
-       
-                    <button><img className="logo" alt="logo" src={Discuss} /></button>
-                
+                    <button><img className="logo" alt="Discussion Forum" src={Discuss} /></button>
                   </div>
-                </div> 
+                </div>
               </div>
-            </a>                  
+            </a>
           </div>
         </div>
       </div>
