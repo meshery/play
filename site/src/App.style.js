@@ -12,7 +12,7 @@ export const Header = styled.header`
     flex: auto;
     padding: 1.5rem 10rem;
     transition: all 0.3s ease 0s;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
   }
@@ -31,12 +31,38 @@ export const Header = styled.header`
     margin: 0 0 0 auto;
     padding: 1rem 1.5rem;
     text-align: center;
-    background-color: #00B39F;
     color: #FFF;
-    border-radius: 0.5rem;
+    background: rgba(235, 192, 23, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(235, 192, 23, 0.3);
     white-space: nowrap;
   }
+  .signup-btn:hover {
+    background-color: rgba(255, 208, 25, 0.8);
+    color: #FFF;
+  }
 
+  .login-btn {
+    margin: 0 0 0 1rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: #FFF;
+    white-space: nowrap;
+    background: rgba(0, 179, 159, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 179, 159, 0.3);
+  }
+
+  .login-btn:hover {
+    background-color: #00D3A9;
+    color: #FFF;
+  }
   @media screen and (max-width: 900px) {
     
     nav {
