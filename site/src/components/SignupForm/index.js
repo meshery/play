@@ -43,19 +43,19 @@ const SignupForm = () => {
   const PlayFormComponent = () => {
     return (
       <div className="form-page">
-          <div className="desc-text">
-              <p>
-                Sign up for the early access of Meshery Playground today. Your
-                request for access will be processed as quickly as possible. Due to
-                the large influx of program participation requests, it may take some
-                time before system access is granted. In the meantime to help you
-                familiarize with Meshery, the maintainers team will send you
-                additional information about the early access program.
-              </p>
-              <div className="desc-callout">
-                <DiscussCallout />
-              </div>
+        <div className="desc-text">
+          <p>
+            Sign up for the early access of Meshery Playground today. Your
+            request for access will be processed as quickly as possible. Due to
+            the large influx of program participation requests, it may take some
+            time before system access is granted. In the meantime to help you
+            familiarize with Meshery, the maintainers team will send you
+            additional information about the early access program.
+          </p>
+          <div className="desc-callout">
+            <DiscussCallout />
           </div>
+        </div>
         <div className="form-container">
           <h3 className="form-title">Get early access</h3>
           <Formik
@@ -70,7 +70,7 @@ const SignupForm = () => {
               // twitter: twitter,
               // linkedin: linkedin,
               role: role,
-              form: "play"
+              form: "playground"
             }}
             onSubmit={(values) => {
               if (values.role && values.email) {
