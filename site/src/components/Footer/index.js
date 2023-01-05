@@ -169,7 +169,7 @@ const Footer = () => {
                 href="https://meshery.io/calendar"
               >
                 <img src={CalendarIcon} alt="Calendar Icon" />
-                Calender
+                Calendar
               </a>
             </li>
             <li>
