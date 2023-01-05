@@ -24,7 +24,7 @@ const App = () => {
       </Header>
       <Main>
         <section className="hero">
-          <h3 className="cmng-soon-txt">Coming soon...</h3>
+          <h3 className="try-now-txt">Try it now!</h3>
           <h1>
             The Cloud Native Playground
           </h1>
