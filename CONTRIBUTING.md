@@ -17,7 +17,40 @@ Relevant coding style guidelines are the Go Code Review Comments and the Formatt
 
 In order to contribute to Meshery Play, please follow the fork-and-pull request workflow described [here](./CONTRIBUTING-gitflow.md).
 
+## Style Guide
+The play.meshery.io site is built using ReactJS.
+
+## Working with themes
+A custom React hook [useDarkMode.js](./site/src/components/useDarkMode.js) has been used to provide dark theme functionality to the website. The theme can be passed as props to the component where the functionality is desired.
+
+The styling for the light and dark themes is defined in [index.style.js](./site/src/index.style.js)
+
+### Examples
+
+To change text color in CSS, this can be used:
+
+```
+color: ${({ theme }) => theme.text};
+```
+
+To change background color in CSS, this can be executed:
+```
+background: ${({ theme }) => theme.body};
+```
+
+## Changing images according to theme
+
+To change images or SVG in image source, according to the theme, pass the theme state to the specific image component and change its source according to the theme.
+
+### Example
+```
+theme === 'light' ? mesheryLogo : mesheryLogoLight;
+```
+
+To create new classes or components with theme changing functionality, pass the theme state state to the component and use it as mentioned above.
+
 ## <a name="how-to-contribute">How to Contribute</a>
+
 ### Prerequisites
 Make sure you have the following prerequisites installed on your operating system before you start contributing:
 
