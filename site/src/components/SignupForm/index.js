@@ -193,6 +193,14 @@ const SignupForm = () => {
               <button type="submit" className="submit-btn">
                 Submit
               </button>
+              <div className="form-group">
+                <label htmlFor="privacy-statement" className="form-field-privacy">
+                By clicking “submit”, you agree to Meshery's 
+                <a href="https://meshery.layer5.io/terms-of-service.html" target="_blank" rel="noopener noreferrer"> terms of use</a>,
+                <a href="https://meshery.layer5.io/privacy-policy.html" target="_blank" rel="noopener noreferrer"> privacy policy </a>
+                and use of cookies.
+                </label>
+              </div>
             </Form>
           </Formik>
         </div>
