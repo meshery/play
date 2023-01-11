@@ -135,6 +135,12 @@ const SignupFormWrapper = styled.section`
 				font-size: 0.9rem;
 			}
 
+			.form-field-privacy{
+				margin-top: 1rem;
+				text-align: center;
+    			opacity: 0.5;
+			}
+
 			select {
 				padding: 1rem 0.5rem;
 				margin: 0.5rem 0;
