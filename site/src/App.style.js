@@ -165,6 +165,7 @@ export const Main = styled.main`
       box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
     }
     figcaption {
+      color: ${({ theme }) => theme.text};
       margin-top: 0.75rem;
       margin-left: 1.5rem;
       font-weight: 500;
@@ -182,7 +183,7 @@ export const Main = styled.main`
     a {
       display: block;
       background: #EBC017;
-      color: #FFF;
+      color:  ${({ theme }) => theme.btn};
       width: 14rem;
       padding: 1rem;
       margin: auto;
