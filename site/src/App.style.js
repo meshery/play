@@ -29,9 +29,7 @@ export const Header = styled.header`
     height: auto;
   }
   .themeToggle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto .5rem;
     padding: auto .5rem;
     svg {
       width: 40px;
@@ -41,12 +39,13 @@ export const Header = styled.header`
   .btn-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
+    margin: auto .5rem;
   }
   .signup-btn {
-    margin: 0 0 0 auto;
     padding: 1rem 1.5rem;
     text-align: center;
     color: #FFF;
@@ -113,14 +112,15 @@ export const Header = styled.header`
     }
     .signup-btn {
       padding: 0.70rem 1rem;
+      margin: auto .35rem;
     }
     .login-btn {
       padding: 0.70rem 1rem;
-      margin-left: .5rem;
+      margin: auto .35rem;
     }
     .themeToggle > svg {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -136,13 +136,14 @@ export const Header = styled.header`
   @media screen and (max-width: 500px) {
     nav {
       padding: 1.3rem 0.6rem;
+      margin: auto;
       width: 100%;
     }
     .themeToggle {
       position: static;
     }
     .signup-btn, .login-btn {
-      padding: 7px;
+      padding: 5px 7px;
     }
     .themeToggle > svg {
       width: 20px;
@@ -186,7 +187,7 @@ export const Main = styled.main`
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
-    width: 80%;
+    width: 90%;
 
     img {
       margin-top: 1rem;
@@ -224,11 +225,13 @@ export const Main = styled.main`
     figure {
       width: 90%;
     }
+    max-width: 85%;
   }
   @media screen and (max-width: 568px) {
     figure {
       width: 100%;
     }
+    max-width: 90%;
   }
 
   @media screen and (max-width: 344px){
@@ -237,6 +240,7 @@ export const Main = styled.main`
         width: 12rem;
       }
     }
+    max-width: 95%;
   }
 
 
