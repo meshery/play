@@ -13,9 +13,10 @@ export const Header = styled.header`
     flex: auto;
     padding: 1.5rem 10rem;
     transition: all 0.3s ease 0s;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: flex-end;
+    position: relative;
   }
 
   .scrolled { 
@@ -28,12 +29,18 @@ export const Header = styled.header`
     height: auto;
   }
   .themeToggle {
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     padding: auto .5rem;
     svg {
       width: 40px;
       height: 40px;
     }
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
   }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
@@ -74,15 +81,27 @@ export const Header = styled.header`
     background-color: #00D3A9;
     color: #FFF;
   }
-  @media screen and (max-width: 975px) {
-    
+  @media screen and (max-width: 1400px) {
+    img.logo {
+      max-width: 320px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
     nav {
-      padding: 1.5rem 5rem;
+      padding: 1.5em 2.5em;
     }
-    .themeToggle > svg {
-      width: 32px;
-      height: 32px;
+  }
+  @media screen and (max-width: 975px) {
+    .themeToggle {
+      // position: absolute;
     }
+    nav {
+      // padding: 1.5rem 5rem;
+    }
+    // .themeToggle > svg {
+    //   width: 32px;
+    //   height: 32px;
+    // }
     img.logo {
       max-width: 320px;
     }
@@ -92,7 +111,6 @@ export const Header = styled.header`
     img.logo {
       max-width: 250px;        
     }
-
     .signup-btn {
       padding: 0.70rem 1rem;
     }
@@ -107,16 +125,22 @@ export const Header = styled.header`
   }
 
   @media screen and (max-width: 615px) {
-
     nav {
-      padding: 1.5rem 1.5rem;
+      padding: 1.5rem;
     }
-
+ 
     img.logo {
       max-width: 200px;        
     }
   }
-
+  @media screen and (max-width: 500px) {
+    .themeToggle {
+      position: static;
+    }
+    nav {
+      padding: 1.5em 0.6em; 
+    }
+  }
   @media screen and (max-width: 368px){
     .signup-btn {
       padding: 7px;
