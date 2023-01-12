@@ -134,26 +134,19 @@ export const Header = styled.header`
     }
   }
   @media screen and (max-width: 500px) {
+    nav {
+      padding: 1.3rem 0.6rem;
+      width: 100%;
+    }
     .themeToggle {
       position: static;
     }
-    nav {
-      padding: 1.5em 0.6em; 
-    }
-  }
-  @media screen and (max-width: 368px){
-    .signup-btn {
-      padding: 7px;
-    }
-    .login-btn {
+    .signup-btn, .login-btn {
       padding: 7px;
     }
     .themeToggle > svg {
-      width: 16px;
-      height: 16px;
-    }
-    nav {
-      padding: 1.3rem 0.6rem;
+      width: 20px;
+      height: 20px;
     }
   }
 `
