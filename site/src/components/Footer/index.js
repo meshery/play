@@ -5,7 +5,6 @@ import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
 import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
 import GithubIcon from "../../assets/images/social-icons/github.svg";
 import CalendarIcon from "../../assets/images/social-icons/calendar.png";
-import CalendarIcon from "../../assets/images/social-icons/calendar.png";
 import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
 import FooterWrapper from './Footer.styles';
 
