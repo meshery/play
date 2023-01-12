@@ -158,11 +158,20 @@ export const Main = styled.main`
 
   p {
 			font-size: 1.35rem;
+      text-align: center;
   }
 
   h1 {
     text-align: center;
     margin-bottom: 2rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  .hero {
+    p {
+      text-align: center;
+    }
   }
   .try-now-txt {
     margin-top: -3rem;
@@ -173,6 +182,9 @@ export const Main = styled.main`
   }
 
   figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
     width: 80%;
 
@@ -229,5 +241,3 @@ export const Main = styled.main`
 
 
 `
-
-
