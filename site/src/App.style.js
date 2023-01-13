@@ -13,9 +13,10 @@ export const Header = styled.header`
     flex: auto;
     padding: 1.5rem 10rem;
     transition: all 0.3s ease 0s;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: flex-end;
+    position: relative;
   }
 
   .scrolled { 
@@ -28,18 +29,23 @@ export const Header = styled.header`
     height: auto;
   }
   .themeToggle {
-    margin: auto;
+    margin: auto .5rem;
     padding: auto .5rem;
     svg {
       width: 40px;
       height: 40px;
     }
   }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
+    margin: auto .5rem;
   }
   .signup-btn {
-    margin: 0 0 0 auto;
     padding: 1rem 1.5rem;
     text-align: center;
     color: #FFF;
@@ -74,15 +80,27 @@ export const Header = styled.header`
     background-color: #00D3A9;
     color: #FFF;
   }
-  @media screen and (max-width: 975px) {
-    
+  @media screen and (max-width: 1400px) {
+    img.logo {
+      max-width: 320px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
     nav {
-      padding: 1.5rem 5rem;
+      padding: 1.5em 2.5em;
     }
-    .themeToggle > svg {
-      width: 32px;
-      height: 32px;
+  }
+  @media screen and (max-width: 975px) {
+    .themeToggle {
+      // position: absolute;
     }
+    nav {
+      // padding: 1.5rem 5rem;
+    }
+    // .themeToggle > svg {
+    //   width: 32px;
+    //   height: 32px;
+    // }
     img.logo {
       max-width: 320px;
     }
@@ -92,44 +110,44 @@ export const Header = styled.header`
     img.logo {
       max-width: 250px;        
     }
-
     .signup-btn {
       padding: 0.70rem 1rem;
+      margin: auto .35rem;
     }
     .login-btn {
       padding: 0.70rem 1rem;
-      margin-left: .5rem;
+      margin: auto .35rem;
     }
     .themeToggle > svg {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
   }
 
   @media screen and (max-width: 615px) {
-
     nav {
-      padding: 1.5rem 1.5rem;
+      padding: 1.5rem;
     }
-
+ 
     img.logo {
       max-width: 200px;        
     }
   }
-
-  @media screen and (max-width: 368px){
-    .signup-btn {
-      padding: 7px;
-    }
-    .login-btn {
-      padding: 7px;
-    }
-    .themeToggle > svg {
-      width: 16px;
-      height: 16px;
-    }
+  @media screen and (max-width: 500px) {
     nav {
       padding: 1.3rem 0.6rem;
+      margin: auto;
+      width: 100%;
+    }
+    .themeToggle {
+      position: static;
+    }
+    .signup-btn, .login-btn {
+      padding: 5px 7px;
+    }
+    .themeToggle > svg {
+      width: 20px;
+      height: 20px;
     }
   }
 `
@@ -141,11 +159,20 @@ export const Main = styled.main`
 
   p {
 			font-size: 1.35rem;
+      text-align: center;
   }
 
   h1 {
     text-align: center;
     margin-bottom: 2rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  .hero {
+    p {
+      text-align: center;
+    }
   }
   .try-now-txt {
     margin-top: -3rem;
@@ -156,8 +183,11 @@ export const Main = styled.main`
   }
 
   figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
-    width: 80%;
+    width: 90%;
 
     img {
       margin-top: 1rem;
@@ -195,11 +225,13 @@ export const Main = styled.main`
     figure {
       width: 90%;
     }
+    max-width: 85%;
   }
   @media screen and (max-width: 568px) {
     figure {
       width: 100%;
     }
+    max-width: 90%;
   }
 
   @media screen and (max-width: 344px){
@@ -208,9 +240,8 @@ export const Main = styled.main`
         width: 12rem;
       }
     }
+    max-width: 95%;
   }
 
 
 `
-
-

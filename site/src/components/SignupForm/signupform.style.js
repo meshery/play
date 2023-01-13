@@ -23,10 +23,10 @@ const SignupFormWrapper = styled.section`
 	.desc-text {
 		margin: 1rem;
 		width: 50%;
-		text-align: justify;
 		p:first-child{
 			font-size: 1.35rem;
 			margin-bottom: 3rem;
+			text-align: justify;
 		}
 
 		@media screen and (max-width: 1024px) {
@@ -76,7 +76,7 @@ const SignupFormWrapper = styled.section`
 	  margin: 1rem;
 	  height: 100%;
 	  width: 50%;
-		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+	  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
        
 	  @media only screen and (max-width: 1024px){
 			margin: 2rem 0 ;
@@ -102,7 +102,7 @@ const SignupFormWrapper = styled.section`
 			justify-content: center;
 			background-color: #1E2117;
 			color: #ccc;
-
+			
 			@media only screen and (max-width: 568px){
 				min-width: 8rem
 			}
@@ -202,6 +202,9 @@ const SignupFormWrapper = styled.section`
 	}
 
 	.thankyou-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		text-align: center;
 		padding: 2rem;
 		margin: 3rem auto;
@@ -216,7 +219,7 @@ const SignupFormWrapper = styled.section`
 			margin-bottom: 2rem;
 		}
 		p {
-			margin-top: .85rem;
+			margin-top: .25rem;
 			color: #FFF;
 		}
 		img {
