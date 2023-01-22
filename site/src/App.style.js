@@ -134,10 +134,11 @@ export const Header = styled.header`
     }
   }
   @media screen and (max-width: 500px) {
+    img.logo {
+      max-width: 180px;        
+    }
     nav {
-      padding: 1.3rem 0.6rem;
-      margin: auto;
-      width: 100%;
+      padding: 1.5625rem 0.625rem;
     }
     .themeToggle {
       position: static;
