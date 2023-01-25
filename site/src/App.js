@@ -30,7 +30,6 @@ const App = () => {
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
         <Header>
-
           <nav className={scroll ? "scrolled" : ""}>
             <img className="logo" src={Logo} alt="Meshery Logo" />
             <div className="btn-container">
