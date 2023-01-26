@@ -183,26 +183,51 @@ export const Main = styled.main`
     font-style: italic;
   }
 
-  figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem auto;
-    width: 90%;
+  .desc-text {
+    margin: 0 0 3rem;
+  }
 
-    img {
-      margin-top: 1rem;
+  .embedVideo {
+    height: 44vw !important;
+    border-radius: 2.5%;
+    box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.5);
+
+    .react-player__preview {
       border-radius: 2.5%;
+    }
+
+    .react-player__play-icon {
+      border-width: 2rem 0 2rem 3rem !important;
+    }
+
+    iframe {
+      border-radius: 2.5%;
+    }
+
+    @media (max-width: 768px) {
+      height: 54vw !important;
+    }
+
+    &:hover {
       box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
+      .react-player__play-icon {
+        border-color: transparent transparent transparent red !important;
+      }
     }
-    figcaption {
-      color: ${({ theme }) => theme.text};
-      margin-top: 0.75rem;
-      margin-left: 1.5rem;
-      font-weight: 500;
-      font-style: italic;
-      text-align: center;
-    }
+  }
+
+  .caption {
+    color: ${({ theme }) => theme.text};
+    margin-top: 0.75rem;
+    margin-left: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .byline {
+    margin-top: 2rem;
   }
 
   .form {
