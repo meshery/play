@@ -190,10 +190,14 @@ export const Main = styled.main`
   .embedVideo {
     height: 44vw !important;
     border-radius: 2.5%;
-    box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
+    box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.5);
 
     .react-player__preview {
       border-radius: 2.5%;
+    }
+
+    .react-player__play-icon {
+      border-width: 2rem 0 2rem 3rem !important;
     }
 
     iframe {
@@ -202,6 +206,13 @@ export const Main = styled.main`
 
     @media (max-width: 768px) {
       height: 54vw !important;
+    }
+
+    &:hover {
+      box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
+      .react-player__play-icon {
+        border-color: transparent transparent transparent red !important;
+      }
     }
   }
 
