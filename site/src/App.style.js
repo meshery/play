@@ -197,7 +197,7 @@ export const Main = styled.main`
     }
 
     .react-player__play-icon {
-      border-width: 2rem 0 2rem 3rem !important;
+      transform: scale(3, 3);
     }
 
     iframe {
@@ -211,7 +211,7 @@ export const Main = styled.main`
     &:hover {
       box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
       .react-player__play-icon {
-        border-color: transparent transparent transparent red !important;
+        border-color: transparent transparent transparent #EBC017 !important;
       }
     }
   }
