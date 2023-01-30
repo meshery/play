@@ -51,12 +51,12 @@ const App = () => {
             </p>
 
             <ReactPlayer
-              url="https://www.youtube.com/embed/Do7htKrRzDA"
+              url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
               playing
               controls
               light={mesheryPlayground}
               width="90%"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
               className="embedVideo"
             />
             <p className="caption">Launch and learn with Meshery</p>
