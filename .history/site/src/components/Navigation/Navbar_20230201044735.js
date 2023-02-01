@@ -1,0 +1,17 @@
+import React from 'react';
+import Logo from './logo.png'; // import the logo image
+
+function Navbar({scroll, theme, toggleTheme}) {
+  return (
+    <nav className={scroll ? "scrolled" : ""}>
+      <img className="logo" src={Logo} alt="Meshery Logo" />
+      <div className="btn-container">
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+        <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
+        <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;

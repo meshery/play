@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import SignupForm from "./components/SignupForm";
 import { Header, Main } from './App.style.js';
-//import mesheryLogo from './assets/images/meshery-learn-logo.png';
-//import mesheryLogoLight from './assets/images/meshery-learn-logo-white.png';
+import mesheryLogo from './assets/images/meshery-learn-logo.png';
+import mesheryLogoLight from './assets/images/meshery-learn-logo-white.png';
 import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
@@ -44,11 +44,11 @@ const App = () => {
           </nav>*/}
 
         {/*<Navbar className={scroll ? "scrolled" : ""}> */}
-        <Navbar/> 
+        <Navbar> 
         {/*<Toggle theme={theme} toggleTheme={toggleTheme} />*/}
 
 
-        
+        </Navbar>
         </Header> 
         <Main>
           <section className="hero">

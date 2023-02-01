@@ -3,9 +3,9 @@ import Navbar from './Navbar';
 
 function Navigation() {
   return (
-    //<div>Navigation</div>
+    <div>Navigation</div>
     <Navbar />
   )
 }
 
-export { default as Navigation, Navbar };
+export default Navigation

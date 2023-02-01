@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import SignupForm from "./components/SignupForm";
 import { Header, Main } from './App.style.js';
-//import mesheryLogo from './assets/images/meshery-learn-logo.png';
-//import mesheryLogoLight from './assets/images/meshery-learn-logo-white.png';
+import mesheryLogo from './assets/images/meshery-learn-logo.png';
+import mesheryLogoLight from './assets/images/meshery-learn-logo-white.png';
 import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
-//import { Toggle } from "./components/Toggle";
+import { Toggle } from "./components/Toggle";
 import ReactPlayer from 'react-player/youtube'
 import  Navbar from './components/navigation/Navbar';
 
@@ -23,9 +23,9 @@ const App = () => {
   }, []);
 
 
-  const [theme] = useDarkMode();
+  const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-//  const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight; 
+  const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight;
 
 
   return (
@@ -33,7 +33,6 @@ const App = () => {
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
         <Header>
-        
           {/*<nav className={scroll ? "scrolled" : ""}>
             <img className="logo" src={Logo} alt="Meshery Logo" />
             <div className="btn-container">
@@ -41,14 +40,7 @@ const App = () => {
               <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
               <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
             </div>
-          </nav>*/}
-
-        {/*<Navbar className={scroll ? "scrolled" : ""}> */}
-        <Navbar/> 
-        {/*<Toggle theme={theme} toggleTheme={toggleTheme} />*/}
-
-
-        
+          </nav>
         </Header> 
         <Main>
           <section className="hero">
