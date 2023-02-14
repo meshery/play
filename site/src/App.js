@@ -28,7 +28,6 @@ const App = () => {
             <p className="desc-text">
               Explore the Cloud Native Computing Foundation's graduated, incubation, and sandbox projects as well as many other popular open source projects. Use Meshery Playground to explore a new way of DevOps - visual and collaborative configuration management for your infrastructure.
             </p>
-
             <ReactPlayer
               url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
               playing
