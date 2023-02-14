@@ -6,6 +6,8 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import Navigation from "./components/Navigation";
+import { Toggle } from "./components/Toggle";
+import ReactPlayer from 'react-player/youtube'
 
 const App = () => {
 
@@ -27,11 +29,17 @@ const App = () => {
               Explore the Cloud Native Computing Foundation's graduated, incubation, and sandbox projects as well as many other popular open source projects. Use Meshery Playground to explore a new way of DevOps - visual and collaborative configuration management for your infrastructure.
             </p>
 
-            <figure>
-              <img src={mesheryPlayground} alt="Meshery Playground" className="meshery-plaground" />
-              <figcaption>Launch and learn with Meshery</figcaption>
-            </figure>
-            <p>The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 100+ integrations.</p>
+            <ReactPlayer
+              url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
+              playing
+              controls
+              light={mesheryPlayground}
+              width="90%"
+              style={{ margin: "auto" }}
+              className="embedVideo"
+            />
+            <p className="caption">Launch and learn with Meshery</p>
+            <p className="byline">The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 150+ integrations.</p>
           </section>
           <section className="form" id="signup-form">
             <h2>Sign up for the early access of cloud native playground!</h2>
