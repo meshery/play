@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
-import { Toggle } from "./components/Toggle";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
 
