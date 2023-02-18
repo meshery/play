@@ -11,6 +11,7 @@ function Navigation({theme, toggleTheme}) {
   const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight;
   const [scroll, setScroll] = useState(false);
 
+  
   useEffect(() => {
     window.addEventListener("scroll", () =>
       window.pageYOffset > 50 ? setScroll(true) : setScroll(false)
