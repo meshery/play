@@ -194,6 +194,9 @@ const SignupFormWrapper = styled.section`
 					color: #FFF;
 					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 				}
+				&:active {
+					box-shadow: none;
+				}
 			}
 
 			@media only screen and (max-width: 300px) {
