@@ -190,6 +190,8 @@ const SignupFormWrapper = styled.section`
 				color: #FFF;
 				&:hover {
 					cursor: pointer;
+					background-color: #00D3A9;
+					color: #FFF;
 					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 				}
 			}
