@@ -42,6 +42,8 @@ const Faq = (props) => {
 
   faq_keys = Object.keys(faqs);
 
+  console.log(faq_keys);
+
   return (
     <FaqSectionWrapper>
         <Accordion allowMultipleExpanded="true" allowZeroExpanded="true">

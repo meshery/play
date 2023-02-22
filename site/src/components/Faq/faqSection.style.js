@@ -19,12 +19,12 @@ const FaqSectionWrapper = styled.section`
   .accordion__item {
     .accordion__header {
       padding:0;
-      background: ${props => props.theme.secondaryColor};
+      background: #00b39f;
       h5 {
         font-weight: 700;
         font-size: 18px;
         position: relative;
-        color: ${props => props.theme.white};
+        color: #ffffff;
       }
       > div {
         &:focus {
@@ -70,7 +70,7 @@ const FaqSectionWrapper = styled.section`
     }
   }
   .askus_section {
-    text-align: center;
+    text-align: left;
     h2 {
       margin-bottom: 1rem;
     }
@@ -92,6 +92,9 @@ const FaqSectionWrapper = styled.section`
       text-align: center;
     }
     .reusecore__accordion {
+      text-align: left;
+    }
+    h2 {
       text-align: left;
     }
   }
