@@ -98,6 +98,7 @@ const FaqSectionWrapper = styled.section`
       text-align: left;
     }
   }
+  
   @media only screen and (max-width: 480px) {
     .accordion__item {
       .accordion__header {
