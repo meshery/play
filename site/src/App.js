@@ -77,7 +77,6 @@ const App = () => {
           <section className="faq">
             <h1>Frequently Asked Questions</h1>
             <Faq category={["Meshery Playground"]}/>
-            {/* <Faq /> */}
           </section>
         </Main>
         <Footer />
