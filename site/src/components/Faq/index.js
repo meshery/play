@@ -1,11 +1,8 @@
 import React from "react";
 import data from "../../assets/data/faq";
-
 import FaqSectionWrapper from "./faqSection.style";
 import Button from "../../reusecore/Button";
-
 import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
-
 import {
   Accordion,
   AccordionItem,
@@ -41,8 +38,6 @@ const Faq = (props) => {
   }, {});
 
   faq_keys = Object.keys(faqs);
-
-  console.log(faq_keys);
 
   return (
     <FaqSectionWrapper>
