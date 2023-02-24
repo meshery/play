@@ -218,7 +218,7 @@ export const Main = styled.main`
 
   .caption {
     color: ${({ theme }) => theme.text};
-    margin-top: 0.75rem;
+    margin-top: 3rem;
     margin-left: 1.5rem;
     font-size: 1.125rem;
     font-weight: 500;
