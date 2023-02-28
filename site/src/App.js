@@ -10,6 +10,7 @@ import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import { Toggle } from "./components/Toggle";
 import ReactPlayer from 'react-player/youtube'
+import Faq from "./components/Faq";
 
 const App = () => {
 
@@ -72,6 +73,10 @@ const App = () => {
               <p>Engage in the Meshery community by joining us on Slack</p>
               <a href="https://slack.layer5.io/" >Join Our Open Source Community</a>
             </div>
+          </section>
+          <section className="faq">
+            <h1>Frequently Asked Questions</h1>
+            <Faq category={["Meshery Playground"]}/>
           </section>
         </Main>
         <Footer />
