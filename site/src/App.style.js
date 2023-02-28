@@ -43,6 +43,7 @@ export const Header = styled.header`
   }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
+    transition: 0.2s ease-in-out;
     margin: auto .5rem;
   }
   .signup-btn {
@@ -58,7 +59,8 @@ export const Header = styled.header`
     white-space: nowrap;
   }
   .signup-btn:hover {
-    background-color: rgba(255, 208, 25, 0.8);
+    background-color: rgba(255, 208, 25, 1);
+    box-shadow: 0px 0px 15px rgba(235, 192, 23, 1);
     color: #FFF;
   }
 
@@ -78,6 +80,7 @@ export const Header = styled.header`
 
   .login-btn:hover {
     background-color: #00D3A9;
+    box-shadow: 0px 0px 15px rgba(0, 179, 159, 1);
     color: #FFF;
   }
   @media screen and (max-width: 1400px) {
@@ -190,6 +193,7 @@ export const Main = styled.main`
   .embedVideo {
     height: 44vw !important;
     border-radius: 2.5%;
+    transition: 0.2s ease-in-out;
     box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.5);
 
     .react-player__preview {
@@ -244,7 +248,14 @@ export const Main = styled.main`
       padding: 1rem;
       margin: auto;
       border-radius: 0.5rem;
+      transition: 0.2s ease-in-out;
+      &:hover{
+        background-color: rgba(255, 208, 25, 1);
+        box-shadow: 0px 0px 12px #EBC017;
+        color: #FFF;
+      }
     }
+
   }
 
   .faq {

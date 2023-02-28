@@ -79,7 +79,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (min-width: 1211px){
             .explain {
                 .cards {
-                    padding: 0;
+                    padding: 0 0.5rem 1rem 0.5rem;
                     .card {
                         width: 23.25rem;
                     }  
@@ -89,7 +89,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (max-width: 1210px){
             .explain {
                 .cards {
-                    padding: 0; 
+                    padding: 0 0.5rem 1rem 0.5rem;
                         h2 {
                             font-size: 25px;
                             line-height: 35px;
@@ -104,7 +104,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (max-width: 1100px){
             .explain {
                 .cards {
-                    padding: 0;
+                    padding: 0 0.5rem 1rem 0.5rem;
                     .card {
                         h2 {
                             font-size: 22px;
