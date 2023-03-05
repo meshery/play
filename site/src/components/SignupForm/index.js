@@ -111,7 +111,7 @@ const SignupForm = () => {
                   id="firstname"
                   name="firstname"
                   maxLength="32"
-                  pattern="[A-Za-z]{1,32}"
+                  pattern="[A-Za-zŽžÀ-ÿ]{1,32}"
                   required
                 />
               </div>
