@@ -124,6 +124,7 @@ const SignupFormWrapper = styled.section`
 				padding: 1rem .5rem;
 				font-size: .85rem;
 				margin-top: 0.5rem;
+				font-family: inherit;
 				
 				&:focus {
 					border: 2px solid #00B39F;
@@ -150,6 +151,7 @@ const SignupFormWrapper = styled.section`
 				height: 50px;
 				width: 100%;
 				font-size: .85rem;
+				font-family: inherit;
 			}
 
 			.custom-arrow {
@@ -180,6 +182,7 @@ const SignupFormWrapper = styled.section`
 			}
 			
 			.submit-btn {
+				font-family: inherit;
 				margin: 1.5rem auto 0rem auto;
 				padding: 1rem 1.5rem;
 				font-size: 1.35rem;
