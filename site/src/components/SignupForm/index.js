@@ -111,7 +111,7 @@ const SignupForm = () => {
                   id="firstname"
                   name="firstname"
                   maxLength="32"
-                  pattern="[A-Za-z]{1,32}"
+                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
@@ -125,7 +125,7 @@ const SignupForm = () => {
                   id="lastname"
                   name="lastname"
                   maxLength="32"
-                  pattern="[A-Za-z]{1,32}"
+                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
