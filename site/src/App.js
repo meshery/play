@@ -51,7 +51,7 @@ const App = () => {
             </p>
 
             <ReactPlayer
-              url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
+              url="https://youtu.be/Do7htKrRzDA"
               playing
               controls
               light={mesheryPlayground}
