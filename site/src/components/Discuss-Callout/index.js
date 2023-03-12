@@ -8,15 +8,13 @@ const DiscussCallout = () => {
     <DiscussWrapper>
       <div className="explain">
         <div className="cards">
-          <div>
+          <div className="card">
             <a href="https://discuss.layer5.io/">
-              <div className="card">
-                <div className="parentcard">
-                  <div className="section-title">
-                    <h2>Join the Conversation</h2>
-                    <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
-                    <button><img className="logo" alt="Discussion Forum" src={Discuss} /></button>
-                  </div>
+              <div className="parentcard">
+                <div className="section-title">
+                  <h2>Join the Conversation</h2>
+                  <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
+                  <button><img className="logo" alt="Discussion Forum" src={Discuss} /></button>
                 </div>
               </div>
             </a>
