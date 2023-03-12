@@ -7,6 +7,8 @@ import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
+import Faq from "./components/Faq";
+
 
 const App = () => {
 
@@ -28,7 +30,7 @@ const App = () => {
               Explore the Cloud Native Computing Foundation's graduated, incubation, and sandbox projects as well as many other popular open source projects. Use Meshery Playground to explore a new way of DevOps - visual and collaborative configuration management for your infrastructure.
             </p>
             <ReactPlayer
-              url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
+              url="https://youtu.be/Do7htKrRzDA"
               playing
               controls
               light={mesheryPlayground}
@@ -49,6 +51,10 @@ const App = () => {
               <p>Engage in the Meshery community by joining us on Slack</p>
               <a href="https://slack.layer5.io/" >Join Our Open Source Community</a>
             </div>
+          </section>
+          <section className="faq">
+            <h1>Frequently Asked Questions</h1>
+            <Faq category={["Meshery Playground"]}/>
           </section>
         </Main>
         <Footer />

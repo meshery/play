@@ -29,7 +29,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
-      axios.post("https://hook.us1.make.com/r5qgpjel5tlhtyndcgjvkrdkoc65417y", {
+      axios.post("https://hook.us1.make.com/s4jo47a8ydq6uk7gg16wuukgr4l52p8c", {
         memberFormOne
       });
       window.scrollTo({
@@ -111,7 +111,7 @@ const SignupForm = () => {
                   id="firstname"
                   name="firstname"
                   maxLength="32"
-                  pattern="[A-Za-z]{1,32}"
+                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
@@ -125,7 +125,7 @@ const SignupForm = () => {
                   id="lastname"
                   name="lastname"
                   maxLength="32"
-                  pattern="[A-Za-z]{1,32}"
+                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
