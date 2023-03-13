@@ -151,6 +151,7 @@ const SignupForm = () => {
                   className="text-field"
                   id="occupation"
                   name="occupation"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -158,7 +159,7 @@ const SignupForm = () => {
                   Org / Company / School{" "}
                   <span className="required-sign">*</span>
                 </label>
-                <Field type="text" className="text-field" id="org" name="org" />
+                <Field type="text" className="text-field" id="org" name="org" required/>
               </div>
               <div className="form-group">
                 <label htmlFor="role" className="form-field">
@@ -172,7 +173,7 @@ const SignupForm = () => {
                 </p>
               )}
               <div className="form-select" aria-labelledby="select">
-                <Field as="select" name="role">
+                <Field as="select" name="role" required>
                   <option>Select your role</option>
                   <option value="Architect">Architect</option>
                   <option value="Business Operations">
