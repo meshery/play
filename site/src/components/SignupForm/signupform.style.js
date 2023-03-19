@@ -124,6 +124,7 @@ const SignupFormWrapper = styled.section`
 				padding: 1rem .5rem;
 				font-size: .85rem;
 				margin-top: 0.5rem;
+				font-family: inherit;
 				
 				&:focus {
 					border: 2px solid #00B39F;
@@ -150,6 +151,7 @@ const SignupFormWrapper = styled.section`
 				height: 50px;
 				width: 100%;
 				font-size: .85rem;
+				font-family: inherit;
 			}
 
 			.custom-arrow {
@@ -180,6 +182,7 @@ const SignupFormWrapper = styled.section`
 			}
 			
 			.submit-btn {
+				font-family: inherit;
 				margin: 1.5rem auto 0rem auto;
 				padding: 1rem 1.5rem;
 				font-size: 1.35rem;
@@ -188,11 +191,12 @@ const SignupFormWrapper = styled.section`
 				border-radius: 0.5rem;
 				background: #00B39F;
 				color: #FFF;
+				transition: 0.2s ease-in-out;
 				&:hover {
 					cursor: pointer;
 					background-color: #00D3A9;
 					color: #FFF;
-					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+					box-shadow: 0.5px 0.5px 10px #00B39F;
 				}
 				&:active {
 					box-shadow: none;

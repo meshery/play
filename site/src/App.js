@@ -1,45 +1,25 @@
-import { useState, useEffect } from "react";
 import SignupForm from "./components/SignupForm";
-import { Header, Main } from './App.style.js';
-import mesheryLogo from './assets/images/meshery-learn-logo.png';
-import mesheryLogoLight from './assets/images/meshery-learn-logo-white.png';
+import { Main } from './App.style.js';
 import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
-import { Toggle } from "./components/Toggle";
 import ReactPlayer from 'react-player/youtube'
+import Navigation from "./components/Navigation";
+import Faq from "./components/Faq";
+
 
 const App = () => {
 
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () =>
-      window.pageYOffset > 50 ? setScroll(true) : setScroll(false)
-    );
-  }, []);
-
-
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight;
-
 
   return (
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Header>
-          <nav className={scroll ? "scrolled" : ""}>
-            <img className="logo" src={Logo} alt="Meshery Logo" />
-            <div className="btn-container">
-              <Toggle theme={theme} toggleTheme={toggleTheme} />
-              <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
-              <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
-            </div>
-          </nav>
-        </Header>
+        <Navigation theme={theme} toggleTheme={toggleTheme} />
         <Main>
           <section className="hero">
             <h3 className="try-now-txt">Try it now!</h3>
@@ -49,9 +29,8 @@ const App = () => {
             <p className="desc-text">
               Explore the Cloud Native Computing Foundation's graduated, incubation, and sandbox projects as well as many other popular open source projects. Use Meshery Playground to explore a new way of DevOps - visual and collaborative configuration management for your infrastructure.
             </p>
-
             <ReactPlayer
-              url="https://www.youtube.com/embed/Do7htKrRzDA?vq=1080p"
+              url="https://youtu.be/Do7htKrRzDA"
               playing
               controls
               light={mesheryPlayground}
@@ -72,6 +51,10 @@ const App = () => {
               <p>Engage in the Meshery community by joining us on Slack</p>
               <a href="https://slack.layer5.io/" >Join Our Open Source Community</a>
             </div>
+          </section>
+          <section className="faq">
+            <h1>Frequently Asked Questions</h1>
+            <Faq category={["Meshery Playground"]}/>
           </section>
         </Main>
         <Footer />

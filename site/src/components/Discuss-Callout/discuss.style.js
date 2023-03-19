@@ -37,9 +37,12 @@ const DiscussWrapper = styled.div`
                 -webkit-transition: 450ms all;
                 transition: 450ms all;
                 margin: auto;
-                padding: 1.25rem;
                 background-color: #1E2117; 
                 border-radius: 25px;
+                overflow: hidden;
+                .parentcard {
+                    padding: 1.25rem;
+                }
                 p {
                     text-align: center;
                     padding: 0px 0px 1px 0px;
@@ -79,7 +82,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (min-width: 1211px){
             .explain {
                 .cards {
-                    padding: 0;
+                    padding: 0 0.5rem 1rem 0.5rem;
                     .card {
                         width: 23.25rem;
                     }  
@@ -89,7 +92,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (max-width: 1210px){
             .explain {
                 .cards {
-                    padding: 0; 
+                    padding: 0 0.5rem 1rem 0.5rem;
                         h2 {
                             font-size: 25px;
                             line-height: 35px;
@@ -104,7 +107,7 @@ const DiscussWrapper = styled.div`
         @media only screen and (max-width: 1100px){
             .explain {
                 .cards {
-                    padding: 0;
+                    padding: 0 0.5rem 1rem 0.5rem;
                     .card {
                         h2 {
                             font-size: 22px;
@@ -127,7 +130,9 @@ const DiscussWrapper = styled.div`
             .cards {
                 padding: 1rem 1rem 1rem 1rem;
                 .card {
-                    padding: 0.5rem;
+                    .parentcard {
+                        padding: 0.5rem;
+                    }
                     h2 {
                         font-size: 25px;
                     }
