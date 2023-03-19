@@ -21,8 +21,9 @@ export const Header = styled.header`
 
   .hamburger-icon{
     width: 40px;
+    color:#a8afba;
   }
-
+  
   nav {
     background: ${({ theme }) => theme.body};
     display: flex;
