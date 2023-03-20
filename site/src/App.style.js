@@ -197,7 +197,7 @@ export const Main = styled.main`
     box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.5);
 
     .react-player__preview {
-      border-radius: 2.5%;
+      border-radius: 1.5%;
     }
 
     .react-player__play-icon {
