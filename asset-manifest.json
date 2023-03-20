@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.fa7da8c8.css",
-    "main.js": "./static/js/main.3e5e3d91.js",
+    "main.js": "./static/js/main.934523b5.js",
     "static/js/787.b82d7c21.chunk.js": "./static/js/787.b82d7c21.chunk.js",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
     "static/media/QanelasSoftBoldItalic.otf": "./static/media/QanelasSoftBoldItalic.52c37ed9cc5710337d41.otf",
+    "static/media/meshery-playground-meshmap.png": "./static/media/meshery-playground-meshmap.5242722a8cd9c3855f42.png",
     "static/media/QanelasSoftSemiBoldItalic.otf": "./static/media/QanelasSoftSemiBoldItalic.56d0c69232528d9a4366.otf",
     "static/media/QanelasSoftLightItalic.otf": "./static/media/QanelasSoftLightItalic.9c130ab4bfac11736a60.otf",
     "static/media/QanelasSoftUltraLightItalic.otf": "./static/media/QanelasSoftUltraLightItalic.c8eb96e311fa1a092ae7.otf",
-    "static/media/meshery-playground-meshmap.png": "./static/media/meshery-playground-meshmap.19583a5dcde336d75eeb.png",
     "static/media/QanelasSoftExtraBoldItalic.otf": "./static/media/QanelasSoftExtraBoldItalic.876c2f79321792d10d20.otf",
     "static/media/QanelasSoftHeavyItalic.otf": "./static/media/QanelasSoftHeavyItalic.3fc5ff7006a9206f3dca.otf",
     "static/media/QanelasSoftThinItalic.otf": "./static/media/QanelasSoftThinItalic.b2fa0a76c7cbbc8d1a41.otf",
@@ -35,11 +35,11 @@
     "index.html": "./index.html",
     "static/media/youtube.svg": "./static/media/youtube.e5e6132f56bf262c7b7ce8b0fe25d38e.svg",
     "main.fa7da8c8.css.map": "./static/css/main.fa7da8c8.css.map",
-    "main.3e5e3d91.js.map": "./static/js/main.3e5e3d91.js.map",
+    "main.934523b5.js.map": "./static/js/main.934523b5.js.map",
     "787.b82d7c21.chunk.js.map": "./static/js/787.b82d7c21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa7da8c8.css",
-    "static/js/main.3e5e3d91.js"
+    "static/js/main.934523b5.js"
   ]
 }
