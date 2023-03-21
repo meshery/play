@@ -37,9 +37,12 @@ const DiscussWrapper = styled.div`
                 -webkit-transition: 450ms all;
                 transition: 450ms all;
                 margin: auto;
-                padding: 1.25rem;
                 background-color: #1E2117; 
                 border-radius: 25px;
+                overflow: hidden;
+                .parentcard {
+                    padding: 1.25rem;
+                }
                 p {
                     text-align: center;
                     padding: 0px 0px 1px 0px;
@@ -127,7 +130,9 @@ const DiscussWrapper = styled.div`
             .cards {
                 padding: 1rem 1rem 1rem 1rem;
                 .card {
-                    padding: 0.5rem;
+                    .parentcard {
+                        padding: 0.5rem;
+                    }
                     h2 {
                         font-size: 25px;
                     }

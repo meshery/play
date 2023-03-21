@@ -7,6 +7,23 @@ export const Header = styled.header`
   background: #FFF;
   z-index: 1;
 
+  .dropdown_btn {
+    display: none;
+  }
+
+  .dropdown_menu_closed {
+    display: none;
+  }
+
+  .dropdown_menu_opened {
+    display: none;
+  }
+
+  .hamburger-icon{
+    width: 40px;
+    color:#a8afba;
+  }
+  
   nav {
     background: ${({ theme }) => theme.body};
     display: flex;
@@ -43,7 +60,6 @@ export const Header = styled.header`
   }
   .signup-btn, .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
-    transition: 0.2s ease-in-out;
     margin: auto .5rem;
   }
   .signup-btn {
@@ -59,8 +75,7 @@ export const Header = styled.header`
     white-space: nowrap;
   }
   .signup-btn:hover {
-    background-color: rgba(255, 208, 25, 1);
-    box-shadow: 0px 0px 15px rgba(235, 192, 23, 1);
+    background-color: rgba(255, 208, 25, 0.8);
     color: #FFF;
   }
 
@@ -80,7 +95,6 @@ export const Header = styled.header`
 
   .login-btn:hover {
     background-color: #00D3A9;
-    box-shadow: 0px 0px 15px rgba(0, 179, 159, 1);
     color: #FFF;
   }
   @media screen and (max-width: 1400px) {
@@ -94,9 +108,9 @@ export const Header = styled.header`
     }
   }
   @media screen and (max-width: 975px) {
-    .themeToggle {
-      // position: absolute;
-    }
+    // .themeToggle {
+    //   // position: absolute;
+    // }
     nav {
       // padding: 1.5rem 5rem;
     }
@@ -138,152 +152,65 @@ export const Header = styled.header`
   }
   @media screen and (max-width: 500px) {
     img.logo {
-      max-width: 180px;        
+      max-width: 250px;        
     }
     nav {
       padding: 1.5625rem 0.625rem;
     }
-    .themeToggle {
-      position: static;
+    .signup-btn{
+      padding: 10px 5px;
+      width: 100%;
+      margin-right: 5px;
     }
-    .signup-btn, .login-btn {
-      padding: 5px 7px;
+    .login-btn {
+      padding: 10px 5px;
+      width: 100%;
+      margin-left: 5px;
     }
     .themeToggle > svg {
       width: 20px;
       height: 20px;
     }
+    .themeToggle{
+        margin: 0 5px;
+        background: ${({ theme }) => theme.body};
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius:20px;
+        border: 1px solid gray
+    }
+    .btn-container{
+        display: none;
+    }
+    .dropdown_btn{
+        display:flex;
+    }
+    .dropdown_menu_opened {
+        background: ${({ theme }) => theme.body};
+        transition: all 0.3s ease 0s;
+        width:100%;
+        height:100px;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 179, 159, 0.2) 0 20px 20px -2px;
+        padding: 20px 0px;
+    }
+    .mode-btn{
+      width:95%;
+    }
+    .action-btns{
+        display: flex;
+        width: 95%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
   }
 `
 
-export const Main = styled.main`
-
-  max-width: 75%;
-  margin: 5rem auto;
-
-  p {
-			font-size: 1.35rem;
-      text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  h2 {
-    text-align: center;
-  }
-  .hero {
-    p {
-      text-align: center;
-    }
-  }
-  .try-now-txt {
-    margin-top: -3rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
-    text-align: center;
-    font-style: italic;
-  }
-
-  .desc-text {
-    margin: 0 0 3rem;
-  }
-
-  .embedVideo {
-    height: 44vw !important;
-    border-radius: 2.5%;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.5);
-
-    .react-player__preview {
-      border-radius: 1.5%;
-    }
-
-    .react-player__play-icon {
-      transform: scale(3, 3);
-    }
-
-    iframe {
-      border-radius: 2.5%;
-    }
-
-    @media (max-width: 768px) {
-      height: 54vw !important;
-    }
-
-    &:hover {
-      box-shadow: 0px 3px 20px 4px rgba(0, 179, 159, 0.75);
-      .react-player__play-icon {
-        border-color: transparent transparent transparent #EBC017 !important;
-      }
-    }
-  }
-
-  .caption {
-    color: ${({ theme }) => theme.text};
-    margin-top: 0.75rem;
-    margin-left: 1.5rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
-  }
-
-  .byline {
-    margin-top: 2rem;
-  }
-
-  .form {
-    margin: 4rem auto;
-  }
-
-  .join-community {
-    text-align: center;
-    a {
-      display: block;
-      background: #EBC017;
-      color:  ${({ theme }) => theme.btn};
-      width: 14rem;
-      padding: 1rem;
-      margin: auto;
-      border-radius: 0.5rem;
-      transition: 0.2s ease-in-out;
-      &:hover{
-        background-color: rgba(255, 208, 25, 1);
-        box-shadow: 0px 0px 12px #EBC017;
-        color: #FFF;
-      }
-    }
-
-  }
-
-  .faq {
-    text-align: center;
-    margin: 4rem auto 0rem auto;
-  }
-
-  @media screen and (max-width: 768px) {
-    figure {
-      width: 90%;
-    }
-    max-width: 85%;
-  }
-  @media screen and (max-width: 568px) {
-    figure {
-      width: 100%;
-    }
-    max-width: 90%;
-  }
-
-  @media screen and (max-width: 344px){
-    .join-community {
-      a {
-        width: 12rem;
-      }
-    }
-    max-width: 95%;
-  }
-
-
-`
+export default Header;
