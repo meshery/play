@@ -30,7 +30,7 @@ function Navigation({theme, toggleTheme}) {
         <div className="btn-container">
           <Toggle theme={theme} toggleTheme={toggleTheme} />
           <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
-          <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
+          {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
         </div>
         <div className="dropdown_btn" onClick={handleNavOpen}>
           {openNav ? 
@@ -48,7 +48,7 @@ function Navigation({theme, toggleTheme}) {
             </div>
             <div className="action-btns">
               <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
-              <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a>
+              {/* <a href="https://demo.meshery.io" className="login-btn" role="button">Login</a> */}
             </div>
       </div>
     </Header>
