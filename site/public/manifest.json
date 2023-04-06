@@ -1,6 +1,6 @@
 {
-  "short_name": "Meshery Playground | Cloud Native Manager for Kubernetes and Service Mesh",
-  "name": "Meshery Playground - The cloud native playground for kubernetes and service mesh.",
+  "short_name": "Meshery Playground",
+  "name": "Meshery CNCF Playground - The cloud native playground for Kubernetes and all CNCF projects",
   "icons": [
     {
       "src": "favicon.ico",

@@ -108,7 +108,7 @@ git checkout -b <your_branch_name>
 **8.** Install the dependencies for running the site.
 
 ```
-make site-setup
+make setup
 ```
 
 **9.** Make the desired changes.
@@ -116,7 +116,7 @@ make site-setup
 **10.** Run the site locally to preview changes.
 
 ```
-make site-dev
+make site
 ```
 
 This will run a local webserver with "live reload" conveniently enabled. ( NOTE: while using the make command on Windows, there sometimes arises an error in identifying the command even after it is installed (unrecognized command), this is because the PATH for the binary might not be set correctly ).
@@ -219,19 +219,21 @@ Please contribute! Layer5 documentation uses Jekyll and GitHub Pages to host doc
 Users can now test their code on their local machine against the CI checks implemented using `make run-tests`.
 
 To test code changes on your local machine, run the following command:
+
 ```
 make run-tests
 ```
 
 #### Building Docker image
 To build a Docker image of the project, please ensure you have `Docker` installed to be able to build the image. Now, run the following command to build the Docker image:
+
 ```sh
 make docker
 ```
 
 ### UI Lint Rules
 
-Layer5 uses ES-Lint to maintain code quality & consistency in our UI Code.
+Meshery uses eslint to maintain code consistency.
 
 # <a name="maintaining"> Reviews</a>
 All contributors are invited to review pull requests. See this short video on [how to review a pull request](https://www.youtube.com/watch?v=isLfo7jfE6g&feature=youtu.be).
@@ -239,14 +241,17 @@ All contributors are invited to review pull requests. See this short video on [h
 # New to Git?
 Resources: https://lab.github.com and https://try.github.com/
 
+### Stargazers
+
+<p align="center">
+  <i>If you’re using Meshery or if you like the project, please <a href="../../stargazers">★</a> star this repository to show your support! 🤩</i>
+<a href="../../stargazers"><img align="right" src="https://starchart.cc/meshery/meshery.svg" /></a></p>
+
 ### License
 
-This repository and site are available as open source under the terms of the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
+This repository and site are available as open-source under the terms of the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
 
-### About Layer5
+### Community
 
-**Community First**
-<p>The <a href="https://layer5.io">Layer5</a> community represents the largest collection of service mesh projects and their maintainers in the world.</p>
+See an <a href="https://layer5.io/community/handbook/repository-overview">overview of repositories</a> and projects by tech stack in the <a href="https://layer5.io/community/handbook/">Community Handbook</a>.
 
-**Open Source First**
-<p>Our projects establish industry standards and enable service developers, owners, and operators with repeatable patterns and best practices for managing all aspects of distributed services. Our shared commitment to the open source spirit push the Layer5 community and its projects forward.</p>
