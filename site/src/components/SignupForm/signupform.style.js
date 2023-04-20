@@ -219,6 +219,7 @@ const SignupFormWrapper = styled.section`
 		margin: 3rem auto;
 		background-color: #1E2117;
 		border-radius: 2rem;
+		box-shadow: rgba(255, 243, 197, 0.75) 0px 5px 15px;
 		
 		h2, h3 {
 			color: #FFF;
