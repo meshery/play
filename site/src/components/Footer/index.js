@@ -208,7 +208,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container flex copyright">
-        <div className="text">&copy; 2022-<script>document.write(new Date().getFullYear())</script> The Meshery Authors</div>
+        <div className="text">&copy; 2023-<script>document.write(new Date().getFullYear())</script> The Meshery Authors</div>
         <div className="text">Proudly representing every CNCF project</div>
         <div className="text"><a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></div>
       </div>
