@@ -8,18 +8,23 @@ import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
 import Faq from "./components/Faq";
-
+import { useState } from "react";
 
 const App = () => {
 
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const [showSignUpButton, setShowSignUpButton] = useState(true);
+
+  const handleSignUpFormSubmit = () => {
+    setShowSignUpButton(false);
+  };
 
   return (
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Navigation theme={theme} toggleTheme={toggleTheme} />
+        <Navigation theme={theme} toggleTheme={toggleTheme} showSignUpButton={showSignUpButton} />
         <Main>
           <section className="hero">
             <h3 className="try-now-txt">Try it now!</h3>
@@ -43,7 +48,7 @@ const App = () => {
           </section>
           <section className="form" id="signup-form">
             <h2>Sign up for the early access of cloud native playground!</h2>
-            <SignupForm />
+            <SignupForm onSubmit={handleSignUpFormSubmit}  />
           </section>
           <section className="join-community">
             <div>

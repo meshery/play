@@ -5,7 +5,7 @@ import MesheryText from "../../assets/images/meshery-light-text.svg";
 import SignupFormWrapper from "./signupform.style.js";
 import DiscussCallout from "../Discuss-Callout";
 
-const SignupForm = () => {
+const SignupForm = (props) => {
   // Form values
   const [memberFormOne, setMemberFormOne] = useState({});
 
@@ -29,6 +29,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
+      props.onSubmit();
       axios.post("https://hook.us1.make.com/s4jo47a8ydq6uk7gg16wuukgr4l52p8c", {
         memberFormOne
       });
@@ -38,7 +39,7 @@ const SignupForm = () => {
         behavior: "smooth"
       });
     }
-  }, [formSubmitted, memberFormOne]);
+  }, [formSubmitted, memberFormOne, props]);
 
   const PlayFormComponent = () => {
     return (
