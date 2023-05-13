@@ -29,7 +29,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
-      axios.post("https://hook.us1.make.com/s4jo47a8ydq6uk7gg16wuukgr4l52p8c", {
+      axios.post("https://hook.us1.make.com/r5qgpjel5tlhtyndcgjvkrdkoc65417y", {
         memberFormOne
       });
       window.scrollTo({
