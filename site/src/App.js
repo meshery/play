@@ -8,6 +8,7 @@ import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
 import Faq from "./components/Faq";
+import ContactFormModal from "./components/Contact-Modal";
 
 
 const App = () => {
@@ -56,6 +57,10 @@ const App = () => {
             <h1>Frequently Asked Questions</h1>
             <Faq category={["Meshery Playground"]}/>
           </section>
+          <div className="askus_section">
+          <h2>Didn't find an answer to your question?</h2>
+            <ContactFormModal callout_text="Just Ask" form_header="Send Us An Email" />
+            </div>
         </Main>
         <Footer />
       </ThemeProvider>

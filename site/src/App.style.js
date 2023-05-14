@@ -263,6 +263,19 @@ export const Main = styled.main`
     margin: 4rem auto 0rem auto;
   }
 
+  .askus_section {
+    text-align: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    button {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
   @media screen and (max-width: 768px) {
     figure {
       width: 90%;
