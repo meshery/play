@@ -33,7 +33,7 @@ build:
 
 ## Build and run site
 site:
-	cd site; npm start; cd..
+	cd site; npm start; cd ..
 
 #-----------------------------------------------------------------------------
 # Docker-based Builds

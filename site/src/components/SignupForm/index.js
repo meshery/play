@@ -29,7 +29,7 @@ const SignupForm = () => {
 
   useEffect(() => {
     if (formSubmitted) {
-      axios.post("https://hook.us1.make.com/s4jo47a8ydq6uk7gg16wuukgr4l52p8c", {
+      axios.post("https://hook.us1.make.com/x4crqi16j8wfhctosk8y47fj6gknyvvh", {
         memberFormOne
       });
       window.scrollTo({
@@ -224,7 +224,7 @@ const SignupForm = () => {
           </p>
           <p>
             If you have any questions in the meantime, please send an email to{" "}
-            <a href="mailto:playground@meshery.io">playground@meshery.io</a>.
+            <a href="mailto:learn@meshery.io">learn@meshery.io</a>.
           </p>
           <h3 className="white">
             - Team <img src={MesheryText} alt="Meshery" />
