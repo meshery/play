@@ -30,8 +30,9 @@ const SignupForm = (props) => {
   useEffect(() => {
     if (formSubmitted) {
       props.onSubmit();
-      axios.post("https://hook.us1.make.com/x4crqi16j8wfhctosk8y47fj6gknyvvh", {
-      memberFormOne
+
+      axios.post("https://hook.us1.make.com/s4jo47a8ydq6uk7gg16wuukgr4l52p8c", {
+        memberFormOne
       });
       window.scrollTo({
         top: 800,
