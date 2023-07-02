@@ -4,7 +4,7 @@ import mesheryLogo from '../../assets/images/meshery-learn-logo.png';
 import mesheryLogoLight from '../../assets/images/meshery-learn-logo-white.png';
 import { Toggle } from "../Toggle";
 
-function Navigation({theme, toggleTheme}) {
+function Navigation({theme, toggleTheme, showSignUpButton}) {
 
 
   const [openNav, setOpenNav] = useState(false);
@@ -29,7 +29,7 @@ function Navigation({theme, toggleTheme}) {
         <img className="logo" src={Logo} alt="Meshery Logo" />
         <div className="btn-container">
           <Toggle theme={theme} toggleTheme={toggleTheme} />
-          <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
+          {showSignUpButton && <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>}
           {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
         </div>
         <div className="dropdown_btn" onClick={handleNavOpen}>
