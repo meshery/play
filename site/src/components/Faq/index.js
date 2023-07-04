@@ -12,7 +12,7 @@ import {
   OpenIcon,
   CloseIcon
 } from "../../reusecore/Accordion";
- 
+
 const Faq = (props) => {
     let faq_keys = [];
     let faqs_data = [];
@@ -44,7 +44,7 @@ const Faq = (props) => {
         <Accordion allowMultipleExpanded="true" allowZeroExpanded="true">
           {faq_keys.map((key) => (
             <>
-              <h2 className="category_name">{key}</h2>
+              <h2 className="category_name" style={{ paddingBottom: 25 }} >{key}</h2>
               {faqs[key].map((faq, index) => (
                 <AccordionItem key={index}>
                   <AccordionTitle>
