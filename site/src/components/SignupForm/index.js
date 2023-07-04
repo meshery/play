@@ -5,7 +5,7 @@ import MesheryText from "../../assets/images/meshery-light-text.svg";
 import SignupFormWrapper from "./signupform.style.js";
 import DiscussCallout from "../Discuss-Callout";
 
-const SignupForm = (props) => {
+const SignupForm = ({onSubmit}) => {
   // Form values
   const [memberFormOne, setMemberFormOne] = useState({});
 
@@ -29,7 +29,7 @@ const SignupForm = (props) => {
 
   useEffect(() => {
     if (formSubmitted) {
-      props.onSubmit();
+      onSubmit();
 
       axios.post("https://hook.us1.make.com/x4crqi16j8wfhctosk8y47fj6gknyvvh", {
         memberFormOne
