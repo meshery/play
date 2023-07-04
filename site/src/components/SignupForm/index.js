@@ -40,7 +40,7 @@ const SignupForm = (props) => {
         behavior: "smooth"
       });
     }
-  }, [formSubmitted, memberFormOne, props]);
+  }, [formSubmitted, memberFormOne]);
 
   const PlayFormComponent = () => {
     return (
