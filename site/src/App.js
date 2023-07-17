@@ -43,8 +43,8 @@ const App = () => {
               style={{ margin: "auto" }}
               className="embedVideo"
             />
-            <p className="caption">Launch and learn with Meshery</p>
-            <p className="byline">The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 200+ integrations.</p>
+            {/* <p className="caption">Launch and learn with Meshery</p>
+            <p className="byline">The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 200+ integrations.</p> */}
           </section>
           <section className="form" id="signup-form">
             <h2>Sign up for the early access of cloud native playground!</h2>
