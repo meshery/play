@@ -20,4 +20,4 @@ assignees: ''
 ---
 #### Contributor [Guides](https://docs.meshery.io/project/contributing) and Resources
 - 🛠 [Meshery Build & Release Strategy](https://docs.meshery.io/project/build-and-release)
-- 🙋🏾🙋🏼 Questions: [Layer5 Discussion Forum](https://discuss.layer5.io) and [Layer5 Community Slack](http://slack.layer5.io)
+- 🙋🏾🙋🏼 Questions: [Discussion Forum](https://discuss.meshery.io) and [Community Slack](https://slack.meshery.io)

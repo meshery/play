@@ -41,7 +41,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://slack.layer5.io/"
+                href="https://slack.meshery.io/"
               >
                 <img src={SlackIcon} alt="Slack Icon" />
                 Slack
@@ -198,7 +198,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://www.linkedin.com/company/layer5/"
+                href="https://www.linkedin.com/company/meshery/"
               >
                 <img src={LinkedinIcon} alt="Linkedin Icon" />
                 Linkedin

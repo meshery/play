@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include install/Makefile.core.mk
 include install/Makefile.show-help.mk
 
 setup-libs: site-setup
