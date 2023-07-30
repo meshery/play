@@ -9,7 +9,7 @@ const DiscussCallout = () => {
       <div className="explain">
         <div className="cards">
           <div className="card">
-            <a href="https://discuss.meshery.io/">
+            <a href="http://discuss.meshery.io/">
               <div className="parentcard">
                 <div className="section-title">
                   <h2>Join the Conversation</h2>

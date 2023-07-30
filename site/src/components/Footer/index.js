@@ -116,7 +116,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://discuss.meshery.io/"
+                href="http://discuss.meshery.io/"
               >
                 Discussion Forum
               </a>
