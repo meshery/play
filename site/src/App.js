@@ -47,7 +47,6 @@ const App = () => {
             <p className="byline">The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 200+ integrations.</p> */}
           </section>
           <section className="form" id="signup-form">
-            <h2>Sign up for the early access of cloud native playground!</h2>
             <SignupForm onSubmit={handleSignUpFormSubmit}  />
           </section>
           <section className="faq">

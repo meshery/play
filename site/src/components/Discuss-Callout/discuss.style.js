@@ -47,7 +47,7 @@ const DiscussWrapper = styled.div`
                     text-align: center;
                     padding: 0px 0px 1px 0px;
                     letter-spacing: 0;
-                    font-size: 16px;
+                    font-size: 1.25rem;
                 }
                 h2 {
                     text-align: center;
@@ -98,7 +98,7 @@ const DiscussWrapper = styled.div`
                             line-height: 35px;
                         }
                         p {
-                            font-size: 15px
+                            font-size: 1.1rem;
                         }
                     }
                 }
@@ -114,7 +114,7 @@ const DiscussWrapper = styled.div`
                             line-height: 32px;
                         }
                         p {
-                            font-size: 13px;
+                            font-size: 1rem;
                             line-height: 23px;
                         }
                     }
@@ -137,7 +137,7 @@ const DiscussWrapper = styled.div`
                         font-size: 25px;
                     }
                     p{
-                        font-size: 15px;  
+                        font-size: 1.1rem;  
                     }
                 }
             }
@@ -151,7 +151,7 @@ const DiscussWrapper = styled.div`
                     font-size: 22px;
                 }
                 p{
-                    font-size: 13px;  
+                    font-size: 1rem;  
                 }
             }
         }

@@ -67,19 +67,7 @@ const SignupForm = ({ onSubmit }) => {
 
   const PlayFormComponent = () => {
     return (
-      <div className='form-page'>
-        <div className='desc-text'>
-          <p>
-            Sign up for the early access of Meshery Playground today. Your request for access will
-            be processed as quickly as possible. Due to the large influx of program participation
-            requests, it may take some time before system access is granted. In the meantime to help
-            you familiarize with Meshery, the maintainers team will send you additional information
-            about the early access program.
-          </p>
-          <div className='desc-callout'>
-            <DiscussCallout />
-          </div>
-        </div>
+      <div className='form-page'>        
         <div className='form-container'>
           <h3 className='form-title'>Get early access</h3>
           <Formik
@@ -230,7 +218,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                 <label htmlFor='privacy-statement' className='form-field-privacy'>
                   By clicking “submit”, you agree to Meshery's
                   <a
-                    href='https://meshery.layer5.io/terms-of-service.html'
+                    href='https://meshery.layer5.io/legal/terms-of-service.html'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}
@@ -238,7 +226,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                   </a>
                   ,
                   <a
-                    href='https://meshery.layer5.io/privacy-policy.html'
+                    href='https://meshery.layer5.io/legal/privacy-policy.html'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}
@@ -249,6 +237,15 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
               </div>
             </Form>
           </Formik>
+        </div>
+        <div className='signup-text'>
+          <h2>Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.</h2>
+          <p>
+            Meshery maintainers will verify and process your request for access as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. To help you familiarize with Meshery in the meantime, you will receive confirmation of your position in the queue.
+          </p>
+          <div className='desc-callout'>
+            <DiscussCallout />
+          </div>
         </div>
       </div>
     );

@@ -20,18 +20,22 @@ const SignupFormWrapper = styled.section`
 		color: #b30000;
 	}
 
-	.desc-text {
+	.signup-text {
 		margin: 1rem;
 		width: 50%;
-		p:first-child{
+		
+		p {
 			font-size: 1.35rem;
 			margin-bottom: 3rem;
+			margin-top: 2rem;
 			text-align: justify;
+			color: #ececed;
+			text-align: left;
 		}
 
 		@media screen and (max-width: 1024px) {
 			div {
-				displya: block;
+				display: block;
 			}
 			margin: 1rem 1rem 2rem 1rem;
 			width: 100%;
@@ -42,7 +46,6 @@ const SignupFormWrapper = styled.section`
 	.desc-callout{
 		@media screen and (max-width: 1024px){
 			position: relative;
-			top: 58rem;
 			width: fit-content;
 			margin: auto;
 		}
@@ -81,8 +84,7 @@ const SignupFormWrapper = styled.section`
 	  @media only screen and (max-width: 1024px){
 			margin: 2rem 0 ;
 			width: 90%;
-			position: relative;
-			bottom: 16rem;
+
 		}
 
 		.form-title {
@@ -140,6 +142,13 @@ const SignupFormWrapper = styled.section`
 				margin-top: 1rem;
 				text-align: center;
     			opacity: 0.5;
+
+				& a {
+					color:inherit;
+					:hover {
+						text-decoration: underline;	
+					}
+				}
 			}
 
 			select {
