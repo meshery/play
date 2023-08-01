@@ -127,7 +127,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                   id='firstname'
                   name='firstname'
                   maxLength='32'
-                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
+                  pattern="^[\p{L}]+('[\p{L}]*)?(?:-[\p{L}]+)*([\s][\p{L}]+('[\p{L}]*)?(?:-[\p{L}]+)*){0,31}$"
                   required
                 />
               </div>
@@ -141,7 +141,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                   id='lastname'
                   name='lastname'
                   maxLength='32'
-                  pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
+                  pattern="^[\p{L}]+('[\p{L}]*)?(?:-[\p{L}]+)*([\s][\p{L}]+('[\p{L}]*)?(?:-[\p{L}]+)*){0,31}$"
                   required
                 />
               </div>
