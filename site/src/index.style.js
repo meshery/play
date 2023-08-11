@@ -96,6 +96,23 @@ export const GlobalStyle = createGlobalStyle`
   section{
     position: relative;
   }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track { 
+  background: ${({ theme }) => theme.trackcol};
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: ${({ theme }) => theme.thumbcol};
+  border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: ${({ theme }) => theme.thumbhover};
+}
 `;
 
 
@@ -105,6 +122,9 @@ export const lightTheme = {
   toggleBorder: '#FFF',
   background: '#363537',
   btn: '#FFF',
+  thumbcol : 'rgb(60,73,79)',
+  trackcol : 'rgb(255,255,255)',
+  thumbhover : 'rgb(85,85,85)',
 }
 export const darkTheme = {
   body: 'rgb(18, 18, 18)',
@@ -112,4 +132,7 @@ export const darkTheme = {
   toggleBorder: '#6B8096',
   background: '#999',
   btn: '#1E2117',
+  thumbcol : 'rgb(0,211,169)',
+  trackcol : 'rgb(18,18,18)',
+  thumbhover : 'rgb(85,85,85)',
 }
