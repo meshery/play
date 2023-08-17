@@ -47,7 +47,7 @@ const SignupForm = ({ onSubmit }) => {
   const [errorMessage, setErrorMessage] = useState('');
 
   // const errorAccounts = "Please provide at least one account";
-  // const errorRole = '';
+  const errorRole = '';
 
   useEffect(() => {
     if (formSubmitted) {
@@ -63,7 +63,7 @@ const SignupForm = ({ onSubmit }) => {
         behavior: 'smooth'
       });
     }
-  }, [formSubmitted, memberFormOne, onSubmit]);
+  }, [formSubmitted, memberFormOne]);
 
   const PlayFormComponent = () => {
     return (
