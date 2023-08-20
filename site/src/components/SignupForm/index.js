@@ -47,7 +47,6 @@ const SignupForm = ({ onSubmit }) => {
   const [errorMessage, setErrorMessage] = useState('');
 
   // const errorAccounts = "Please provide at least one account";
-  const errorRole = '';
 
   useEffect(() => {
     if (formSubmitted) {
@@ -63,6 +62,7 @@ const SignupForm = ({ onSubmit }) => {
         behavior: 'smooth'
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formSubmitted, memberFormOne]);
 
   const PlayFormComponent = () => {
