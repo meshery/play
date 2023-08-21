@@ -2,7 +2,7 @@ import React from 'react';
 import SlackIcon from "../../assets/images/social-icons/slack.svg";
 import DockerIcon from "../../assets/images/social-icons/docker.svg";
 import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
-import TwitterIcon from "../../assets/images/social-icons/twitterX.png";
+import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
 import GithubIcon from "../../assets/images/social-icons/github.svg";
 import CalendarIcon from "../../assets/images/social-icons/calendar.png";
 import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
