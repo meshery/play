@@ -179,7 +179,7 @@ const Footer = () => {
           <ul className="section-categories">
           <li>
               <a
-                className="category-link"
+                className="category-link hover-invert "
                 href="https://twitter.com/mesheryio/"
               >
                 <img src={TwitterIcon} alt="Twitter Icon"/>

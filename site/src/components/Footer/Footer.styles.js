@@ -39,6 +39,9 @@ const FooterWrapper = styled.section`
           img {
             filter: invert(0);
           }
+          .hover-invert {
+            filter: invert(1);
+          }
         }
       }
     }
@@ -155,6 +158,12 @@ const FooterWrapper = styled.section`
       color: rgba(255, 255, 255, 0.5);
       transition: 0.2s all;
     }
+    .hover-invert {
+      &:hover {
+        img{
+          filter: invert(1);
+        }
+      }
   }
 `;
 
