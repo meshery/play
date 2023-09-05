@@ -136,18 +136,18 @@ const Footer = () => {
                 Meshery Cloud
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 className="category-link"
                 href="https://layer5.io/community/members"
               >
                 Community Members
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 className="category-link"
-                href="https://layer5.io/community/events/"
+                href="https://meshery.io/calendar"
               >
                 Community Events
               </a>
@@ -160,23 +160,31 @@ const Footer = () => {
                 Mailing Lists
               </a>
             </li>    
-
-            <li>
+            {/* <li>
               <a
                 className="category-link"
                 href="https://layer5.io/service-mesh-landscape"
               >Service Mesh Comparison
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className='footer-links resources'> 
           <h3 className="section-title">
-            <a className="title-link" href='https://layer5.io/resources'>
+            <a className="title-link" href='https://meshery.io/calendar'>
               Social
             </a>
           </h3>
           <ul className="section-categories">
+          <li>
+              <a
+                className="category-link"
+                href="https://meshery.io/blog"
+              >
+                {/* <img src={TwitterIcon} alt="Twitter Icon"/>
+                Twitter */}
+              </a>
+            </li>
           <li>
               <a
                 className="category-link"
