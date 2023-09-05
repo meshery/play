@@ -29,7 +29,7 @@ const SignupFormWrapper = styled.section`
 			margin-bottom: 3rem;
 			margin-top: 2rem;
 			text-align: justify;
-			color: #ececed;
+			color: #8b8b8f;
 			text-align: left;
 		}
 
