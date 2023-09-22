@@ -239,7 +239,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
           </Formik>
         </div>
         <div className='signup-text'>
-          <h2>Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.</h2>
+          <h2>Sign-up to receive a user account, entitled with perpetually free and full access to the Playground environment.</h2>
           <p>
             Meshery maintainers will verify and process your request for access as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. To help you familiarize with Meshery in the meantime, you will receive confirmation of your position in the queue.
           </p>
