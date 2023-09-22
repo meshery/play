@@ -67,9 +67,9 @@ const SignupForm = ({ onSubmit }) => {
 
   const PlayFormComponent = () => {
     return (
-      <div className='form-page'>        
-        <div className='form-container'>
-          <h3 className='form-title'>Get early access</h3>
+      <div className='form-page' >        
+        <div className='form-container' style={{  borderRadius: '30px'}}>
+          <h3 className='form-title' style={{  borderTopLeftRadius: '30px', borderTopRightRadius: '30px'}}>Get early access</h3>
           <Formik
             initialValues={{
               firstname: firstname,
@@ -116,7 +116,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
               // setLinkedinAccount(values.linkedin);
               setRole(values.role);
             }}>
-            <Form className='form1' method='post'>
+            <Form className='form1' method='post'style={{ borderBottomLeftRadius: '30px',borderBottomRightRadius: '30px'}}>
               <div className='form-group'>
                 <label htmlFor='firstname' className='form-field'>
                   First Name <span className='required-sign'>*</span>
