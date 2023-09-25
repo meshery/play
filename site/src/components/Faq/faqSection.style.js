@@ -9,6 +9,7 @@ const FaqSectionWrapper = styled.section`
     margin: 2rem 0 0.5rem;
     font-style: italic;
     text-transform: capitalize;
+    text-align: center;
   }
   .accordion__item + .accordion__item {
     border-color: transparent;
