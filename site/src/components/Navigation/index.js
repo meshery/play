@@ -33,6 +33,7 @@ function Navigation({theme, toggleTheme, showSignUpButton}) {
           {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
         </div>
         <div className="dropdown_btn" onClick={handleNavOpen}>
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
           {openNav ? 
             (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hamburger-icon">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -43,9 +44,9 @@ function Navigation({theme, toggleTheme, showSignUpButton}) {
         </div>        
       </nav>
       <div className={openNav ? "dropdown_menu_opened" : "dropdown_menu_closed"}>
-            <div className="mode-btn">
+            {/* <div className="mode-btn">
               <Toggle theme={theme} toggleTheme={toggleTheme} />
-            </div>
+            </div> */}
             <div className="action-btns">
               <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
               {/* <a href="https://demo.meshery.io" className="login-btn" role="button">Login</a> */}
