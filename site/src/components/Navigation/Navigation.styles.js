@@ -45,6 +45,10 @@ export const Header = styled.header`
     max-width: 400px;
     height: auto;
   }
+  .container{
+    display: flex;
+    align-items: center;
+  }
   .themeToggle {
     margin: auto .5rem;
     padding: auto .5rem;
@@ -178,8 +182,6 @@ export const Header = styled.header`
         display: flex;
         justify-content: center;
         align-items:center
-        // border-radius:20px;
-        // border: 1px solid gray
     }
     .btn-container{
         display: none;
@@ -200,9 +202,6 @@ export const Header = styled.header`
         align-items: center;
         box-shadow: rgba(0, 179, 159, 0.2) 0 20px 20px -2px;
         padding: 20px 0px;
-    }
-    .mode-btn{
-      width:95%;
     }
     .action-btns{
         display: flex;
