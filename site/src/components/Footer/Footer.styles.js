@@ -42,8 +42,9 @@ const FooterWrapper = styled.section`
           vertical-align: middle;
           position: relative;
           top: -2px;
-          width: 22px;
-          height: 22px;
+          width: 24px;
+          height: 24px;
+          right: 2px;
         }
 
         &:hover {
