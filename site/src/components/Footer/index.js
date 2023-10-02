@@ -1,29 +1,27 @@
-import React from 'react';
+import React from "react";
 import SlackIcon from "../../assets/images/social-icons/slack.svg";
 import DockerIcon from "../../assets/images/social-icons/docker.svg";
 import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
-import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
+// import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
 import GithubIcon from "../../assets/images/social-icons/github.svg";
 import CalendarIcon from "../../assets/images/social-icons/calendar.png";
 import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
-import FooterWrapper from './Footer.styles';
+import { ReactComponent as TwitterLogo } from "../../assets/images/social-icons/twitter.svg";
+import FooterWrapper from "./Footer.styles";
 
 const Footer = () => {
   return (
-    <FooterWrapper> 
+    <FooterWrapper>
       <div className="container">
-      <div className='footer-links resources'> 
+        <div className="footer-links resources">
           <h3 className="section-title">
-            <a className="title-link" href='https://meshery.io/community'>
+            <a className="title-link" href="https://meshery.io/community">
               Project
             </a>
           </h3>
           <ul className="section-categories">
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/calendar"
-              >
+              <a className="category-link" href="https://meshery.io/calendar">
                 <img src={CalendarIcon} alt="Calendar Icon" />
                 Calendar
               </a>
@@ -37,12 +35,9 @@ const Footer = () => {
                 <img src={DockerIcon} alt="Docker Icon" />
                 Docker Hub
               </a>
-            </li>                  
+            </li>
             <li>
-              <a
-                className="category-link"
-                href="https://slack.meshery.io/"
-              >
+              <a className="category-link" href="https://slack.meshery.io/">
                 <img src={SlackIcon} alt="Slack Icon" />
                 Slack
               </a>
@@ -58,26 +53,24 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='footer-links getting-started'> 
+        <div className="footer-links getting-started">
           <h3 className="section-title">
-            <a className="title-link" href="https://meshery.io/#getting-started">
+            <a
+              className="title-link"
+              href="https://meshery.io/#getting-started"
+            >
               Getting Started
             </a>
           </h3>
           <ul className="section-categories">
-          <li>
-              <a
-                className="category-link"
-                href="https://docs.meshery.io/"
-              >
+            <li>
+              <a className="category-link" href="https://docs.meshery.io/">
                 Docs
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/features"
-              >Features
+              <a className="category-link" href="https://meshery.io/features">
+                Features
               </a>
             </li>
             <li>
@@ -97,27 +90,21 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/catalog"
-              >
+              <a className="category-link" href="https://meshery.io/catalog">
                 Meshery Catalog
               </a>
             </li>
           </ul>
         </div>
-        <div className='footer-links community'> 
+        <div className="footer-links community">
           <h3 className="section-title">
-            <a className="title-link" href='https://meshery.io/community'>
+            <a className="title-link" href="https://meshery.io/community">
               Community
             </a>
           </h3>
           <ul className="section-categories">
             <li>
-              <a
-                className="category-link"
-                href="http://discuss.meshery.io/"
-              >
+              <a className="category-link" href="http://discuss.meshery.io/">
                 Discussion Forum
               </a>
             </li>
@@ -129,10 +116,7 @@ const Footer = () => {
               </a>
             </li> */}
             <li>
-              <a
-                className="category-link"
-                href="https://cloud.meshery.io"
-              >
+              <a className="category-link" href="https://cloud.meshery.io">
                 Meshery Cloud
               </a>
             </li>
@@ -145,21 +129,15 @@ const Footer = () => {
               </a>
             </li> */}
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/calendar"
-              >
+              <a className="category-link" href="https://meshery.io/calendar">
                 Community Events
               </a>
-            </li>      
+            </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/subscribe"
-              >
+              <a className="category-link" href="https://meshery.io/subscribe">
                 Mailing Lists
               </a>
-            </li>    
+            </li>
             {/* <li>
               <a
                 className="category-link"
@@ -169,28 +147,25 @@ const Footer = () => {
             </li> */}
           </ul>
         </div>
-        <div className='footer-links resources'> 
+        <div className="footer-links resources">
           <h3 className="section-title">
-            <a className="title-link" href='https://meshery.io/calendar'>
+            <a className="title-link" href="https://meshery.io/calendar">
               Social
             </a>
           </h3>
           <ul className="section-categories">
-          <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/blog"
-              >
+            <li>
+              <a className="category-link" href="https://meshery.io/blog">
                 {/* <img src={TwitterIcon} alt="Twitter Icon"/>
                 Twitter */}
               </a>
             </li>
-          <li>
+            <li>
               <a
                 className="category-link"
                 href="https://twitter.com/mesheryio/"
               >
-                <img src={TwitterIcon} alt="Twitter Icon"/>
+                <TwitterLogo />
                 Twitter
               </a>
             </li>
@@ -216,12 +191,18 @@ const Footer = () => {
         </div>
       </div>
       <div className="container flex copyright">
-        <div className="text">&copy; {new Date().getFullYear()}- The Meshery Authors</div>
+        <div className="text">
+          &copy; {new Date().getFullYear()}- The Meshery Authors
+        </div>
         <div className="text">Proudly representing every CNCF project</div>
-        <div className="text"><a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></div>
+        <div className="text">
+          <a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">
+            Code of Conduct
+          </a>
+        </div>
       </div>
-    </FooterWrapper> 
-  )
-}
+    </FooterWrapper>
+  );
+};
 
-export default Footer; 
+export default Footer;
