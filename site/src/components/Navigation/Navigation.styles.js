@@ -5,7 +5,7 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   background: #FFF;
-  z-index: 1;
+  z-index: 1000;
 
   .dropdown_btn {
     display: none;
