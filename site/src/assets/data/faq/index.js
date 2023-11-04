@@ -57,7 +57,7 @@ const data = {
         //     ],
         // },
         {
-            question: "Are designs that I create in the Meshery Playground saved or will I look any work that I do in the playground?",
+            question: "Are designs that I create in the Meshery Playground saved or will I lose any work that I do in the playground?",
             category: "Meshery Playground",
             answer: [
                 "Yes, all of the designs that you have created in the Meshery Playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.",
