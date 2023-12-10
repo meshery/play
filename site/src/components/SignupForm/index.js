@@ -261,7 +261,11 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
             on the status of your access via the email address you provided during registration.
           </p>
           <p>
-            If you have any questions in the meantime, please send an email to{' '}
+            If you have any questions in the meantime, feel free to share them in our
+            <a href='https://slack.meshery.io/'>Slack community</a>
+            or our
+            <a href='https://discuss.layer5.io/'>discussion forum</a>.
+            You could also send an email to{' '}
             <a href='mailto:learn@meshery.io'>learn@meshery.io</a>.
           </p>
           <h3 className='white'>
