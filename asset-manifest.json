@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.8c03a602.css",
-    "main.js": "./static/js/main.40231258.js",
+    "main.js": "./static/js/main.33fa45a4.js",
+    "reactPlayerPreview.js": "./static/js/reactPlayerPreview.77fe4473.chunk.js",
     "static/js/787.a67d8972.chunk.js": "./static/js/787.a67d8972.chunk.js",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
@@ -34,11 +35,12 @@
     "static/media/youtube.svg": "./static/media/youtube.e5e6132f56bf262c7b7ce8b0fe25d38e.svg",
     "static/media/twitter.svg": "./static/media/twitter.6bc4fb9befbf0f89f4f6e7b7373efc67.svg",
     "main.8c03a602.css.map": "./static/css/main.8c03a602.css.map",
-    "main.40231258.js.map": "./static/js/main.40231258.js.map",
+    "main.33fa45a4.js.map": "./static/js/main.33fa45a4.js.map",
+    "reactPlayerPreview.77fe4473.chunk.js.map": "./static/js/reactPlayerPreview.77fe4473.chunk.js.map",
     "787.a67d8972.chunk.js.map": "./static/js/787.a67d8972.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c03a602.css",
-    "static/js/main.40231258.js"
+    "static/js/main.33fa45a4.js"
   ]
 }
