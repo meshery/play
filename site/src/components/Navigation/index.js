@@ -1,58 +1,167 @@
 import { useState, useEffect } from "react";
 import { Header } from "./Navigation.styles";
-import mesheryLogo from '../../assets/images/meshery-learn-logo.png';
-import mesheryLogoLight from '../../assets/images/meshery-learn-logo-white.png';
+import mesheryLogo from "../../assets/images/meshery-learn-logo.png";
+import mesheryLogoLight from "../../assets/images/meshery-learn-logo-white.png";
 import { Toggle } from "../Toggle";
-
-function Navigation({theme, toggleTheme, showSignUpButton}) {
-
-
+import Cookie from "js-cookie";
+import axios from "axios";
+import DefaultAvatar from "./DefaultAvatar";
+import CloudIcon from "./CloudIcon";
+import MeshMapIcon from "./MeshMapIcon";
+import LogoutIcon from "./LogoutIcon";
+function Navigation({ theme, toggleTheme, showSignUpButton }) {
+  const [userData, setUserData] = useState({
+    id: "something",
+    first_name: "Akshay",
+    avatar_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_xRbyejmyqX9vxRHCtGbcdKHB_XgacKfNkLs9ljPtw1xVDhFDtPTIDx33Zwr0lQwGmQ&usqp=CAU",
+  });
   const [openNav, setOpenNav] = useState(false);
-  const Logo = theme === 'light' ? mesheryLogo : mesheryLogoLight;
+  const Logo = theme === "light" ? mesheryLogo : mesheryLogoLight;
   const [scroll, setScroll] = useState(false);
-
-  
+  const [dropDown, setDropDown] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () =>
       window.pageYOffset > 50 ? setScroll(true) : setScroll(false)
     );
   }, []);
 
+  useEffect(() => {
+    const CLOUD_USER_API =
+      "https://meshery.layer5.io/api/identity/users/profile";
+    const fetchData = async () => {
+      try {
+        const token = Cookie.get("token");
+        const response = await axios.get(CLOUD_USER_API, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
 
-  const handleNavOpen = ()=>{
-      setOpenNav(!openNav);
-  }
+        if (response.status !== 200) {
+          throw new Error("Network response was not ok");
+        }
+
+        const data = response.data;
+        console.log(data, "here");
+        setUserData(data);
+      } catch (error) {
+        console.error("There was a problem with your fetch operation:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+  const handleNavOpen = () => {
+    setOpenNav(!openNav);
+  };
 
   return (
-    <Header>       
+    <Header>
       <nav className={scroll ? "scrolled" : ""}>
         <img className="logo" src={Logo} alt="Meshery Logo" />
-        <div className="btn-container">
-          <Toggle theme={theme} toggleTheme={toggleTheme} />
-          {showSignUpButton && <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>}
-          {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
+        <div style={{ display: "flex" }}>
+          {userData && (
+            <div className="dropdown_btn" onClick={handleNavOpen}>
+              {openNav ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="hamburger-icon"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="hamburger-icon"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 9h16.5m-16.5 6.75h16.5"
+                  />
+                </svg>
+              )}
+            </div>
+          )}
+          {userData && (
+            <div className="dropDown">
+              <button
+                className="avatar-container"
+                onClick={() => setDropDown((prev) => !prev)}
+              >
+                {userData.avatar_url ? (
+                  <img src={userData.avatar_url} alt={userData.first_name} />
+                ) : (
+                  <DefaultAvatar className="default_avatar" />
+                )}
+              </button>
+              <div
+                className={"dropDown-content"}
+                style={{ display: `${dropDown ? "block" : "none"}` }}
+              >
+                <a
+                  className="drop-item"
+                  href={`https://meshery.layer5.io/user/${userData.id}`}
+                >
+                  <CloudIcon /> Cloud
+                </a>
+                <a className="drop-item" href="https://playground.meshery.io">
+                  <MeshMapIcon /> Playground
+                </a>
+                <a
+                  onClick={() => {
+                    sessionStorage.clear();
+                    localStorage.clear();
+                  }}
+                  className="drop-item"
+                  href="https://playground.meshery.io/user/logout"
+                >
+                  <LogoutIcon /> Logout
+                </a>
+              </div>
+            </div>
+          )}
+          <div className="btn-container">
+            <Toggle theme={theme} toggleTheme={toggleTheme} />
+            {showSignUpButton && !userData && (
+              <a href="#signup-form" className="signup-btn" role="button">
+                Sign Up
+              </a>
+            )}
+            {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
+          </div>
         </div>
-        <div className="dropdown_btn" onClick={handleNavOpen}>
-          {openNav ? 
-            (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hamburger-icon">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>)
-            : (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hamburger-icon" >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-              </svg>)}
-        </div>        
       </nav>
-      <div className={openNav ? "dropdown_menu_opened" : "dropdown_menu_closed"}>
-            <div className="mode-btn">
-              <Toggle theme={theme} toggleTheme={toggleTheme} />
-            </div>
-            <div className="action-btns">
-              <a href="#signup-form" className="signup-btn" role="button">Sign Up</a>
-              {/* <a href="https://demo.meshery.io" className="login-btn" role="button">Login</a> */}
-            </div>
+      <div
+        className={openNav ? "dropdown_menu_opened" : "dropdown_menu_closed"}
+      >
+        <div className="mode-btn">
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
+        </div>
+        {!userData && (
+          <div className="action-btns">
+            <a href="#signup-form" className="signup-btn" role="button">
+              Sign Up
+            </a>
+            {/* <a href="https://demo.meshery.io" className="login-btn" role="button">Login</a> */}
+          </div>
+        )}
       </div>
     </Header>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;
