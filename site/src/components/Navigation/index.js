@@ -10,12 +10,7 @@ import CloudIcon from "./CloudIcon";
 import MeshMapIcon from "./MeshMapIcon";
 import LogoutIcon from "./LogoutIcon";
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
-  const [userData, setUserData] = useState({
-    id: "something",
-    first_name: "Akshay",
-    avatar_url:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_xRbyejmyqX9vxRHCtGbcdKHB_XgacKfNkLs9ljPtw1xVDhFDtPTIDx33Zwr0lQwGmQ&usqp=CAU",
-  });
+  const [userData, setUserData] = useState();
   const [openNav, setOpenNav] = useState(false);
   const Logo = theme === "light" ? mesheryLogo : mesheryLogoLight;
   const [scroll, setScroll] = useState(false);
