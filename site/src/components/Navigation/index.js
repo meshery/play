@@ -3,7 +3,6 @@ import { Header } from "./Navigation.styles";
 import mesheryLogo from "../../assets/images/meshery-learn-logo.png";
 import mesheryLogoLight from "../../assets/images/meshery-learn-logo-white.png";
 import { Toggle } from "../Toggle";
-import Cookie from "js-cookie";
 import axios from "axios";
 import DefaultAvatar from "./DefaultAvatar";
 import CloudIcon from "./CloudIcon";
@@ -15,6 +14,17 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
   const Logo = theme === "light" ? mesheryLogo : mesheryLogoLight;
   const [scroll, setScroll] = useState(false);
   const [dropDown, setDropDown] = useState(false);
+  function getCookieValue(cookieName) {
+    const cookies = document.cookie.split(";");
+
+    for (let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i].trim(); // Remove whitespace
+      if (cookie.indexOf(cookieName + "=") === 0) {
+        return cookie.substring(cookieName.length + 1);
+      }
+    }
+    return null;
+  }
   useEffect(() => {
     window.addEventListener("scroll", () =>
       window.pageYOffset > 50 ? setScroll(true) : setScroll(false)
@@ -26,7 +36,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
       "https://meshery.layer5.io/api/identity/users/profile";
     const fetchData = async () => {
       try {
-        const token = Cookie.get("token");
+        const token = getCookieValue("provider_token");
         const response = await axios.get(CLOUD_USER_API, {
           headers: {
             Authorization: `Bearer ${token}`,
