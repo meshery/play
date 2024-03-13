@@ -45,13 +45,14 @@ export const Header = styled.header`
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+    display: flex;
+    background-color: #c5c5c5;
     overflow: hidden;
     border: 2px solid ${(props) => props.theme.primaryColor};
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     &:hover {
+      background-color: #ebebeb;
       border: 2px solid ${(props) => props.theme.secondaryColor};
-      background: px ${(props) => props.theme.highlightColor};
-      background-color: transparent;
     }
     margin-right: 2rem;
     margin-left: 1rem;

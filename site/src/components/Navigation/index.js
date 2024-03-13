@@ -9,7 +9,7 @@ import CloudIcon from "./CloudIcon";
 import MeshMapIcon from "./MeshMapIcon";
 import LogoutIcon from "./LogoutIcon";
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
-  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState(null);
   const [openNav, setOpenNav] = useState(false);
   const Logo = theme === "light" ? mesheryLogo : mesheryLogoLight;
   const [scroll, setScroll] = useState(false);
@@ -48,7 +48,6 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
         }
 
         const data = response.data;
-        console.log(data, "here");
         setUserData(data);
       } catch (error) {
         console.error("There was a problem with your fetch operation:", error);
