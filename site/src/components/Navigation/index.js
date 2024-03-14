@@ -25,6 +25,10 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
     }
     return null;
   }
+  function removeCookie(cookieName) {
+    document.cookie =
+      cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  }
   useEffect(() => {
     window.addEventListener("scroll", () =>
       window.pageYOffset > 50 ? setScroll(true) : setScroll(false)
@@ -36,7 +40,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
       "https://meshery.layer5.io/api/identity/users/profile";
     const fetchData = async () => {
       try {
-        const token = getCookieValue("provider_token");
+        const token = getCookieValue("token");
         const response = await axios.get(CLOUD_USER_API, {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -117,23 +121,37 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
                 style={{ display: `${dropDown ? "block" : "none"}` }}
               >
                 <a
+                  rel="noreferrer"
+                  target="_blank"
                   className="drop-item"
                   href={`https://meshery.layer5.io/user/${userData.id}`}
                 >
                   <CloudIcon /> Cloud
                 </a>
-                <a className="drop-item" href="https://playground.meshery.io">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  className="drop-item"
+                  href="https://playground.meshery.io"
+                >
                   <MeshMapIcon /> Playground
                 </a>
                 <a
+                  href="/"
                   onClick={() => {
-                    sessionStorage.clear();
-                    localStorage.clear();
+                    removeCookie("token");
+                    window.open("https://meshery.layer5.io/logout", "_blank");
+
+                    // Refresh the current page
+                    window.location.reload();
                   }}
+                  rel="noreferrer"
                   className="drop-item"
-                  href="https://playground.meshery.io/user/logout"
                 >
-                  <LogoutIcon /> Logout
+                  <div className="drop-item-icon">
+                    <LogoutIcon />
+                  </div>
+                  Logout
                 </a>
               </div>
             </div>
