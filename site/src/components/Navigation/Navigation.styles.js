@@ -46,6 +46,7 @@ export const Header = styled.header`
     height: 2.5rem;
     border-radius: 50%;
     display: flex;
+    align-items: center;
     background-color: #c5c5c5;
     overflow: hidden;
     border: 2px solid ${(props) => props.theme.primaryColor};
