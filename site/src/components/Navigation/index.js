@@ -109,10 +109,12 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
               <button
                 className="avatar-container"
                 onClick={() => setDropDown((prev) => !prev)}
+                style={{
+                  backgroundImage: `url(${userData.avatar_url})`,
+                  backgroundSize: "cover",
+                }}
               >
-                {userData.avatar_url ? (
-                  <img src={userData.avatar_url} alt={userData.first_name} />
-                ) : (
+                {!userData.avatar_url && (
                   <DefaultAvatar className="default_avatar" />
                 )}
               </button>
