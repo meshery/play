@@ -165,7 +165,6 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
                 Sign Up
               </a>
             )}
-            {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
           </div>
         </div>
       </nav>
