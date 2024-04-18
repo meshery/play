@@ -83,7 +83,7 @@ const data = {
                 "3. Connectivity: those individuals will have to be afforded network connectivity to that cluster (in whatever fashion you deem appropriate). There are two ways in which this can occur:",
                 "3.a) The other user runs their own copy of Meshery (or signs into a shared instance like the Playground) and will see the connection as being available when they sign in. Their Meshery Server will need to be able to reach your Kube API over the network. How that is done can be any number of ways and is left unto your own devices.",
                 "3.b) The other user signs into your Meshery Server instance, which has network access to your Kubernetes cluster. In order for the other user to sign into your Meshery Server, you would have to expose it to the Internet or VPN or… one of the many other ways to grant them access to your Meshery Server.",
-                "So, in short, you can share access to your Kubernetes cluster with other users, but you have to explicitly grant them access to do so. For more information please visit [Remote Provider Permissions](https://docs.meshery.io/extensibility/authorization)."
+                "So, in short, you can share access to your Kubernetes cluster with other users, but you have to explicitly grant them access to do so. For more information please visit Remote Provider Permissions - https://docs.meshery.io/extensibility/authorization."
             ],
             link: "https://meshery.io",
             linktext: "Get Started with Meshery"
