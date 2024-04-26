@@ -15,8 +15,10 @@
     "react-accessible-accordion": "^5.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.7.1",
+    "react-markdown": "^9.0.1",
     "react-player": "^2.11.0",
     "react-scripts": "5.0.1",
+    "remark-gfm": "^4.0.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

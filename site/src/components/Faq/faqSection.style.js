@@ -18,7 +18,7 @@ const FaqSectionWrapper = styled.section`
   }
   .accordion__item {
     .accordion__header {
-      padding:0;
+      padding: 0;
       background: #00b39f;
       h5 {
         font-weight: 700;
@@ -42,10 +42,20 @@ const FaqSectionWrapper = styled.section`
         margin: 0;
       }
     }
+
+    .markdown {
+      text-align: left;
+      color: rgb(250, 250, 250);
+      font-size: 16px;
+      p {
+        margin: 1rem 0;
+        color: rgb(250, 250, 250);
+      }
+    }
   }
   div.faqbutton {
-    text-align: center; 
-    
+    text-align: center;
+
     button.faqbutton {
       margin-bottom: 1.25rem;
     }
@@ -63,12 +73,13 @@ const FaqSectionWrapper = styled.section`
         font-size: 20px;
         width: 80%;
         padding: 1rem;
-        border: 1px solid #FFFFFF;
-        background-color: #F0F0F0;
+        border: 1px solid #ffffff;
+        background-color: #f0f0f0;
         border-radius: 1.25rem;
       }
     }
   }
+
   .askus_section {
     text-align: left;
     h2 {
@@ -98,7 +109,7 @@ const FaqSectionWrapper = styled.section`
       text-align: left;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     .accordion__item {
       .accordion__header {
@@ -106,6 +117,16 @@ const FaqSectionWrapper = styled.section`
           font-size: 13px;
           line-height: 21px;
           padding-right: 1.6rem;
+        }
+      }
+      .markdown {
+        font-size: 13px;
+        p {
+          font-size: 13px;
+          text-overflow: clip;
+        }
+        ul {
+          padding-left: 1rem;
         }
       }
     }
