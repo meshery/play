@@ -18,20 +18,20 @@ import remarkGfm from "remark-gfm";
 
 const Faq = (props) => {
   let faq_keys = [];
-  let faqs_data = [];
-  if (props.category === undefined) faqs_data = data.faqs;
-  else {
-    props.category.forEach((item) => {
-      if (item === "all") faqs_data = data.faqs;
-      else {
-        data.faqs.forEach((faq) => {
-          if (faq.category.toString() === item) {
-            faqs_data.push(faq);
-          }
-        });
-      }
-    });
-  }
+    let faqs_data = [];
+    if (props.category === undefined)
+        faqs_data = data.faqs;
+    else {
+        props.category.forEach(item => {
+        if (item === "all")
+            faqs_data = data.faqs;
+        else {
+            data.faqs.forEach(faq => {
+                if (faq.category.toString() === item) {
+                    faqs_data.push(faq);
+                }
+            });
+        }
 
   let faqs = faqs_data.reduce((faq, ind) => {
     faq[ind.category] = [...(faq[ind.category] || []), ind];

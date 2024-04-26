@@ -73,8 +73,8 @@ const FaqSectionWrapper = styled.section`
         font-size: 20px;
         width: 80%;
         padding: 1rem;
-        border: 1px solid #ffffff;
-        background-color: #f0f0f0;
+        border: 1px solid #FFFFFF;
+        background-color: #F0F0F0;
         border-radius: 1.25rem;
       }
     }
