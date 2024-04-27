@@ -90,7 +90,7 @@ const Faq = (props) => {
         ))}
       </Accordion>
     </FaqSectionWrapper>
-  );
+  )
 };
 
 export default Faq;
