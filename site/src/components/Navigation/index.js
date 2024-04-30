@@ -54,7 +54,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
         const data = response.data;
         setUserData(data);
       } catch (error) {
-        console.error("There was a problem with your fetch operation:", error);
+        console.error("There was a problem with your fetch operation: ", error?.toString?.(), error );
       }
     };
 
@@ -165,7 +165,6 @@ function Navigation({ theme, toggleTheme, showSignUpButton }) {
                 Sign Up
               </a>
             )}
-            {/* <a href="https://playground.meshery.io" className="login-btn" role="button">Login</a> */}
           </div>
         </div>
       </nav>
