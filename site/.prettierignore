@@ -1,0 +1,9 @@
+*.svg
+*.ico
+*.css
+*.otf
+
+package.json
+package-lock.json
+public
+node_modules

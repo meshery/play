@@ -52,14 +52,14 @@ const SignupForm = ({ onSubmit }) => {
     if (formSubmitted) {
       onSubmit();
 
-      axios.post("https://hook.us1.make.com/7c1op88rysnmeitovt35fxzcv2spspp0", {
-        memberFormOne
+      axios.post('https://hook.us1.make.com/7c1op88rysnmeitovt35fxzcv2spspp0', {
+        memberFormOne,
       });
 
       window.scrollTo({
         top: 800,
         left: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -67,9 +67,14 @@ const SignupForm = ({ onSubmit }) => {
 
   const PlayFormComponent = () => {
     return (
-      <div className='form-page' >        
-        <div className='form-container' style={{  borderRadius: '30px'}}>
-          <h3 className='form-title' style={{  borderTopLeftRadius: '30px', borderTopRightRadius: '30px'}}>Get early access</h3>
+      <div className="form-page">
+        <div className="form-container" style={{ borderRadius: '30px' }}>
+          <h3
+            className="form-title"
+            style={{ borderTopLeftRadius: '30px', borderTopRightRadius: '30px' }}
+          >
+            Get early access
+          </h3>
           <Formik
             initialValues={{
               firstname: firstname,
@@ -82,7 +87,7 @@ const SignupForm = ({ onSubmit }) => {
               // twitter: twitter,
               // linkedin: linkedin,
               role: role,
-              form: 'playground'
+              form: 'playground',
             }}
             onSubmit={(values) => {
               if (!validateEmail(values.email)) {
@@ -90,7 +95,7 @@ const SignupForm = ({ onSubmit }) => {
                 setErrorMessage(
                   `Use of ${values.email} is not allowed. Please use a non-anonymous email address / domain.
 
-The Meshery Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshery Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`
+The Meshery Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshery Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`,
                 );
               } else if (!values.role) {
                 setFormValidations(true);
@@ -115,97 +120,102 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
               // setGithubAccount(values.github);
               // setLinkedinAccount(values.linkedin);
               setRole(values.role);
-            }}>
-            <Form className='form1' method='post'style={{ borderBottomLeftRadius: '30px',borderBottomRightRadius: '30px'}}>
-              <div className='form-group'>
-                <label htmlFor='firstname' className='form-field'>
-                  First Name <span className='required-sign'>*</span>
+            }}
+          >
+            <Form
+              className="form1"
+              method="post"
+              style={{ borderBottomLeftRadius: '30px', borderBottomRightRadius: '30px' }}
+            >
+              <div className="form-group">
+                <label htmlFor="firstname" className="form-field">
+                  First Name <span className="required-sign">*</span>
                 </label>
                 <Field
-                  type='text'
-                  className='text-field'
-                  id='firstname'
-                  name='firstname'
-                  maxLength='32'
+                  type="text"
+                  className="text-field"
+                  id="firstname"
+                  name="firstname"
+                  maxLength="32"
                   pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
-              <div className='form-group'>
-                <label htmlFor='lastname' className='form-field'>
-                  Last Name <span className='required-sign'>*</span>
+              <div className="form-group">
+                <label htmlFor="lastname" className="form-field">
+                  Last Name <span className="required-sign">*</span>
                 </label>
                 <Field
-                  type='text'
-                  className='text-field'
-                  id='lastname'
-                  name='lastname'
-                  maxLength='32'
+                  type="text"
+                  className="text-field"
+                  id="lastname"
+                  name="lastname"
+                  maxLength="32"
                   pattern="([A-Za-zŽžÀ-ÿ]+('{0,1}-{0,1}[A-Za-zÀ-ÿ])?[A-Za-zŽžÀ-ÿ]){1,32}|[A-Za-zŽžÀ-ÿ]"
                   required
                 />
               </div>
-              <div className='form-group'>
-                <label htmlFor='email' className='form-field'>
-                  Email Address <span className='required-sign'>*</span>
+              <div className="form-group">
+                <label htmlFor="email" className="form-field">
+                  Email Address <span className="required-sign">*</span>
                 </label>
                 <Field
-                  type='email'
-                  className='text-field'
-                  id='email'
-                  name='email'
-                  pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+                  type="email"
+                  className="text-field"
+                  id="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   required
                 />
               </div>
-              <div className='form-group'>
-                <label htmlFor='occupation' className='form-field'>
-                  Occupation / Title <span className='required-sign'>*</span>
+              <div className="form-group">
+                <label htmlFor="occupation" className="form-field">
+                  Occupation / Title <span className="required-sign">*</span>
                 </label>
                 <Field
-                  type='text'
-                  className='text-field'
-                  id='occupation'
-                  name='occupation'
+                  type="text"
+                  className="text-field"
+                  id="occupation"
+                  name="occupation"
                   required
                 />
               </div>
-              <div className='form-group'>
-                <label htmlFor='org' className='form-field'>
-                  Org / Company / School <span className='required-sign'>*</span>
+              <div className="form-group">
+                <label htmlFor="org" className="form-field">
+                  Org / Company / School <span className="required-sign">*</span>
                 </label>
-                <Field type='text' className='text-field' id='org' name='org' required />
+                <Field type="text" className="text-field" id="org" name="org" required />
               </div>
-              <div className='form-group'>
-                <label htmlFor='role' className='form-field'>
-                  What role best identifies you? <span className='required-sign'>*</span>
+              <div className="form-group">
+                <label htmlFor="role" className="form-field">
+                  What role best identifies you? <span className="required-sign">*</span>
                 </label>
               </div>
-              <div className='form-select' aria-labelledby='select'>
-                <Field as='select' name='role' required>
+              <div className="form-select" aria-labelledby="select">
+                <Field as="select" name="role" required>
                   <option>Select your role</option>
-                  <option value='Frontend Engineer'>Frontend Engineer</option>
-                  <option value='Backend Engineer'>Backend Engineer</option>
-                  <option value='Fullstack Engineer'>Fullstack Engineer</option>
-                  <option value='Architect'>Architect</option>
-                  <option value='Developer'>Developer</option>
-                  <option value='DevOps Engineer/SysAdmin'>DevOps Engineer/SysAdmin</option>
-                  <option value='Platform Engineer'>Platform Engineer</option>
-                  <option value='Site Reliability Engineer'>Site Reliability Engineer</option>
-                  <option value='Data Analyst'>Data Analyst</option>
-                  <option value='Designer'>Designer</option>
-                  <option value='Manager'>Manager</option>
-                  <option value='Executive'>Executive</option>
-                  <option value='IT Operations'>IT Operations</option>
-                  <option value='Marketing'>Marketing</option>
-                  <option value='Sales'>Sales</option>
-                  <option value='Sales Engineer'>Sales Engineer</option>
-                  <option value='Business Operations'>Business Operations</option>
-                  <option value='Product Manager'>Product Manager</option>
-                  <option value='Media/Analyst'>Media/Analyst</option>
-                  <option value='Professor/Academic'>Professor/Academic</option>
-                  <option value='Student'>Student</option>
-                  <option value='Other'>Other</option>
+                  <option value="Frontend Engineer">Frontend Engineer</option>
+                  <option value="Backend Engineer">Backend Engineer</option>
+                  <option value="Fullstack Engineer">Fullstack Engineer</option>
+                  <option value="Architect">Architect</option>
+                  <option value="Developer">Developer</option>
+                  <option value="DevOps Engineer/SysAdmin">DevOps Engineer/SysAdmin</option>
+                  <option value="Platform Engineer">Platform Engineer</option>
+                  <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+                  <option value="Data Analyst">Data Analyst</option>
+                  <option value="Designer">Designer</option>
+                  <option value="Manager">Manager</option>
+                  <option value="Executive">Executive</option>
+                  <option value="IT Operations">IT Operations</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Sales">Sales</option>
+                  <option value="Sales Engineer">Sales Engineer</option>
+                  <option value="Business Operations">Business Operations</option>
+                  <option value="Product Manager">Product Manager</option>
+                  <option value="Media/Analyst">Media/Analyst</option>
+                  <option value="Professor/Academic">Professor/Academic</option>
+                  <option value="Student">Student</option>
+                  <option value="Other">Other</option>
                 </Field>
               </div>
 
@@ -216,29 +226,32 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                     color: 'red',
                     fontSize: '14px',
                     whiteSpace: 'pre-wrap',
-                    justifyContent: 'left'
-                  }}>
+                    justifyContent: 'left',
+                  }}
+                >
                   {errorMessage}
                 </p>
               )}
-              <button type='submit' className='submit-btn'>
+              <button type="submit" className="submit-btn">
                 Submit
               </button>
-              <div className='form-group'>
-                <label htmlFor='privacy-statement' className='form-field-privacy'>
+              <div className="form-group">
+                <label htmlFor="privacy-statement" className="form-field-privacy">
                   By clicking “submit”, you agree to Meshery's
                   <a
-                    href='https://meshery.layer5.io/legal/terms-of-service.html'
-                    target='_blank'
-                    rel='noopener noreferrer'>
+                    href="https://meshery.layer5.io/legal/terms-of-service.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {' '}
                     terms of use
                   </a>
                   ,
                   <a
-                    href='https://meshery.layer5.io/legal/privacy-policy.html'
-                    target='_blank'
-                    rel='noopener noreferrer'>
+                    href="https://meshery.layer5.io/legal/privacy-policy.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {' '}
                     privacy policy{' '}
                   </a>
@@ -248,12 +261,18 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
             </Form>
           </Formik>
         </div>
-        <div className='signup-text'>
-          <h2>Sign-up to receive a user account, entitled with perpetually free and full access to the Playground environment.</h2>
-          <p style={{textAlign: "center"}}>
-            Meshery maintainers will verify and process your request for access as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. To help you familiarize with Meshery in the meantime, you will receive confirmation of your position in the queue.
+        <div className="signup-text">
+          <h2>
+            Sign-up to receive a user account, entitled with perpetually free and full access to the
+            Playground environment.
+          </h2>
+          <p style={{ textAlign: 'center' }}>
+            Meshery maintainers will verify and process your request for access as quickly as
+            possible. Due to the large influx of program participation requests, it may take some
+            time before system access is granted. To help you familiarize with Meshery in the
+            meantime, you will receive confirmation of your position in the queue.
           </p>
-          <div className='desc-callout'>
+          <div className="desc-callout">
             <DiscussCallout />
           </div>
         </div>
@@ -264,7 +283,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
   const ThankYou = () => {
     return (
       <>
-        <div className='thankyou-box'>
+        <div className="thankyou-box">
           <h2>Thank you for your interest in Meshery Playground early access program!</h2>
           <p>
             You are now signed up for the Meshery Playground early access program and your position
@@ -273,10 +292,10 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
           </p>
           <p>
             If you have any questions in the meantime, please send an email to{' '}
-            <a href='mailto:learn@meshery.io'>learn@meshery.io</a>.
+            <a href="mailto:learn@meshery.io">learn@meshery.io</a>.
           </p>
-          <h3 className='white'>
-            - Team <img src={MesheryText} alt='Meshery' />
+          <h3 className="white">
+            - Team <img src={MesheryText} alt="Meshery" />
           </h3>
         </div>
       </>

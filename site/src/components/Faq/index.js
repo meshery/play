@@ -1,8 +1,8 @@
-import React from "react";
-import data from "../../assets/data/faq";
-import FaqSectionWrapper from "./faqSection.style";
-import Button from "../../reusecore/Button";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import React from 'react';
+import data from '../../assets/data/faq';
+import FaqSectionWrapper from './faqSection.style';
+import Button from '../../reusecore/Button';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import {
   Accordion,
   AccordionItem,
@@ -11,27 +11,27 @@ import {
   IconWrapper,
   OpenIcon,
   CloseIcon,
-} from "../../reusecore/Accordion";
+} from '../../reusecore/Accordion';
 
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const Faq = (props) => {
   let faq_keys = [];
-    let faqs_data = [];
-    if (props.category === undefined)
-        faqs_data = data.faqs;
-    else {
-        props.category.forEach(item => {
-        if (item === "all")
-            faqs_data = data.faqs;
-        else {
-            data.faqs.forEach(faq => {
-                if (faq.category.toString() === item) {
-                    faqs_data.push(faq);
-                }
-            });
-        }
+  let faqs_data = [];
+  if (props.category === undefined) faqs_data = data.faqs;
+  else {
+    props.category.forEach((item) => {
+      if (item === 'all') faqs_data = data.faqs;
+      else {
+        data.faqs.forEach((faq) => {
+          if (faq.category.toString() === item) {
+            faqs_data.push(faq);
+          }
+        });
+      }
+    });
+  }
 
   let faqs = faqs_data.reduce((faq, ind) => {
     faq[ind.category] = [...(faq[ind.category] || []), ind];
@@ -42,17 +42,14 @@ const Faq = (props) => {
 
   return (
     <FaqSectionWrapper>
-      <Accordion allowMultipleExpanded="true" allowZeroExpanded="true">
-        {faq_keys.map((key) => (
-          <>
-            <h2
-              className="category_name"
-              style={{ paddingBottom: 25, textAlign: "center" }}
-            >
+      <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+        {faq_keys.map((key, index) => (
+          <React.Fragment key={index}>
+            <h2 className="category_name" style={{ paddingBottom: 25, textAlign: 'center' }}>
               {key}
             </h2>
-            {faqs[key].map((faq, index) => (
-              <AccordionItem key={index}>
+            {faqs[key].map((faq, faqIndex) => (
+              <AccordionItem key={faqIndex}>
                 <AccordionTitle>
                   <IconWrapper>
                     <h5>{faq.question}</h5>
@@ -67,7 +64,7 @@ const Faq = (props) => {
                 <AccordionBody>
                   <Markdown
                     remarkPlugins={[remarkGfm]}
-                    style={{ textAlign: "left" }}
+                    style={{ textAlign: 'left' }}
                     className="markdown"
                   >
                     {faq.answer}
@@ -86,7 +83,7 @@ const Faq = (props) => {
                 </AccordionBody>
               </AccordionItem>
             ))}
-          </>
+          </React.Fragment>
         ))}
       </Accordion>
     </FaqSectionWrapper>

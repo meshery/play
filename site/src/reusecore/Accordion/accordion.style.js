@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 import {
   AccordionItemHeading,
@@ -6,7 +6,7 @@ import {
   Accordion,
   AccordionItem,
   AccordionItemPanel,
-} from "react-accessible-accordion";
+} from 'react-accessible-accordion';
 
 const fadeIn = keyframes`
   0% {
@@ -41,7 +41,7 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
       }
     }
     &[aria-expanded='true'] {
-      background: ${props => props.theme.DarkTheme ? "rgb(140, 140, 140)" : "#1e2117"};
+      background: ${(props) => (props.theme.DarkTheme ? 'rgb(140, 140, 140)' : '#1e2117')};
     }
   }
 
@@ -54,7 +54,7 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
 `;
 export const AccordionItemButtonWrapper = styled(AccordionItemButton)`
   padding: 0.625rem 1.5rem 0.625rem 1.5rem;
-  `;
+`;
 export const AccordionBodyWrapper = styled(AccordionItemPanel)`
   animation: 0.35s ${fadeIn} ease-in;
   &.accordion__body--hidden {
@@ -65,7 +65,7 @@ export const AccordionBodyWrapper = styled(AccordionItemPanel)`
 export const IconWrapper = styled.div`
   position: relative;
   ${OpenIcon},
-  ${CloseIcon}{
+  ${CloseIcon} {
     position: absolute;
     top: 60%;
     right: 0;

@@ -1,13 +1,12 @@
-
 const toggleStyle = {
-  transition: "all .5s ease 0s",
-  cursor: "pointer",
+  transition: 'all .5s ease 0s',
+  cursor: 'pointer',
 };
 
 export const Toggle = ({ theme, toggleTheme, height, width }) => {
   return (
     <div className="themeToggle" onClick={toggleTheme} style={toggleStyle}>
-      {theme === "dark" ? (
+      {theme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="auto"

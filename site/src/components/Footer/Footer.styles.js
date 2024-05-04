@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const FooterWrapper = styled.section`
   padding: 3.1rem 0 3.1rem 0;

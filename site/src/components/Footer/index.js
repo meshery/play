@@ -1,13 +1,13 @@
-import React from "react";
-import SlackIcon from "../../assets/images/social-icons/slack.svg";
-import DockerIcon from "../../assets/images/social-icons/docker.svg";
-import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
+import React from 'react';
+import SlackIcon from '../../assets/images/social-icons/slack.svg';
+import DockerIcon from '../../assets/images/social-icons/docker.svg';
+import YoutubeIcon from '../../assets/images/social-icons/youtube.svg';
 // import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
-import GithubIcon from "../../assets/images/social-icons/github.svg";
-import CalendarIcon from "../../assets/images/social-icons/calendar.png";
-import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
-import { ReactComponent as TwitterLogo } from "../../assets/images/social-icons/twitter.svg";
-import FooterWrapper from "./Footer.styles";
+import GithubIcon from '../../assets/images/social-icons/github.svg';
+import CalendarIcon from '../../assets/images/social-icons/calendar.png';
+import LinkedinIcon from '../../assets/images/social-icons/linkedin.png';
+import { ReactComponent as TwitterLogo } from '../../assets/images/social-icons/twitter.svg';
+import FooterWrapper from './Footer.styles';
 
 const Footer = () => {
   return (
@@ -28,10 +28,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a
-                className="category-link"
-                href="https://hub.docker.com/u/meshery/"
-              >
+              <a className="category-link" href="https://hub.docker.com/u/meshery/">
                 <img src={DockerIcon} alt="Docker Icon" />
                 Docker Hub
               </a>
@@ -43,10 +40,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://github.com/meshery/play"
-              >
+              <a className="category-link" href="https://github.com/meshery/play">
                 <img src={GithubIcon} alt="GitHub Icon" />
                 Github
               </a>
@@ -55,10 +49,7 @@ const Footer = () => {
         </div>
         <div className="footer-links getting-started">
           <h3 className="section-title">
-            <a
-              className="title-link"
-              href="https://meshery.io/#getting-started"
-            >
+            <a className="title-link" href="https://meshery.io/#getting-started">
               Getting Started
             </a>
           </h3>
@@ -74,18 +65,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/integrations"
-              >
+              <a className="category-link" href="https://meshery.io/integrations">
                 Integrations
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/#getting-started"
-              >
+              <a className="category-link" href="https://meshery.io/#getting-started">
                 Run Meshery
               </a>
             </li>
@@ -161,10 +146,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://twitter.com/mesheryio/"
-              >
+              <a className="category-link" href="https://twitter.com/mesheryio/">
                 <TwitterLogo />
                 Twitter
               </a>
@@ -179,10 +161,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://www.linkedin.com/company/meshery/"
-              >
+              <a className="category-link" href="https://www.linkedin.com/company/meshery/">
                 <img src={LinkedinIcon} alt="Linkedin Icon" />
                 Linkedin
               </a>
@@ -191,9 +170,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container flex copyright">
-        <div className="text">
-          &copy; {new Date().getFullYear()}- The Meshery Authors
-        </div>
+        <div className="text">&copy; {new Date().getFullYear()}- The Meshery Authors</div>
         <div className="text">Proudly representing every CNCF project</div>
         <div className="text">
           <a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">
