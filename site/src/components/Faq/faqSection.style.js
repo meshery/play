@@ -18,7 +18,7 @@ const FaqSectionWrapper = styled.section`
   }
   .accordion__item {
     .accordion__header {
-      padding:0;
+      padding: 0;
       background: #00b39f;
       h5 {
         font-weight: 700;
@@ -42,10 +42,19 @@ const FaqSectionWrapper = styled.section`
         margin: 0;
       }
     }
+
+    .markdown {
+      text-align: left;
+      color: ${({ theme }) => theme.text};
+      font-size: 16px;
+      p {
+        margin: 1rem 0;
+      }
+    }
   }
   div.faqbutton {
-    text-align: center; 
-    
+    text-align: center;
+
     button.faqbutton {
       margin-bottom: 1.25rem;
     }
@@ -69,6 +78,7 @@ const FaqSectionWrapper = styled.section`
       }
     }
   }
+
   .askus_section {
     text-align: left;
     h2 {
@@ -98,14 +108,24 @@ const FaqSectionWrapper = styled.section`
       text-align: left;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     .accordion__item {
       .accordion__header {
         h5 {
-          font-size: 13px;
+          font-size: 15px;
           line-height: 21px;
           padding-right: 1.6rem;
+        }
+      }
+      .markdown {
+        font-size: 13px;
+        p {
+          font-size: 13px;
+          text-overflow: clip;
+        }
+        ul {
+          padding-left: 1rem;
         }
       }
     }
