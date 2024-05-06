@@ -45,11 +45,10 @@ const FaqSectionWrapper = styled.section`
 
     .markdown {
       text-align: left;
-      color: rgb(250, 250, 250);
+      color: ${({ theme }) => theme.text};
       font-size: 16px;
       p {
         margin: 1rem 0;
-        color: rgb(250, 250, 250);
       }
     }
   }
@@ -114,7 +113,7 @@ const FaqSectionWrapper = styled.section`
     .accordion__item {
       .accordion__header {
         h5 {
-          font-size: 13px;
+          font-size: 15px;
           line-height: 21px;
           padding-right: 1.6rem;
         }
