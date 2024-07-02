@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const FaqSectionWrapper = styled.section`
   margin: 2.5rem auto;
@@ -7,6 +7,7 @@ const FaqSectionWrapper = styled.section`
 
   .category_name {
     margin: 2rem 0 0.5rem;
+    font-style: italic;
     text-transform: capitalize;
   }
   .accordion__item + .accordion__item {
@@ -71,8 +72,8 @@ const FaqSectionWrapper = styled.section`
         font-size: 20px;
         width: 80%;
         padding: 1rem;
-        border: 1px solid #ffffff;
-        background-color: #f0f0f0;
+        border: 1px solid #FFFFFF;
+        background-color: #F0F0F0;
         border-radius: 1.25rem;
       }
     }
