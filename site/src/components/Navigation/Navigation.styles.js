@@ -250,17 +250,14 @@ export const Header = styled.header`
     }
     .themeToggle {
       margin: 0 5px;
-      background: ${({ theme }) => theme.body};
+
       padding: 10px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      border: 1px solid gray;
     }
-    .btn-container {
-      display: none;
-    }
+
     .mode-btn {
       width: 95%;
     }
