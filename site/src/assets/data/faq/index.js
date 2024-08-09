@@ -92,6 +92,21 @@ So, in short, you can share access to your Kubernetes cluster with other users, 
       link: "https://meshery.io",
       linktext: "Get Started with Meshery",
     },
+    {
+      question:
+        "How do I connect my Kubernetes cluster to the Meshery Playground?",
+      category: "Meshery Playground",
+      answer: `
+To connect your Kubernetes cluster to the Meshery Playground, follow these steps:
+ - **Generate a Kubeconfig File**: Run the following command to generate a kubeconfig file for your cluster, including the necessary context information for connecting to your publicly accessible Kubernetes API:
+    \`\`\`bash
+    kubectl config view --minify --flatten > config_minikube.yaml
+    \`\`\`
+ - **Upload the Kubeconfig File**: Navigate to **Settings > Environment > Out of Cluster Deployment** in the Meshery Web UI, and use the **Upload kubeconfig** option to upload the file you generated. 
+      `,
+      link: "https://docs.meshery.io/installation/kubernetes",
+      linktext: "Meshery documentation",
+    },
   ],
 };
 
