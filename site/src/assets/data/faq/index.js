@@ -98,24 +98,24 @@ So, in short, you can share access to your Kubernetes cluster with other users, 
       category: "Meshery Playground",
       answer: `
 To connect your Kubernetes cluster to the Meshery Playground, follow these steps:
- - **Generate a Kubeconfig File**: Run the following command to generate a kubeconfig file for your cluster, including the necessary context information for connecting to your publicly accessible Kubernetes API:
+ 1. **Generate a Kubeconfig File**: Run the following command to generate a kubeconfig file for your cluster, including the necessary context information for connecting to your publicly accessible Kubernetes API:
     \`\`\`bash
     kubectl config view --minify --flatten > config_minikube.yaml
     \`\`\`
- 1. **Ensure Network Accessibility:**
+ 2. **Ensure Network Accessibility:**
    - Your Kubernetes API server must be publicly accessible or reachable over the network. This usually involves configuring the API server with a public endpoint and ensuring it’s accessible from external networks.
    - Adjust your firewall settings, security groups, or VPN configurations to allow traffic from the Meshery Playground environment to your API server (typically on port 6443).
 
-2. **Upload kubeconfig:**
+ 3. **Upload kubeconfig:**
    - Use the Meshery Playground Web UI to upload your kubeconfig file, which contains the necessary context and credentials for Meshery to authenticate and connect to your Kubernetes cluster.
 
-3. **Verify TLS/SSL Certificates:**
+ 4. **Verify TLS/SSL Certificates:**
    - Ensure that your kubeconfig includes the correct TLS/SSL certificates, so Meshery can securely connect to your API server.
 
-4. **DNS and IP Configuration:**
+ 5. **DNS and IP Configuration:**
    - If your Kubernetes API server is exposed via a domain name, make sure that this domain is resolvable and that Meshery Playground can reach it.
 
-5. **Authentication and Permissions:**
+ 6. **Authentication and Permissions:**
    - The kubeconfig should contain valid credentials (such as tokens or certificates) to authenticate Meshery Playground with your Kubernetes API. Ensure that these credentials have the necessary permissions to interact with the cluster.
 
 `,
