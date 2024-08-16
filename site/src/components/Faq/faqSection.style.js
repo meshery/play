@@ -7,6 +7,7 @@ const FaqSectionWrapper = styled.section`
 
   .category_name {
     margin: 2rem 0 0.5rem;
+    font-style: italic;
     text-transform: capitalize;
   }
   .accordion__item + .accordion__item {
