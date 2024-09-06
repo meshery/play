@@ -1,5 +1,5 @@
-import SignupForm from "./components/SignupForm";
 import { Main } from './App.style.js';
+import DiscussCallout from './components/Discuss-Callout';
 import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
@@ -8,23 +8,17 @@ import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
 import Faq from "./components/Faq";
-import { useState } from "react";
 
 const App = () => {
 
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const [showSignUpButton, setShowSignUpButton] = useState(true);
-
-  const handleSignUpFormSubmit = () => {
-    setShowSignUpButton(false);
-  };
 
   return (
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Navigation theme={theme} toggleTheme={toggleTheme} showSignUpButton={showSignUpButton} />
+        <Navigation theme={theme} toggleTheme={toggleTheme} />
         <Main>
           <section className="hero">
             <h3 className="try-now-txt">Try it now!</h3>
@@ -43,11 +37,10 @@ const App = () => {
               style={{ margin: "auto" }}
               className="embedVideo"
             />
-         
           </section>
-          <section className="form" id="signup-form">
-             <SignupForm onSubmit={handleSignUpFormSubmit}  />
-          </section>
+          <div className='desc-callout'>
+            <DiscussCallout />
+          </div>
           <section className="faq">
             <h1>Frequently Asked Questions</h1>
             <Faq category={["Meshery Playground"]}/>
