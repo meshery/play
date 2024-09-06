@@ -27,6 +27,7 @@ export const Header = styled.header`
     max-width: 400px;
     height: auto;
   }
+
   .themeToggle {
     margin: auto 0.5rem;
     padding: auto 0.5rem;
@@ -35,36 +36,11 @@ export const Header = styled.header`
       height: 40px;
     }
   }
-  .btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .signup-btn,
+
   .login-btn {
     font-size: calc(16px + 6 * ((50vw - 320px) / 680));
     transition: 0.2s ease-in-out;
     margin: auto 0.5rem;
-  }
-  .signup-btn {
-    padding: 1rem 1.5rem;
-    text-align: center;
-    color: #fff;
-    background: rgba(235, 192, 23, 1);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(235, 192, 23, 0.3);
-    white-space: nowrap;
-  }
-  .signup-btn:hover {
-    background-color: rgba(255, 208, 25, 1);
-    box-shadow: 0px 0px 15px rgba(235, 192, 23, 1);
-    color: #fff;
-  }
-
-  .login-btn {
     margin: 0 0 0 1rem;
     padding: 1rem 1.5rem;
     text-align: center;
@@ -83,27 +59,20 @@ export const Header = styled.header`
     box-shadow: 0px 0px 15px rgba(0, 179, 159, 1);
     color: #fff;
   }
+
   @media screen and (max-width: 1400px) {
     img.logo {
       max-width: 320px;
     }
   }
+
   @media screen and (max-width: 1100px) {
     nav {
       padding: 1.5em 2.5em;
     }
   }
+
   @media screen and (max-width: 975px) {
-    .themeToggle {
-      // position: absolute;
-    }
-    nav {
-      // padding: 1.5rem 5rem;
-    }
-    // .themeToggle > svg {
-    //   width: 32px;
-    //   height: 32px;
-    // }
     img.logo {
       max-width: 320px;
     }
@@ -113,14 +82,12 @@ export const Header = styled.header`
     img.logo {
       max-width: 250px;
     }
-    .signup-btn {
-      padding: 0.7rem 1rem;
-      margin: auto 0.35rem;
-    }
+
     .login-btn {
       padding: 0.7rem 1rem;
       margin: auto 0.35rem;
     }
+
     .themeToggle > svg {
       width: 28px;
       height: 28px;
@@ -136,6 +103,7 @@ export const Header = styled.header`
       max-width: 200px;
     }
   }
+
   @media screen and (max-width: 500px) {
     img.logo {
       max-width: 180px;
@@ -146,10 +114,11 @@ export const Header = styled.header`
     .themeToggle {
       position: static;
     }
-    .signup-btn,
+
     .login-btn {
       padding: 5px 7px;
     }
+
     .themeToggle > svg {
       width: 20px;
       height: 20px;
@@ -233,9 +202,8 @@ export const Main = styled.main`
   .byline {
     margin-top: 2rem;
   }
-
-  .form {
-    margin: 4rem auto;
+  .desc-callout {
+    margin-top: 4rem;
   }
 
   .join-community {
