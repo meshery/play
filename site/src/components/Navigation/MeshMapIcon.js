@@ -1,6 +1,6 @@
 import React from "react";
 
-function MeshMapIcon() {
+function KanvasIcon() {
   return (
     <svg
       width="24px"
@@ -120,4 +120,4 @@ function MeshMapIcon() {
   );
 }
 
-export default MeshMapIcon;
+export default KanvasIcon;

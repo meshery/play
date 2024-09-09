@@ -6,7 +6,7 @@ import { Toggle } from "../Toggle";
 import axios from "axios";
 import DefaultAvatar from "./DefaultAvatar";
 import CloudIcon from "./CloudIcon";
-import MeshMapIcon from "./MeshMapIcon";
+import KanvasIcon from "./KanvasIcon";
 import LogoutIcon from "./LogoutIcon";
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
   const [userData, setUserData] = useState(null);
@@ -136,7 +136,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   className="drop-item"
                   href="https://playground.meshery.io"
                 >
-                  <MeshMapIcon /> Playground
+                  <KanvasIcon /> Playground
                 </a>
                 <a
                   href="/"
