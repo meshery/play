@@ -30,7 +30,7 @@ const data = {
       category: "Meshery Playground",
       answer: `
 - No, all of the designs that you have created in the Meshery Playground are saved to your user account and will be available to you each time that you sign into your account. Your designs will be available in the Meshery Playground and any your other Meshery deployments, too.
-- In other words, all work done in MeshMap Designer is persisted to your user account.
+- In other words, all work done in Kanvas Designer is persisted to your user account.
       `,
     },
     {
@@ -39,7 +39,7 @@ const data = {
       category: "Meshery Playground",
       answer: `
 - Yes, the Meshery Playground clusters are reset on a daily basis. However, only deployments (not designs) that you may have created will be lost.
-- In other words, only MeshMap Visualizer is reset. All of your work in Meshery UI and MeshMap Designer will remain in your user account.
+- In other words, only Kanvas Visualizer is reset. All of your work in Meshery UI and Kanvas Designer will remain in your user account.
       `,
     },
     {
@@ -51,11 +51,11 @@ const data = {
       `,
     },
     // {
-    //     question: "What is the difference between the Cloud Native Playground and MeshMap?",
+    //     question: "What is the difference between the Cloud Native Playground and Kanvas?",
     //     category: "Meshery Playground",
     //     answer: [
-    //         "The Cloud Native Playground (aka Meshery Playground) is a managed instance of Meshery that offers a sandbox environment in which half of MeshMap functionality is enabled (Designer mode) and the other half of MeshMap functionality is disabled (Visualizer mode).",
-    //         "The sandbox environment is not connected to an active Kuberentes cluster, and as such, depending upon which Meshery Playgrouns environment you use specific actions within MeshMap Designer are also disabled. Meshery and MeshMap are feature-rich, sophisticated management applications for cloud native infrastructure. To access their full set of capabilities, simply deploy your own copy of Meshery into the environment of your choosing.",
+    //         "The Cloud Native Playground (aka Meshery Playground) is a managed instance of Meshery that offers a sandbox environment in which half of Kanvas functionality is enabled (Designer mode) and the other half of Kanvas functionality is disabled (Visualizer mode).",
+    //         "The sandbox environment is not connected to an active Kuberentes cluster, and as such, depending upon which Meshery Playgrouns environment you use specific actions within Kanvas Designer are also disabled. Meshery and Kanvas are feature-rich, sophisticated management applications for cloud native infrastructure. To access their full set of capabilities, simply deploy your own copy of Meshery into the environment of your choosing.",
     //     ],
     // },
     {

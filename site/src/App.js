@@ -1,6 +1,6 @@
 import SignupForm from "./components/SignupForm";
 import { Main } from './App.style.js';
-import mesheryPlayground from "./assets/images/meshery-playground-meshmap.png";
+import mesheryPlayground from "./assets/images/meshery-playground-kanvas.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
