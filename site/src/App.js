@@ -6,7 +6,6 @@ import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
-import Faq from "./components/Faq";
 import { useState } from "react";
 
 const App = () => {
@@ -14,7 +13,7 @@ const App = () => {
 
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const [showSignUpButton, setShowSignUpButton] = useState(true);
+  const [showSignUpButton] = useState(true);
 
   return (
     <>
