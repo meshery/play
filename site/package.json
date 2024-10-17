@@ -20,7 +20,8 @@
     "react-scripts": "5.0.1",
     "remark-gfm": "^4.0.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-modal": "^3.16.1"
   },
   "devDependencies": {
     "async": ">=2.6.4",

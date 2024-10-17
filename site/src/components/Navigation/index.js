@@ -8,6 +8,11 @@ import DefaultAvatar from "./DefaultAvatar";
 import CloudIcon from "./CloudIcon";
 import KanvasIcon from "./KanvasIcon";
 import LogoutIcon from "./LogoutIcon";
+import ArrowIcon from "../../ArrowIcon";
+import Modal from "react-modal";
+import Faq from "../Faq";
+import Button from "../../reusecore/Button";
+
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
   const [userData, setUserData] = useState(null);
   const [openNav, setOpenNav] = useState(false);
@@ -40,7 +45,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
       "https://meshery.layer5.io/api/identity/users/profile";
     const fetchData = async () => {
       try {
-        const token = getCookieValue("token");
+        const token = getCookieValue("provider_token");
         const response = await axios.get(CLOUD_USER_API, {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -63,7 +68,17 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
   const handleNavOpen = () => {
     setOpenNav(!openNav);
   };
+  const [modalIsOpen, setIsOpen] = useState(false);
 
+  const openModal = () => {
+    console.log("Opening modal"); // Debugging line
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log("Closing modal"); // Debugging line
+    setIsOpen(false);
+  };
   return (
     <Header>
       <nav className={scroll ? "scrolled" : ""}>
@@ -161,9 +176,55 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
           <div className="btn-container">
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             {showSignUpButton && !userData && (
-              <a href="#signup-form" className="signup-btn" role="button">
-                Sign Up
+              <div>
+              <a href="#open-playground" className="signup-btn" role="button"  onClick={openModal}>
+                Try it now
               </a>
+              <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              className="Modal"
+              overlayClassName="Overlay"
+              ariaHideApp={false}
+              contentLabel="Content Form"
+            >
+              <button
+                className="close-modal-btn"
+                onClick={closeModal}
+              >
+                X
+              </button>
+              {/* <h2 className="modal-heading">
+                Meshery Playground FAQ
+              </h2> */}
+              {/* <div className="content-form">
+                      <ContentForm />
+                    </div> */}
+              <div class="content">
+              <Faq category={["Meshery Playground"]}/>
+              <div className="btn-container" style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginTop: "-2.6rem"
+  
+              }}>
+              <a id="open-playground" href="https://playground.meshery.io">
+              <Button style={{ marginTop: "-0.5rem", display: "flex" }}className="submit-btn">
+                <ArrowIcon />
+                Continue
+              </Button>
+                </a>
+                </div>
+                <p style={{
+                    textAlign: "center",
+                    fontSize: "16px",
+                    color: `${props => props.theme.text}`,
+                    marginTop: ".5rem"
+                }}>
+                  Next: you'll be redirected to playground.meshery.io</p></div>
+            </Modal>
+            </div>
             )}
           </div>
         </div>

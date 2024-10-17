@@ -1,20 +1,27 @@
 import styled from 'styled-components';
 
 const FaqSectionWrapper = styled.section`
-  margin: 2.5rem auto;
+  margin: 0.5rem auto;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .category_name {
-    margin: 2rem 0 0.5rem;
+    margin: 0.5rem 0 0.5rem;
     font-style: italic;
-    text-transform: capitalize;
+    // text-transform: capitalize;
   }
   .accordion__item + .accordion__item {
     border-color: transparent;
   }
   .reusecore__accordion {
     margin-bottom: 5rem;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
   }
   .accordion__item {
     .accordion__header {
