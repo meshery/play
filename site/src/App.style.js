@@ -239,6 +239,7 @@ export const Main = styled.main`
   }
 
   .join-community {
+  margin-top: 4rem;
     text-align: center;
     a {
       display: block;

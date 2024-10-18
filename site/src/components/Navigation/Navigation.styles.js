@@ -101,6 +101,28 @@ export const Header = styled.header`
       color: #00b39f;
     }
   }
+  .continue-btn {
+        z-index: 0;
+        display: flex;
+				font-family: inherit;
+				margin: -0.5rem auto 0rem auto;
+				padding: 1rem 1.5rem;
+				font-size: 1.35rem;
+				border: 0;
+				border-radius: 0.5rem;
+				background: #00B39F;
+				color: #FFF;
+				transition: 0.2s ease-in-out;
+				&:hover {
+					cursor: pointer;
+					background-color: #00D3A9;
+					color: #FFF;
+					box-shadow: 0.5px 0.5px 10px #00B39F;
+				}
+				&:active {
+					box-shadow: none;
+				}
+	}
 
   .dropdown_menu_opened {
     background: ${({ theme }) => theme.body};

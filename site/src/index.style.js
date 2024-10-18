@@ -1,10 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  div.btn-container {
+  div.continue-btn-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: -2.4rem;
+    @media (max-width: 59rem) {
+      margin-top: -1rem;
+    }
   }
 .Modal {
     position: fixed;
@@ -27,7 +31,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     .close-modal-btn {
       min-width: 2rem;
-      cursor: pointer,
+      cursor: pointer;
+      z-index: 1000;
       background: rgb(0, 179, 159);
       border: none;
       border-radius: 5px;
@@ -36,10 +41,8 @@ export const GlobalStyle = createGlobalStyle`
       position: fixed;
       right: 0.5rem;
       top: 0.75rem;
-      svg {
-        font-size: 2rem;
-        width: 1.75rem;
-      }
+      font-size: 2.3rem;
+      line-height: 1;
     }
   }
   .Overlay {
@@ -89,28 +92,6 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.75rem;
       }
   }
-      .submit-btn {
-        z-index: 0;
-				font-family: inherit;
-				margin: 1.5rem auto 0rem auto;
-				padding: 1rem 1.5rem;
-				font-size: 1.35rem;
-				display: block;
-				border: 0;
-				border-radius: 0.5rem;
-				background: #00B39F;
-				color: #FFF;
-				transition: 0.2s ease-in-out;
-				&:hover {
-					cursor: pointer;
-					background-color: #00D3A9;
-					color: #FFF;
-					box-shadow: 0.5px 0.5px 10px #00B39F;
-				}
-				&:active {
-					box-shadow: none;
-				}
-			}
   h3 {
       font-size: 1.75rem;
       font-weight: 500;
