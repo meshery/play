@@ -38,15 +38,6 @@ const App = () => {
               className="embedVideo"
             />
           </section>
-         
-          {/* <Button className="submit-btn">
-            Open Modal
-          </Button> */}
-        
-          {/* <section className="faq">
-            <h1>Frequently Asked Questions</h1>
-            <Faq category={["Meshery Playground"]}/>
-          </section> */}
           <section className="join-community">
             <div>
               <h1>Join the community!</h1>

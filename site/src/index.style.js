@@ -22,8 +22,15 @@ export const GlobalStyle = createGlobalStyle`
     &::-webkit-scrollbar {
         display: none;
     }
+    @media (max-width: 59rem) {
+      max-width: 80vw;
+    }
     .close-modal-btn {
       min-width: 2rem;
+      cursor: pointer,
+      background: rgb(0, 179, 159);
+      border: none;
+      border-radius: 5px;
       height: 2rem;
       padding: 0.25rem;
       position: fixed;
@@ -83,7 +90,7 @@ export const GlobalStyle = createGlobalStyle`
       }
   }
       .submit-btn {
-      z-index: 0;
+        z-index: 0;
 				font-family: inherit;
 				margin: 1.5rem auto 0rem auto;
 				padding: 1rem 1.5rem;

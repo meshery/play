@@ -194,12 +194,6 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
               >
                 X
               </button>
-              {/* <h2 className="modal-heading">
-                Meshery Playground FAQ
-              </h2> */}
-              {/* <div className="content-form">
-                      <ContentForm />
-                    </div> */}
               <div class="content">
               <Faq category={["Meshery Playground"]}/>
               <div className="btn-container" style={{
@@ -210,7 +204,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
   
               }}>
               <a id="open-playground" href="https://playground.meshery.io">
-              <Button style={{ marginTop: "-0.5rem", display: "flex" }}className="submit-btn">
+              <Button style={{ marginTop: "-0.5rem", display: "flex" }} className="submit-btn">
                 <ArrowIcon />
                 Continue
               </Button>
@@ -218,9 +212,9 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                 </div>
                 <p style={{
                     textAlign: "center",
-                    fontSize: "16px",
+                    fontSize: "1rem",
                     color: `${props => props.theme.text}`,
-                    marginTop: ".5rem"
+                    marginTop: "0.5rem"
                 }}>
                   Next: you'll be redirected to playground.meshery.io</p></div>
             </Modal>
