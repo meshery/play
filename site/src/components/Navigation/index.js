@@ -71,12 +71,10 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
-    console.log("Opening modal"); // Debugging line
     setIsOpen(true);
   };
 
   const closeModal = () => {
-    console.log("Closing modal"); // Debugging line
     setIsOpen(false);
   };
   return (
@@ -177,7 +175,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             {showSignUpButton && !userData && (
               <div>
-              <a href="#open-playground" className="signup-btn" role="button"  onClick={openModal}>
+              <a href="#" className="signup-btn" role="button"  onClick={openModal}>
                 Try it now
               </a>
               <Modal
@@ -198,7 +196,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
               <Faq category={["Meshery Playground"]}/>
               <div className="continue-btn-container"
               >
-              <a id="open-playground" href="https://playground.meshery.io">
+              <a href="https://playground.meshery.io">
               <Button className="continue-btn">
                 <ArrowIcon />
                 Continue
