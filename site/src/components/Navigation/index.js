@@ -175,7 +175,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             {showSignUpButton && !userData && (
               <div>
-              <a href="#" className="signup-btn" role="button"  onClick={openModal}>
+              <a href="#open-playground" className="signup-btn" role="button"  onClick={openModal}>
                 Try it now
               </a>
               <Modal
