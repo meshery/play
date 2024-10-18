@@ -188,23 +188,18 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
               ariaHideApp={false}
               contentLabel="Content Form"
             >
-              <button
+              <Button
                 className="close-modal-btn"
                 onClick={closeModal}
               >
-                X
-              </button>
+                &times;
+              </Button>
               <div class="content">
               <Faq category={["Meshery Playground"]}/>
-              <div className="btn-container" style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: "-2.6rem"
-  
-              }}>
+              <div className="continue-btn-container"
+              >
               <a id="open-playground" href="https://playground.meshery.io">
-              <Button style={{ marginTop: "-0.5rem", display: "flex" }} className="submit-btn">
+              <Button className="continue-btn">
                 <ArrowIcon />
                 Continue
               </Button>
