@@ -114,7 +114,7 @@ const DiscussWrapper = styled.div`
                             line-height: 32px;
                         }
                         p {
-                            font-size: 1rem;
+                            font-size: 1.29rem;
                             line-height: 23px;
                         }
                     }

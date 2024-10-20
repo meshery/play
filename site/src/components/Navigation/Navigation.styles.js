@@ -110,14 +110,14 @@ export const Header = styled.header`
 				font-size: 1.35rem;
 				border: 0;
 				border-radius: 0.5rem;
-				background: #00B39F;
+				background: rgb(235, 192, 23);
 				color: #FFF;
 				transition: 0.2s ease-in-out;
 				&:hover {
 					cursor: pointer;
-					background-color: #00D3A9;
+					background-color: rgb(255, 208, 25);
 					color: #FFF;
-					box-shadow: 0.5px 0.5px 10px #00B39F;
+					box-shadow: rgb(235, 192, 23) 0px 0px 12px;
 				}
 				&:active {
 					box-shadow: none;
@@ -164,7 +164,7 @@ export const Header = styled.header`
   .signup-btn {
     padding: 1rem 1.5rem;
     text-align: center;
-    color: #fff;
+    color: #1e2117;
     background: rgba(235, 192, 23, 1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
