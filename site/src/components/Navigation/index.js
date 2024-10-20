@@ -197,7 +197,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
               <div className="continue-btn-container"
               >
               <a href="https://playground.meshery.io">
-              <Button className="continue-btn">
+              <Button className="continue-btn" style={{ background: "rgb(235, 192, 23)" }}>
                 <ArrowIcon />
                 Continue
               </Button>
@@ -209,7 +209,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                     color: `${props => props.theme.text}`,
                     marginTop: "0.5rem"
                 }}>
-                  Next: you'll be redirected to playground.meshery.io</p></div>
+                  On clicking the continue button you will be redirected to Meshery Playground</p></div>
             </Modal>
             </div>
             )}
