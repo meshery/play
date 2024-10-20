@@ -6,6 +6,7 @@ import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
 import Navigation from "./components/Navigation";
+import DiscussCallout from './components/Discuss-Callout';
 import { useState } from "react";
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
               className="embedVideo"
             />
           </section>
+          <div className="community-discuss-wrapper">
           <section className="join-community">
             <div>
               <h1>Join the community!</h1>
@@ -45,6 +47,12 @@ const App = () => {
               <a href="https://slack.meshery.io/" >Join Our Open Source Community</a>
             </div>
           </section>
+          <section>
+          <div className='desc-callout'>
+            <DiscussCallout />
+          </div>
+          </section>
+          </div>
         </Main>
         <Footer />
       </ThemeProvider>
