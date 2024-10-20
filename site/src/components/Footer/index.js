@@ -172,7 +172,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://www.youtube.com/channel/UCFL1af7_wdnhHXL1InzaMvA"
+                href="https://www.youtube.com/Layer5io?sub_confirmation=1"
               >
                 <img src={YoutubeIcon} alt="Youtube Icon" />
                 Youtube
