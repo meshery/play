@@ -101,6 +101,28 @@ export const Header = styled.header`
       color: #00b39f;
     }
   }
+  .continue-btn {
+        z-index: 0;
+        display: flex;
+				font-family: inherit;
+				margin: -0.5rem auto 0rem auto;
+				padding: 1rem 1.5rem;
+				font-size: 1.35rem;
+				border: 0;
+				border-radius: 0.5rem;
+				background: rgb(235, 192, 23);
+				color: #FFF;
+				transition: 0.2s ease-in-out;
+				&:hover {
+					cursor: pointer;
+					background-color: rgb(255, 208, 25);
+					color: #FFF;
+					box-shadow: rgb(235, 192, 23) 0px 0px 12px;
+				}
+				&:active {
+					box-shadow: none;
+				}
+	}
 
   .dropdown_menu_opened {
     background: ${({ theme }) => theme.body};
@@ -142,7 +164,7 @@ export const Header = styled.header`
   .signup-btn {
     padding: 1rem 1.5rem;
     text-align: center;
-    color: #fff;
+    color: #1e2117;
     background: rgba(235, 192, 23, 1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

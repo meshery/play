@@ -239,6 +239,7 @@ export const Main = styled.main`
   }
 
   .join-community {
+  margin-top: 4rem;
     text-align: center;
     a {
       display: block;
@@ -256,7 +257,23 @@ export const Main = styled.main`
       }
     }
   }
+.community-discuss-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  margin-top: 2rem;
+  gap: 4rem;
+  p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  }
+  @media screen and (max-width: 768px) {
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+  }
+}
   .faq {
     text-align: center;
     margin: 4rem auto 0rem auto;

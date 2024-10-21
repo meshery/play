@@ -1,6 +1,57 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  div.continue-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.4rem;
+    @media (max-width: 59rem) {
+      margin-top: -1rem;
+    }
+  }
+.Modal {
+    position: fixed;
+    inset: 50% auto auto 50%;
+    border: 1px solid rgb(204, 204, 204);
+    background: ${(props) => props.theme.body};
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 20px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 50rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    @media (max-width: 59rem) {
+      max-width: 80vw;
+    }
+    .close-modal-btn {
+      min-width: 2rem;
+      cursor: pointer;
+      z-index: 1000;
+      background: rgb(0, 179, 159);
+      border: none;
+      border-radius: 5px;
+      height: 2rem;
+      padding: 0.25rem;
+      position: fixed;
+      right: 0.5rem;
+      top: 0.75rem;
+      font-size: 2.3rem;
+      line-height: 1;
+    }
+  }
+  .Overlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    overflow-y: auto;
+  }
 
   ::selection {
     background: #3C494F;
@@ -41,7 +92,6 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.75rem;
       }
   }
-
   h3 {
       font-size: 1.75rem;
       font-weight: 500;

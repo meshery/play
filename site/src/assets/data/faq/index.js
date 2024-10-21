@@ -42,14 +42,14 @@ const data = {
 - In other words, only Kanvas Visualizer is reset. All of your work in Meshery UI and Kanvas Designer will remain in your user account.
       `,
     },
-    {
-      question: "Is Meshery open source?",
-      category: "Meshery Playground",
-      answer: `
-- Yes, Meshery is a Cloud Native Computing Foundation (CNCF) project and is licensed under Apache v2.
-- As the extensible cloud native manager, Meshery is a pluggable platform, offering multiple extension points within which users and partners (ISVs) can customize and extend Meshery's functionality under the same or different license(s), offering commercial and non-commericial extensions.
-      `,
-    },
+//     {
+//       question: "Is Meshery open source?",
+//       category: "Meshery Playground",
+//       answer: `
+// - Yes, Meshery is a Cloud Native Computing Foundation (CNCF) project and is licensed under Apache v2.
+// - As the extensible cloud native manager, Meshery is a pluggable platform, offering multiple extension points within which users and partners (ISVs) can customize and extend Meshery's functionality under the same or different license(s), offering commercial and non-commericial extensions.
+//       `,
+//     },
     // {
     //     question: "What is the difference between the Cloud Native Playground and Kanvas?",
     //     category: "Meshery Playground",
@@ -66,16 +66,16 @@ const data = {
 - Yes, all of the designs that you have created in the Meshery Playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.
       `,
     },
-    {
-      question: "Can I deploy the Meshery on-premises?",
-      category: "Meshery Playground",
-      answer: `
-- Yes, Meshery can be deployed on-premises with a single command to download, install, and run your own instance of Meshery in your environment.
-- See all supported platforms to deploy your own Meshery instance at https://meshery.io
-      `,
-      link: "https://meshery.io",
-      linktext: "Get Started with Meshery",
-    },
+//     {
+//       question: "Can I deploy the Meshery on-premises?",
+//       category: "Meshery Playground",
+//       answer: `
+// - Yes, Meshery can be deployed on-premises with a single command to download, install, and run your own instance of Meshery in your environment.
+// - See all supported platforms to deploy your own Meshery instance at https://meshery.io
+//       `,
+//       link: "https://meshery.io",
+//       linktext: "Get Started with Meshery",
+//     },
     {
       question:
         "When I add my Kubernetes cluster to the Meshery Playground will it be available to all other users? Can other people access my cluster?",
