@@ -56,7 +56,7 @@ const App = () => {
 
               <div>
               <Button className="continue-btn" style={{ background: "rgb(235, 192, 23)" }} role="button"  onClick={openModal}>
-                Try it now
+                Open Playground
               </Button>
               <Modal
               isOpen={modalIsOpen}
