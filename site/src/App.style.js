@@ -302,7 +302,7 @@ section.playground-btn {
     font-size: 2.5rem;
   }
   @media screen and (max-width: 768px) {
-  gap: 2rem;
+  gap: .2rem;
   flex-wrap: wrap;
   }
 }
