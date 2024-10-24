@@ -8,10 +8,6 @@ import DefaultAvatar from "./DefaultAvatar";
 import CloudIcon from "./CloudIcon";
 import KanvasIcon from "./KanvasIcon";
 import LogoutIcon from "./LogoutIcon";
-import ArrowIcon from "../../ArrowIcon";
-import Modal from "react-modal";
-import Faq from "../Faq";
-import Button from "../../reusecore/Button";
 
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
   const [userData, setUserData] = useState(null);
@@ -68,15 +64,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
   const handleNavOpen = () => {
     setOpenNav(!openNav);
   };
-  const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
   return (
     <Header>
       <nav className={scroll ? "scrolled" : ""}>
@@ -173,46 +161,6 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
           )}
           <div className="btn-container">
             <Toggle theme={theme} toggleTheme={toggleTheme} />
-            {showSignUpButton && !userData && (
-              <div>
-              <a href="#open-playground" className="signup-btn" role="button"  onClick={openModal}>
-                Try it now
-              </a>
-              <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
-              className="Modal"
-              overlayClassName="Overlay"
-              ariaHideApp={false}
-              contentLabel="Content Form"
-            >
-              <Button
-                className="close-modal-btn"
-                onClick={closeModal}
-              >
-                &times;
-              </Button>
-              <div class="content">
-              <Faq category={["Meshery Playground"]}/>
-              <div className="continue-btn-container"
-              >
-              <a href="https://playground.meshery.io">
-              <Button className="continue-btn" style={{ background: "rgb(235, 192, 23)" }}>
-                <ArrowIcon />
-                Continue
-              </Button>
-                </a>
-                </div>
-                <p style={{
-                    textAlign: "center",
-                    fontSize: "1rem",
-                    color: `${props => props.theme.text}`,
-                    marginTop: "0.5rem"
-                }}>
-                  On clicking the continue button you will be redirected to Meshery Playground</p></div>
-            </Modal>
-            </div>
-            )}
           </div>
         </div>
       </nav>
