@@ -158,6 +158,27 @@ export const Header = styled.header`
 `;
 
 export const Main = styled.main`
+  .signup-btn,
+  .login-btn {
+    font-size: calc(16px + 6 * ((50vw - 320px) / 680));
+    margin: auto 0.5rem;
+  }
+  .signup-btn {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: #1e2117;
+    background: rgba(235, 192, 23, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(235, 192, 23, 0.3);
+    white-space: nowrap;
+  }
+  .signup-btn:hover {
+    background-color: rgba(255, 208, 25, 0.8);
+    color: #fff;
+  }
   max-width: 75%;
   margin: 5rem auto;
 
@@ -239,7 +260,6 @@ export const Main = styled.main`
   }
 
   .join-community {
-  margin-top: 4rem;
     text-align: center;
     a {
       display: block;
@@ -257,6 +277,15 @@ export const Main = styled.main`
       }
     }
   }
+section.playground-btn {
+  margin-top: 4rem;
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
 .community-discuss-wrapper {
   display: flex;
   justify-content: center;
@@ -265,13 +294,16 @@ export const Main = styled.main`
   margin-top: 2rem;
   gap: 4rem;
   p {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+  h1 {
+    margin-bottom: 0;
+    font-size: 2.5rem;
   }
   @media screen and (max-width: 768px) {
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 0;
   }
 }
   .faq {
