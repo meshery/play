@@ -283,15 +283,11 @@ section.playground-btn {
     display: flex;
     justify-content: center;
   }
-  .open-playground-btn {
-  position: relative;
-}
 .open-playground-btn {
-font-size: 1.4rem;
-height: 3.5rem;
-padding: 1.5rem;
-
-
+  position: relative;
+  font-size: 1.4rem;
+  height: 3.5rem;
+  padding: 1.5rem;
 }
 .open-playground-btn::after {
   content: '';
