@@ -55,7 +55,7 @@ const App = () => {
           <section className="playground-btn">
 
               <div>
-              <Button className="continue-btn" style={{ background: "rgb(235, 192, 23)" }} role="button"  onClick={openModal}>
+              <Button className="continue-btn open-playground-btn" style={{ background: "rgb(235, 192, 23)" }} role="button"  onClick={openModal}>
                 Open Playground
               </Button>
               <Modal

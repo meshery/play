@@ -283,6 +283,36 @@ section.playground-btn {
     display: flex;
     justify-content: center;
   }
+.open-playground-btn {
+  position: relative;
+  font-size: 1.4rem;
+  height: 3.5rem;
+  padding: 1.5rem;
+}
+.open-playground-btn::after {
+  content: '';
+  border-radius: 100%;
+  border: 0.275rem solid rgb(0,170,159);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2.5s infinite;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
 
 }
 
