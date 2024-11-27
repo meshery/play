@@ -89,7 +89,7 @@ const App = () => {
               playing
               controls
               light={mesheryPlayground}
-              width="70%"
+              width="177.778%"
               style={{ margin: "auto" }}
               className="embedVideo"
             />
