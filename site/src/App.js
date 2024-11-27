@@ -42,19 +42,9 @@ const App = () => {
             <p className="desc-text">
               Explore the Cloud Native Computing Foundation's graduated, incubation, and sandbox projects as well as many other popular open source projects. Use Meshery Playground to explore a new way of DevOps - visual and collaborative configuration management for your infrastructure.
             </p>
-            <ReactPlayer
-              url="https://youtu.be/Do7htKrRzDA"
-              playing
-              controls
-              light={mesheryPlayground}
-              width="90%"
-              style={{ margin: "auto" }}
-              className="embedVideo"
-            />
           </section>
           <section className="playground-btn">
-
-              <div>
+            <div>
               <Button className="continue-btn open-playground-btn" style={{ background: "rgb(235, 192, 23)" }} role="button"  onClick={openModal}>
                 Open Playground
               </Button>
@@ -89,10 +79,22 @@ const App = () => {
                     color: `${props => props.theme.text}`,
                     marginTop: "0.5rem"
                 }}>
-                  On clicking the continue button you will be redirected to Meshery Playground</p></div>
+                  On clicking the continue button you will be redirected to Meshery Playground.</p></div>
             </Modal>
             </div>
           </section>
+          <section className="video">
+            <ReactPlayer
+              url="https://youtu.be/Do7htKrRzDA"
+              playing
+              controls
+              light={mesheryPlayground}
+              width="70%"
+              style={{ margin: "auto" }}
+              className="embedVideo"
+            />
+          </section>
+          
           <div className="community-discuss-wrapper">
           <section className="join-community">
             <div>

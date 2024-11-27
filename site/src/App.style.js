@@ -210,7 +210,11 @@ export const Main = styled.main`
   .desc-text {
     margin: 0 0 3rem;
   }
-
+  section.video {
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+  }
   .embedVideo {
     height: 44vw !important;
     border-radius: 2.5%;

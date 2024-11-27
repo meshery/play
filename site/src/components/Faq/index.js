@@ -50,9 +50,9 @@ const Faq = (props) => {
           <>
             <h2
               className="category_name"
-              style={{ paddingBottom: 25, textAlign: "center", fontSize: "1.5rem" }}
+              style={{ paddingBottom: 25, textAlign: "center", fontSize: "1.5rem", fontWeight: "normal" }}
             >
-              You are about to access Meshery Playground
+              You are about to access Meshery Playground...
             </h2>
             {faqs[key].map((faq, index) => (
               <AccordionItem key={index}>
