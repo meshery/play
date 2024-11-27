@@ -116,8 +116,8 @@ const Footer = () => {
               </a>
             </li> */}
             <li>
-              <a className="category-link" href="https://cloud.meshery.io">
-                Meshery Cloud
+              <a className="category-link" href="https://badges.layer5.io">
+                Recognition Program
               </a>
             </li>
             {/* <li>
