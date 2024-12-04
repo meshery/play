@@ -100,7 +100,7 @@ const App = () => {
             <div>
               <h1>Join the community!</h1>
               <p>Engage in the Meshery community by joining us on Slack</p>
-              <Button href="https://slack.meshery.io/" >Join Our Open Source Community</Button>
+              <Button url="https://slack.meshery.io/" >Join Our Open Source Community</Button>
             </div>
           </section>
           <section>

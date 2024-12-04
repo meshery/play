@@ -265,21 +265,6 @@ export const Main = styled.main`
 
   .join-community {
     text-align: center;
-    a {
-      display: block;
-      background: #ebc017;
-      color: ${({ theme }) => theme.btn};
-      width: 14rem;
-      padding: 1rem;
-      margin: auto;
-      border-radius: 0.5rem;
-      transition: 0.2s ease-in-out;
-      &:hover {
-        background-color: rgba(255, 208, 25, 1);
-        box-shadow: 0px 0px 12px #ebc017;
-        color: #fff;
-      }
-    }
   }
 section.playground-btn {
   margin-top: 4rem;
