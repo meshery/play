@@ -225,7 +225,6 @@ export const Main = styled.main`
 
     .react-player__preview {
       border-radius: 1.5%;
-       
     }
 
     .react-player__play-icon {

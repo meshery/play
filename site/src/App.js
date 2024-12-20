@@ -90,13 +90,10 @@ const App = () => {
               controls
               light={mesheryPlayground}
               width="177.778%"
-
               style={{ margin: "auto" }}
               className="embedVideo"
             />
           </section>
-
-
           <div className="community-discuss-wrapper">
             <section className="join-community">
               <div>
