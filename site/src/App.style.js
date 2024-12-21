@@ -213,9 +213,7 @@ export const Main = styled.main`
   section.video {
     margin: 4rem auto;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
-    padding: 50px;
   }
   .embedVideo {
     height: 44vw !important;
