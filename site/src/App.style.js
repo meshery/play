@@ -214,6 +214,8 @@ export const Main = styled.main`
     margin: 4rem auto;
     display: flex;
     justify-content: center;
+    padding: 50px;
+
   }
   .embedVideo {
     height: 44vw !important;
