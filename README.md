@@ -11,13 +11,13 @@
 Our projects are community-built and welcome collaboration. 👍 Be sure to see the <a href="https://docs.meshery.io/project/community#getting-involved-in-the-community">Meshery Community Welcome Guide</a> for a tour of resources available to you and jump into our <a href="https://slack.meshery.io">Slack</a>!
 
 <p style="clear:both;">
-<a href ="https://layer5.io/community/meshmates"><img alt="MeshMates" src=".github\readme\images\Layer5-MeshMentors-new.png" style="margin-right:10px; margin-bottom:15px;" width="28%" align="left"/></a>
+<a href ="https://meshery.io/community#meshmates"><img alt="MeshMates" src=".github\readme\images\Layer5-MeshMentors-new.png" style="margin-right:10px; margin-bottom:15px;" width="28%" align="left"/></a>
 <h3>Find your MeshMate</h3>
 
 <p>MeshMates are experienced community members, who will help you learn your way around, discover live projects and expand your community network. 
 Become a <b>Meshtee</b> today!</p>
 
-Find out more on the <a href="https://meshery.io/contributors">Layer5 community</a>. <br />
+Find out more on the <a href="https://meshery.io/contributors">Meshery community</a>. <br />
 <br /><br /><br /><br />
 </p>
 
@@ -41,7 +41,7 @@ Find out more on the <a href="https://meshery.io/contributors">Layer5 community<
 ✔️ <em><strong>Watch</strong></em> community <a href="https://www.youtube.com/@mesheryio?sub_confirmation=1">meeting recordings</a>.<br />
 ✔️ <em><strong>Access</strong></em> community resources by completing a community <a href="https://layer5.io/newcomer">Member Form</a>.<br />
 ✔️ <em><strong>Discuss</strong></em> in the <a href="http://discuss.meshery.io">Community Forum</a>.<br />
-✔️<em><strong>Explore more</strong></em> in the <a href="https://layer5.io/community/handbook">Community Handbook</a>.<br />
+✔️<em><strong>Explore more</strong></em> in the <a href="https://meshery.io/community#handbook">Community Handbook</a>.<br />
 </p>
 <p align="center">
 <i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+label%3A%22help+wanted%22+">help-wanted label</a>.</p>
