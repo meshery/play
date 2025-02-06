@@ -4,7 +4,7 @@ back Meshery project security vulnerabilities. We investigate every report thoro
 
 ## Reporting a vulnerability
 To make a report, send an email to the private
-[security-vulns-reports@layer5.io](mailto:security-vulns-reports@layer5.io)
+[security@meshery.dev](mailto:security@meshery.dev)
 mailing list with the vulnerability details. For normal product bugs
 unrelated to latent security vulnerabilities, please head to
 the appropriate repository and submit a [new issue](../../issues/new/choose).
