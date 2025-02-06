@@ -38,7 +38,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
 
   useEffect(() => {
     const CLOUD_USER_API =
-      "https://meshery.layer5.io/api/identity/users/profile";
+      "https://cloud.layer5.io/api/identity/users/profile";
     const fetchData = async () => {
       try {
         const token = getCookieValue("provider_token");
@@ -127,7 +127,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   rel="noreferrer"
                   target="_blank"
                   className="drop-item"
-                  href={`https://meshery.layer5.io/user/${userData.id}`}
+                  href={`https://cloud.layer5.io/user/${userData.id}`}
                 >
                   <CloudIcon /> Cloud
                 </a>
@@ -143,7 +143,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   href="/"
                   onClick={() => {
                     removeCookie("token");
-                    window.open("https://meshery.layer5.io/logout", "_blank");
+                    window.open("https://cloud.layer5.io/logout", "_blank");
 
                     // Refresh the current page
                     window.location.reload();
