@@ -17,7 +17,6 @@ const HeaderSection = styled.div`
 const MainHeading = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
-  color: #0c2340;
   margin-bottom: 1rem;
 `;
 
@@ -39,6 +38,7 @@ const CardGrid = styled.div`
 `;
 
 const Card = styled.div`
+  background-color:  ${props => props.theme.grey212121ToWhite};
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -55,7 +55,7 @@ const CardImage = styled.img`
 const CardTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0c2340;
+ color: ${props => props.theme.text};
   margin-bottom: 1rem;
 `;
 
