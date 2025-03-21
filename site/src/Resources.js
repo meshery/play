@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./reusecore/Button";
 import styled from "styled-components";
 import Tutorials from "./assets/images/5-tutorials.png"
+
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -38,7 +39,6 @@ const CardGrid = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -86,10 +86,9 @@ const ResourcesSection = () => {
           <CardDescription>
             Hands-on tutorials to increase your cloud native knowledge.
           </CardDescription>
-          <Button url="/tutorials/101"> Tutorials</Button>
+          <Button url="https://docs.meshery.io/guides/tutorials"> Tutorials</Button>
         </Card>
 
-        {/* Lab Environment Card */}
         <Card>
           <CardImage 
             src={Tutorials}
@@ -97,9 +96,9 @@ const ResourcesSection = () => {
           />
           <CardTitle>Academy</CardTitle>
           <CardDescription>
-            Learn how to use various cloud native tools with Meshery.
+            Learn how to use various cloud native tools with Meshery .
           </CardDescription>
-          <Button to="/lab-environment">Get Started</Button>
+          <Button url="https://cloud.layer5.io/academy/overview">Get Started</Button>
         </Card>
 
        
@@ -110,9 +109,9 @@ const ResourcesSection = () => {
           />
           <CardTitle>Catalog</CardTitle>
           <CardDescription>
-           Ready-made blueprints for Kubernetes and Cloud Native Infrastructure
+          Reusable templates for Cloud Native Infrastructure
           </CardDescription>
-          <Button url="/community-training">Learn More</Button>
+          <Button url="https://meshery.io/catalog">Learn More</Button>
         </Card>
       </CardGrid>
     </Container>
