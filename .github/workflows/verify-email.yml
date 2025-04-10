@@ -21,7 +21,7 @@ jobs:
           # Required mail server address:
           server_address: smtp.gmail.com
           # Required mail server port:
-          server_port: 465
+          server_port: 587
           # Optional (recommended): mail server username:
           username: ${{secrets.muser}}
           # Optional (recommended) mail server password:
