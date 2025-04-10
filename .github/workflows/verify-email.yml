@@ -21,7 +21,7 @@ jobs:
           # Required mail server address:
           server_address: smtp.gmail.com
           # Required mail server port:
-          server_port: 587
+          server_port: 465
           # Optional (recommended): mail server username:
           username: ${{secrets.MAIL_USERNAME}}
           # Optional (recommended) mail server password:
@@ -41,7 +41,7 @@ jobs:
           # Optional blind carbon copy  recipients:
           # bcc: r2d2@example.com,hansolo@example.com
           # Optional recipient of the email response:
-          reply_to: no-reply@layer5.io
+          reply_to: noreply@layer5.io
           # Optional unsigned/invalid certificates allowance:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
