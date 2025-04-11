@@ -8,7 +8,7 @@
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
     "async": ">=2.6.4",
-    "axios": "^1.6.0",
+    "axios": "^1.8.2",
     "formik": "^2.2.9",
     "nth-check": ">=2.0.1",
     "react": "^18.0.0",
