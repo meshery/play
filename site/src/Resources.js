@@ -130,7 +130,7 @@ const ResourcesSection = () => {
           Reusable design and templates for Cloud Native Infrastructure
           </CardDescription>
           <Spacer />
-          <Button url="https://meshery.io/catalog" style={{ color: "rgb(255,255,255)"}}>Learn More</Button>
+          <Button url="https://cloud.layer5.io/catalog" style={{ color: "rgb(255,255,255)"}}>Learn More</Button>
         </Card>
       </CardGrid>
     </Container>
