@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "./reusecore/Button";
 import styled from "styled-components";
-import Tutorials from "./assets/images/5-tutorials.png"
-
+import AcademyIcon from './assets/images/academy-icon.svg';
+import CatalogIcon from './assets/images/catalog-icon.svg'
+import BookIcon from './assets/images/book-icon.svg'
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -38,16 +39,20 @@ const CardGrid = styled.div`
 `;
 
 const Card = styled.div`
-  background-color:  ${props => props.theme.grey212121ToWhite};
+  background-color:  ${({ theme }) => theme.body};
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
-
+const CardImageContainer = styled.div`
+  max-width: 6rem;
+`;
 const CardImage = styled.img`
-  width: 12rem;
-  height: 12rem;
+  max-width: 6rem;
   object-fit: contain;
   margin: 0 auto 1.5rem;
 `;
@@ -63,6 +68,10 @@ const CardDescription = styled.p`
   margin-bottom: 2rem;
 `;
 
+const Spacer = styled.div`
+  flex-grow: 1;
+`;
+
 
 const ResourcesSection = () => {
   return (
@@ -72,46 +81,56 @@ const ResourcesSection = () => {
           No setup required
         </MainHeading>
         <Subheading>
-            Access the playground right in your browser
+        Learn by doing: explore these hands-on resources using the playground right in your browser
         </Subheading>
       </HeaderSection>
 
       <CardGrid>
         <Card>
-          <CardImage 
-            src={Tutorials} 
-            alt="Hands-on tutorials" 
-          />
+          <CardImageContainer>
+            <CardImage 
+              src={BookIcon} 
+              alt="Hands-on tutorials" 
+              style={{ paddingTop: "1.2rem" }}
+            />
+          </CardImageContainer>
           <CardTitle>Tutorials</CardTitle>
           <CardDescription>
-            Hands-on tutorials to increase your cloud native knowledge.
+            Interactive tutorials to increase your cloud native knowledge.
           </CardDescription>
-          <Button url="https://docs.meshery.io/guides/tutorials"> Tutorials</Button>
+          <Spacer />
+          <Button url="https://docs.meshery.io/guides/tutorials" style={{ color: "rgb(255,255,255)" }}> Tutorials</Button>
         </Card>
 
         <Card>
-          <CardImage 
-            src={Tutorials}
-            alt="" 
-          />
+          <CardImageContainer>
+            <CardImage 
+              src={AcademyIcon}
+              alt="Academy Icon" 
+            />
+          </CardImageContainer>
           <CardTitle>Academy</CardTitle>
           <CardDescription>
             Learn how to use various cloud native tools with Meshery .
           </CardDescription>
-          <Button url="https://cloud.layer5.io/academy/overview">Get Started</Button>
+          <Spacer />
+          <Button url="https://cloud.layer5.io/academy/overview"  style={{ color: "rgb(255,255,255)"}}>Get Started</Button>
         </Card>
 
        
         <Card>
-          <CardImage 
-            src={Tutorials}
-            alt="" 
-          />
+          <CardImageContainer>
+            <CardImage 
+              src={CatalogIcon}
+              alt="Catalog Icon" 
+            />
+          </CardImageContainer>
           <CardTitle>Catalog</CardTitle>
           <CardDescription>
-          Reusable templates for Cloud Native Infrastructure
+          Reusable design and templates for Cloud Native Infrastructure
           </CardDescription>
-          <Button url="https://meshery.io/catalog">Learn More</Button>
+          <Spacer />
+          <Button url="https://meshery.io/catalog" style={{ color: "rgb(255,255,255)"}}>Learn More</Button>
         </Card>
       </CardGrid>
     </Container>
