@@ -12,6 +12,7 @@ import ArrowIcon from './ArrowIcon.js';
 import Modal from "react-modal";
 import Faq from './components/Faq/index.js';
 import Button from './reusecore/Button/index.js';
+import ResourcesSection from './Resources.js';
 
 const App = () => {
 
@@ -93,6 +94,9 @@ const App = () => {
               style={{ margin: "auto" }}
               className="embedVideo"
             />
+          </section>
+          <section>
+            <ResourcesSection />
           </section>
           
           <div className="community-discuss-wrapper">
