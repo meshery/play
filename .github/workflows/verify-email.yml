@@ -13,19 +13,17 @@ jobs:
     name: Prepare email
     runs-on: "ubuntu-24.04"
     steps:
-      - name: Clone repo
-        uses: actions/checkout@master
       - name: Send email
         uses: dawidd6/action-send-mail@v4
         with:
           # Required mail server address:
           server_address: smtp.gmail.com
           # Required mail server port:
-          server_port: 587
+          server_port: 465
           # Optional (recommended): mail server username:
-          username: ${{secrets.muser}}
+          username: ${{secrets.MAIL_USERNAME}}
           # Optional (recommended) mail server password:
-          password: ${{secrets.mpass}}
+          password: ${{secrets.MAIL_PASSWORD}}
           # Required mail subject:
           subject: Verify your email address
           # Required recipients' addresses:
@@ -33,7 +31,7 @@ jobs:
           # Required sender full name (address can be skipped):
           from: "Meshery Cloud" # <user@example.com>
           # Optional whether this connection use TLS (default is true if server_port is 465)
-          secure: false
+          secure: true
           # Optional plain body:
           body: Verify your email. Follow the link below.
           # Optional carbon copy recipients:
@@ -41,7 +39,7 @@ jobs:
           # Optional blind carbon copy  recipients:
           # bcc: r2d2@example.com,hansolo@example.com
           # Optional recipient of the email response:
-          reply_to: noreply@layer5.io
+          reply_to: no-reply@layer5.io
           # Optional unsigned/invalid certificates allowance:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
