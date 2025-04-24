@@ -6,6 +6,7 @@ import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
 import GithubIcon from "../../assets/images/social-icons/github.svg";
 import CalendarIcon from "../../assets/images/social-icons/calendar.png";
 import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
+import BlueskyIcon from "../../assets/images/social-icons/bluesky.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/images/social-icons/twitter.svg";
 import FooterWrapper from "./Footer.styles";
 
@@ -185,6 +186,15 @@ const Footer = () => {
               >
                 <img src={LinkedinIcon} alt="Linkedin Icon" />
                 Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                className="category-link"
+                href="https://bsky.app/profile/mesheryio.bsky.social"
+              >
+                <img src={BlueskyIcon} alt="Bluesky Icon" />
+                Bluesky
               </a>
             </li>
           </ul>
