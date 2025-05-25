@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.8c03a602.css",
-    "main.js": "./static/js/main.861cb6c4.js",
-    "reactPlayerPreview.js": "./static/js/reactPlayerPreview.6aac79af.chunk.js",
+    "main.js": "./static/js/main.bed12132.js",
+    "reactPlayerPreview.js": "./static/js/reactPlayerPreview.d81bc12f.chunk.js",
     "static/js/453.dc8cd84b.chunk.js": "./static/js/453.dc8cd84b.chunk.js",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
@@ -27,20 +27,23 @@
     "static/media/QanelasSoftRegular.otf": "./static/media/QanelasSoftRegular.6917692db33119190d17.otf",
     "static/media/meshery-learn-logo.png": "./static/media/meshery-learn-logo.efec189ffa6454acfae6.png",
     "static/media/meshery-learn-logo-white.png": "./static/media/meshery-learn-logo-white.85d2969e66c4b80a3bf7.png",
+    "static/media/catalog-icon.svg": "./static/media/catalog-icon.4ff6ab96c947f78fe8a5ce6420bb2d34.svg",
     "index.html": "./index.html",
     "static/media/slack.svg": "./static/media/slack.0b6bfe903e2a0f132a35bc6b4af39f6f.svg",
     "static/media/docker.svg": "./static/media/docker.294e4ef13e8d16cc0812f421ada97a71.svg",
     "static/media/github.svg": "./static/media/github.4fc0796482288278ba7897731ea3a2d6.svg",
+    "static/media/academy-icon.svg": "./static/media/academy-icon.9f04769e231c44f738d2faf1fd5c052b.svg",
     "static/media/bluesky.svg": "./static/media/bluesky.7751722215904faa0c37692e1f92d870.svg",
     "static/media/youtube.svg": "./static/media/youtube.e5e6132f56bf262c7b7ce8b0fe25d38e.svg",
+    "static/media/book-icon.svg": "./static/media/book-icon.f5be5709c5d9a97f509369c2343cf04e.svg",
     "static/media/twitter.svg": "./static/media/twitter.6bc4fb9befbf0f89f4f6e7b7373efc67.svg",
     "main.8c03a602.css.map": "./static/css/main.8c03a602.css.map",
-    "main.861cb6c4.js.map": "./static/js/main.861cb6c4.js.map",
-    "reactPlayerPreview.6aac79af.chunk.js.map": "./static/js/reactPlayerPreview.6aac79af.chunk.js.map",
+    "main.bed12132.js.map": "./static/js/main.bed12132.js.map",
+    "reactPlayerPreview.d81bc12f.chunk.js.map": "./static/js/reactPlayerPreview.d81bc12f.chunk.js.map",
     "453.dc8cd84b.chunk.js.map": "./static/js/453.dc8cd84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c03a602.css",
-    "static/js/main.861cb6c4.js"
+    "static/js/main.bed12132.js"
   ]
 }
