@@ -117,18 +117,10 @@ const Footer = () => {
               </a>
             </li> */}
             <li>
-              <a className="category-link" href="https://badges.layer5.io">
+              <a className="category-link" href="https://meshery.io/community/badges">
                 Recognition Program
               </a>
             </li>
-            {/* <li>
-              <a
-                className="category-link"
-                href="https://layer5.io/community/members"
-              >
-                Community Members
-              </a>
-            </li> */}
             <li>
               <a className="category-link" href="https://meshery.io/calendar">
                 Community Events
@@ -138,14 +130,7 @@ const Footer = () => {
               <a className="category-link" href="https://meshery.io/subscribe">
                 Mailing Lists
               </a>
-            </li>
-            {/* <li>
-              <a
-                className="category-link"
-                href="https://layer5.io/service-mesh-landscape"
-              >Service Mesh Comparison
-              </a>
-            </li> */}
+            </li>https://meshery.io/community/badges
           </ul>
         </div>
         <div className="footer-links resources">
@@ -173,7 +158,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://www.youtube.com/Layer5io?sub_confirmation=1"
+                href="https://www.youtube.com/mesheryio?sub_confirmation=1"
               >
                 <img src={YoutubeIcon} alt="Youtube Icon" />
                 Youtube

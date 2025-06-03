@@ -228,7 +228,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                 <label htmlFor='privacy-statement' className='form-field-privacy'>
                   By clicking “submit”, you agree to Meshery's
                   <a
-                    href='https://cloud.layer5.io/legal/terms-of-service.html'
+                    href='#'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}
@@ -236,7 +236,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                   </a>
                   ,
                   <a
-                    href='https://cloud.layer5.io/legal/privacy-policy.html'
+                    href='#'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}

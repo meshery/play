@@ -14,10 +14,10 @@ labels:
   - name: issue/remind
     labeled:
       issue:
-        body: Checking in... it has been awhile since we&#39;ve heard from you on this issue. Are you still working on it? Please let us know and please don&#39;t hesitate to contact a [MeshMate](https://layer5.io/community/meshmates/) or any other [community member](https://layer5.io/community/members) for assistance.
+        body: Checking in... it has been awhile since we&#39;ve heard from you on this issue. Are you still working on it? Please let us know and please don&#39;t hesitate to contact a [MeshMate](https://meshery.io/community#meshmates/) or any other [community member](https://meshery.io/community/members) for assistance.
         action: open
       pr:
-        body: Checking in... it has been awhile since we&#39;ve heard from you on this issue. Are you still working on it? Please let us know and please don&#39;t hesitate to contact a [MeshMate](https://layer5.io/community/meshmates/) or any other [community member](https://layer5.io/community/members) for assistance.
+        body: Checking in... it has been awhile since we&#39;ve heard from you on this issue. Are you still working on it? Please let us know and please don&#39;t hesitate to contact a [MeshMate](https://meshery.io/community#meshmates/) or any other [community member](https://meshery.io/community/members) for assistance.
         action: open
   - name: issue/dco
     labeled:
@@ -34,10 +34,10 @@ labels:
   - name: component/ui
     labeled:
       issue:
-        body: This issue has been labeled with 'component/ui'. 🧰 Here are docs on [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui). 🎨 Here is the [Meshery UI Figma File](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshery-UI?node-id=4%3A0) File. Lastly, here are docs on [Contributing to Meshery's End-to-End Tests Using Cypress](https://docs.meshery.io/project/contributing/contributing-cypress).
+        body: This issue has been labeled with 'component/ui'. 🧰 Here are docs on [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui). 🎨 Here is the [Meshery UI Figma File](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshery-UI?node-id=4%3A0) File. Lastly, here are docs on [Contributing to Meshery's End-to-End Tests](https://docs.meshery.io/project/contributing/contributing-ui-tests).
         action: open
       pr:
-        body: This PR has been labeled with 'component/ui'. 🧰 Here are docs on [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui). 🎨 Here is the [Meshery UI Figma File](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshery-UI?node-id=4%3A0) File. Lastly, here are docs on [Contributing to Meshery's End-to-End Tests Using Cypress](https://docs.meshery.io/project/contributing/contributing-cypress)
+        body: This PR has been labeled with 'component/ui'. 🧰 Here are docs on [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui). 🎨 Here is the [Meshery UI Figma File](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshery-UI?node-id=4%3A0) File. Lastly, here are docs on [Contributing to Meshery's End-to-End Tests](https://docs.meshery.io/project/contributing/contributing-ui-tests).
         action: open
   - name: component/mesheryctl
     labeled:
@@ -50,3 +50,8 @@ labels:
       # pr:
       #   body: Hi, please note that this issue will need an approved design specification before implementation proceeds. See [Creating a Functional Specification](https://docs.google.com/document/d/1RP3IWLc-MiQS-QYasqCoVuCH7--G87p5ezE5f_nOzB8/edit?usp=sharing) to create a design spec.
       #   action: open
+  - name: issue/docs-needed
+    labeled:
+      pr:
+        body: This PR has been labeled with 'issue/docs-needed'. It looks like this PR might need an update to the Meshery Docs. Please ensure the documentation is updated accordingly. Here are docs on [Contributing to Meshery Docs](https://docs.meshery.io/project/contributing/contributing-docs).
+        action: open

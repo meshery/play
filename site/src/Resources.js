@@ -114,7 +114,7 @@ const ResourcesSection = () => {
             Learn how to use various cloud native tools with Meshery.
           </CardDescription>
           <Spacer />
-          <Button url="https://cloud.layer5.io/academy/overview"  style={{ color: "rgb(255,255,255)"}}>Get Started</Button>
+          <Button url="https://docs.meshery.io/guides/tutorials"  style={{ color: "rgb(255,255,255)"}}>Get Started</Button>
         </Card>
 
        
@@ -130,7 +130,7 @@ const ResourcesSection = () => {
           Reusable designs and templates for Cloud Native Infrastructure.
           </CardDescription>
           <Spacer />
-          <Button url="https://cloud.layer5.io/catalog" style={{ color: "rgb(255,255,255)"}}>Learn More</Button>
+          <Button url="https://meshery.io/catalog" style={{ color: "rgb(255,255,255)"}}>Learn More</Button>
         </Card>
       </CardGrid>
     </Container>
