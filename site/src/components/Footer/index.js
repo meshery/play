@@ -130,7 +130,7 @@ const Footer = () => {
               <a className="category-link" href="https://meshery.io/subscribe">
                 Mailing Lists
               </a>
-            </li>https://meshery.io/community/badges
+            </li>
           </ul>
         </div>
         <div className="footer-links resources">
