@@ -29,7 +29,7 @@ const Subheading = styled.p`
 
 
 const CardGrid = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
   gap: 2rem;
   
@@ -102,7 +102,7 @@ const ResourcesSection = () => {
           <Button url="https://docs.meshery.io/guides/tutorials" style={{ color: "rgb(255,255,255)" }}> Tutorials</Button>
         </Card>
 
-        <Card>
+        {/* <Card>
           <CardImageContainer>
             <CardImage 
               src={AcademyIcon}
@@ -115,7 +115,7 @@ const ResourcesSection = () => {
           </CardDescription>
           <Spacer />
           <Button url="https://docs.meshery.io/guides/tutorials"  style={{ color: "rgb(255,255,255)"}}>Get Started</Button>
-        </Card>
+        </Card> */}
 
        
         <Card>
