@@ -29,13 +29,12 @@ const Subheading = styled.p`
 
 
 const CardGrid = styled.div`
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  justify-content: center;
   
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
