@@ -32,6 +32,7 @@ const CardGrid = styled.div`
   display: flex;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-content: center;
   
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
