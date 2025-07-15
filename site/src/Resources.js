@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./reusecore/Button";
 import styled from "styled-components";
-import AcademyIcon from './assets/images/academy-icon.svg';
+// import AcademyIcon from './assets/images/academy-icon.svg';
 import CatalogIcon from './assets/images/catalog-icon.svg'
 import BookIcon from './assets/images/book-icon.svg'
 const Container = styled.div`
@@ -29,12 +29,14 @@ const Subheading = styled.p`
 
 
 const CardGrid = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-content: center;
   
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 `;
 
@@ -102,7 +104,7 @@ const ResourcesSection = () => {
           <Button url="https://docs.meshery.io/guides/tutorials" style={{ color: "rgb(255,255,255)" }}> Tutorials</Button>
         </Card>
 
-        <Card>
+        {/* <Card>
           <CardImageContainer>
             <CardImage 
               src={AcademyIcon}
@@ -115,7 +117,7 @@ const ResourcesSection = () => {
           </CardDescription>
           <Spacer />
           <Button url="https://docs.meshery.io/guides/tutorials"  style={{ color: "rgb(255,255,255)"}}>Get Started</Button>
-        </Card>
+        </Card> */}
 
        
         <Card>
