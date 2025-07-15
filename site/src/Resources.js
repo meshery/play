@@ -36,7 +36,6 @@ const CardGrid = styled.div`
   
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
   }
 `;
 
