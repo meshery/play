@@ -90,7 +90,7 @@ const SignupForm = ({ onSubmit }) => {
                 setErrorMessage(
                   `Use of ${values.email} is not allowed. Please use a non-anonymous email address / domain.
 
-The Meshery Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshery Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`
+the Cloud Native Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Cloud Native Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`
                 );
               } else if (!values.role) {
                 setFormValidations(true);
@@ -267,7 +267,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
         <div className='thankyou-box'>
           <h2>Thank you for your interest in Meshery Playground early access program!</h2>
           <p>
-            You are now signed up for the Meshery Playground early access program and your position
+            You are now signed up for the Cloud Native Playground early access program and your position
             on the waiting list is confirmed. Please wait patiently for a response from the Meshery
             team.
           </p>

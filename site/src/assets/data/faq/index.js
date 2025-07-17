@@ -21,7 +21,7 @@ const data = {
       answer: `
 - The Playground is connected to live Kubernetes clusters, and while these clusters are refreshed on a daily basis, the clusters do need to be protected from nefarious actors, who might use these clusters for cryptomining, for example.
 - Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.
-- The Meshery Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshery Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts.
+- the Cloud Native Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Cloud Native Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts.
     `,
     },
     {
@@ -29,7 +29,7 @@ const data = {
         "Will I lose my Meshery designs in the Cloud Native Playground?",
       category: "Meshery Playground",
       answer: `
-- No, all of the designs that you have created in the Meshery Playground are saved to your user account and will be available to you each time that you sign into your account. Your designs will be available in the Meshery Playground and any your other Meshery deployments, too.
+- No, all of the designs that you have created in the Cloud Native Playground are saved to your user account and will be available to you each time that you sign into your account. Your designs will be available in the Cloud Native Playground and any your other Meshery deployments, too.
 - In other words, all work done in Kanvas Designer is persisted to your user account.
       `,
     },
@@ -38,7 +38,7 @@ const data = {
         "Will I lose my Meshery deployments in the Cloud Native Playground?",
       category: "Meshery Playground",
       answer: `
-- Yes, the Meshery Playground clusters are reset on a daily basis. However, only deployments (not designs) that you may have created will be lost.
+- Yes, the Cloud Native Playground clusters are reset on a daily basis. However, only deployments (not designs) that you may have created will be lost.
 - In other words, only Kanvas Visualizer is reset. All of your work in Meshery UI and Kanvas Designer will remain in your user account.
       `,
     },
@@ -60,10 +60,10 @@ const data = {
     // },
     {
       question:
-        "Are designs that I create in the Meshery Playground saved or will I lose any work that I do in the playground?",
+        "Are designs that I create in the Cloud Native Playground saved or will I lose any work that I do in the playground?",
       category: "Meshery Playground",
       answer: `
-- Yes, all of the designs that you have created in the Meshery Playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.
+- Yes, all of the designs that you have created in the Cloud Native Playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.
       `,
     },
 //     {
@@ -78,7 +78,7 @@ const data = {
 //     },
     {
       question:
-        "When I add my Kubernetes cluster to the Meshery Playground will it be available to all other users? Can other people access my cluster?",
+        "When I add my Kubernetes cluster to the Cloud Native Playground will it be available to all other users? Can other people access my cluster?",
       category: "Meshery Playground",
       answer: `
 No, they can't, unless you explicitly allow them to do so. It's important to understand the following controls and system behavior:
