@@ -19,7 +19,7 @@ const VendorSelection = () => {
 
   return (
     <VendorSelectionWrapper>
-      <h2>Choose Your Playground Vendor</h2>
+      <h2>Choose Your Playground Provider</h2>
       <div className="vendors-grid">
         {vendors.map((vendor, index) => (
           <VendorCard key={vendor.name} available={vendor.available}>
@@ -49,14 +49,14 @@ const VendorSelection = () => {
 
         <AddYourOwnCard>
           <div className="add-your-own-content">
-            <h3>Custom</h3>
-            <p>Bring your own vendor-hosted Meshery Playground</p>
+            <h3>Other</h3>
+            <p><i>Learn about Providers</i></p>
             <a
               href="https://docs.meshery.io/extensibility/providers"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="add-btn">+ Add Your Own Vendor</Button>
+              <Button className="add-btn">+ Add your Playground here</Button>
             </a>
           </div>
         </AddYourOwnCard>

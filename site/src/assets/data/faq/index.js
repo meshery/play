@@ -16,29 +16,29 @@ const data = {
 
     {
       question:
-        "Why do I need to sign-up/register to use the Cloud Native Playground?",
+        "Why do I need to sign-up/register to use a hosted playground?",
       category: "Meshery Playground",
       answer: `
 - The Playground is connected to live Kubernetes clusters, and while these clusters are refreshed on a daily basis, the clusters do need to be protected from nefarious actors, who might use these clusters for cryptomining, for example.
 - Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.
-- the Cloud Native Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Cloud Native Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts.
+- a hosted playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, a hosted playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts.
     `,
     },
     {
       question:
-        "Will I lose my Meshery designs in the Cloud Native Playground?",
+        "Will I lose my Meshery designs in a hosted playground?",
       category: "Meshery Playground",
       answer: `
-- No, all of the designs that you have created in the Cloud Native Playground are saved to your user account and will be available to you each time that you sign into your account. Your designs will be available in the Cloud Native Playground and any your other Meshery deployments, too.
+- No, all of the designs that you have created in the hosted playground are saved to your user account and will be available to you each time that you sign into your account. Your designs will be available in the hosted playground and any your other Meshery deployments, too.
 - In other words, all work done in Kanvas Designer is persisted to your user account.
       `,
     },
     {
       question:
-        "Will I lose my Meshery deployments in the Cloud Native Playground?",
+        "Will I lose my Meshery deployments in a hosted playground?",
       category: "Meshery Playground",
       answer: `
-- Yes, the Cloud Native Playground clusters are reset on a daily basis. However, only deployments (not designs) that you may have created will be lost.
+- Yes, the hosted playground clusters are reset on a daily basis. However, only deployments (not designs) that you may have created will be lost.
 - In other words, only Kanvas Visualizer is reset. All of your work in Meshery UI and Kanvas Designer will remain in your user account.
       `,
     },
@@ -51,19 +51,19 @@ const data = {
 //       `,
 //     },
     // {
-    //     question: "What is the difference between the Cloud Native Playground and Kanvas?",
+    //     question: "What is the difference between a hosted playground and Kanvas?",
     //     category: "Meshery Playground",
     //     answer: [
-    //         "The Cloud Native Playground (aka Meshery Playground) is a managed instance of Meshery that offers a sandbox environment in which half of Kanvas functionality is enabled (Designer mode) and the other half of Kanvas functionality is disabled (Visualizer mode).",
+    //         "a hosted playground (aka Meshery Playground) is a managed instance of Meshery that offers a sandbox environment in which half of Kanvas functionality is enabled (Designer mode) and the other half of Kanvas functionality is disabled (Visualizer mode).",
     //         "The sandbox environment is not connected to an active Kuberentes cluster, and as such, depending upon which Meshery Playgrouns environment you use specific actions within Kanvas Designer are also disabled. Meshery and Kanvas are feature-rich, sophisticated management applications for cloud native infrastructure. To access their full set of capabilities, simply deploy your own copy of Meshery into the environment of your choosing.",
     //     ],
     // },
     {
       question:
-        "Are designs that I create in the Cloud Native Playground saved or will I lose any work that I do in the playground?",
+        "Are designs that I create in a hosted playground saved or will I lose any work that I do in the playground?",
       category: "Meshery Playground",
       answer: `
-- Yes, all of the designs that you have created in the Cloud Native Playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.
+- Yes, all of the designs that you have created in a hosted playground are saved to your user account and will be available to you each time that you return to the Playground. The designs will also be available in your other Meshery deployments.
       `,
     },
 //     {
@@ -78,7 +78,7 @@ const data = {
 //     },
     {
       question:
-        "When I add my Kubernetes cluster to the Cloud Native Playground will it be available to all other users? Can other people access my cluster?",
+        "When I add my Kubernetes cluster to a hosted playground will it be available to all other users? Can other people access my cluster?",
       category: "Meshery Playground",
       answer: `
 No, they can't, unless you explicitly allow them to do so. It's important to understand the following controls and system behavior:
