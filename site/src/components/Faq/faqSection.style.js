@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const FaqSectionWrapper = styled.section`
   margin: 0.5rem auto;
@@ -17,10 +17,9 @@ const FaqSectionWrapper = styled.section`
     border-color: transparent;
   }
   .reusecore__accordion {
-    margin-bottom: 5rem;
     overflow: scroll;
     &::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
   }
   .accordion__item {
