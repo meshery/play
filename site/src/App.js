@@ -39,7 +39,7 @@ const App = () => {
         />
         <Main>
           <section className="hero">
-            <h1>A Cloud Native Playground</h1>
+            <h1>The Cloud Native Playground</h1>
             <p className="desc-text">
               Explore the Cloud Native Computing Foundation's graduated,
               incubation, and sandbox projects as well as many other popular
