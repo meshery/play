@@ -69,7 +69,7 @@ const App = () => {
                 <Button className="close-modal-btn" onClick={closeModal}>
                   &times;
                 </Button>
-                <div class="content">
+                <div className="content">
                   <Faq
                     category={[
                       "Cloud Native Playgrounds",

@@ -22,7 +22,7 @@ const VendorSelection = () => {
       <h2>Choose Your Playground Vendor</h2>
       <div className="vendors-grid">
         {vendors.map((vendor, index) => (
-          <VendorCard key={index} available={vendor.available}>
+          <VendorCard key={vendor.name} available={vendor.available}>
             <div className="vendor-info">
               <h3>{vendor.name}</h3>
               <p>{vendor.description}</p>
@@ -35,7 +35,7 @@ const VendorSelection = () => {
                     style={{ background: "rgb(235, 192, 23)" }}
                   >
                     <ArrowIcon />
-                    Open {vendor.name} Playground
+                    Launch Playground
                   </Button>
                 </a>
               ) : (
