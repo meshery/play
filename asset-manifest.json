@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.8c03a602.css",
-    "main.js": "./static/js/main.d5c42f4f.js",
-    "reactPlayerPreview.js": "./static/js/reactPlayerPreview.6aac79af.chunk.js",
-    "static/js/453.dc8cd84b.chunk.js": "./static/js/453.dc8cd84b.chunk.js",
+    "main.js": "./static/js/main.42fc18c9.js",
+    "reactPlayerPreview.js": "./static/js/reactPlayerPreview.495307d9.chunk.js",
+    "static/js/453.958a5677.chunk.js": "./static/js/453.958a5677.chunk.js",
     "static/media/QanelasSoftBlackItalic.otf": "./static/media/QanelasSoftBlackItalic.bc806bf9672b5e5c6169.otf",
     "static/media/QanelasSoftMediumItalic.otf": "./static/media/QanelasSoftMediumItalic.9bf3c3b0d52e48a90e0d.otf",
     "static/media/QanelasSoftBoldItalic.otf": "./static/media/QanelasSoftBoldItalic.52c37ed9cc5710337d41.otf",
@@ -37,12 +37,12 @@
     "static/media/book-icon.svg": "./static/media/book-icon.f5be5709c5d9a97f509369c2343cf04e.svg",
     "static/media/twitter.svg": "./static/media/twitter.6bc4fb9befbf0f89f4f6e7b7373efc67.svg",
     "main.8c03a602.css.map": "./static/css/main.8c03a602.css.map",
-    "main.d5c42f4f.js.map": "./static/js/main.d5c42f4f.js.map",
-    "reactPlayerPreview.6aac79af.chunk.js.map": "./static/js/reactPlayerPreview.6aac79af.chunk.js.map",
-    "453.dc8cd84b.chunk.js.map": "./static/js/453.dc8cd84b.chunk.js.map"
+    "main.42fc18c9.js.map": "./static/js/main.42fc18c9.js.map",
+    "reactPlayerPreview.495307d9.chunk.js.map": "./static/js/reactPlayerPreview.495307d9.chunk.js.map",
+    "453.958a5677.chunk.js.map": "./static/js/453.958a5677.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c03a602.css",
-    "static/js/main.d5c42f4f.js"
+    "static/js/main.42fc18c9.js"
   ]
 }
