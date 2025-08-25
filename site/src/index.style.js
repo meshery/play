@@ -20,14 +20,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 20px;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    max-width: 50rem;
+    max-width: 85%;
     max-height: 80vh;
     overflow-y: auto;
     &::-webkit-scrollbar {
         display: none;
     }
     @media (max-width: 59rem) {
-      max-width: 80vw;
+      max-width: 85%;
     }
     .close-modal-btn {
       min-width: 2rem;

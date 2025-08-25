@@ -46,7 +46,7 @@ const VendorSelection = () => {
     {
       name: "GCP",
       description:
-        "Host your own Meshery Playground on Google Cloud Platform (GKE)",
+        "Host your own Meshery Playground on GCP (GKE)",
       url: "https://docs.meshery.io/installation/kubernetes/gke",
       logo: null, // We can add logos later
       available: true,
@@ -66,8 +66,8 @@ const VendorSelection = () => {
   return (
     <VendorSelectionWrapper>
       <div>
-        <h2 style={{ marginTop: "3rem" }}>Hosted Playgrounds</h2>
-        <div className="vendors-grid">
+        <h2>Hosted Playgrounds</h2>
+        <div className="hosted-grid">
           {vendors.map((vendor, index) => (
             
               vendor.hosting === "hosted" && (
@@ -105,11 +105,25 @@ const VendorSelection = () => {
                 </VendorCard>
                 </div>
               )
-          
           ))}
+          <AddYourOwnCard>
+            <div className="add-your-own-content">
+              {/* <h3>Other</h3> */}
+              <p>
+                <i>Have a hosted playground to list?</i>
+              </p>
+              <a
+                href="https://docs.meshery.io/extensibility/providers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="add-btn">+ Add your Playground here</Button>
+              </a>
+            </div>
+          </AddYourOwnCard>
         </div>
 
-        <h2 style={{ marginTop: "3rem" }}>Self-Hosted Playgrounds</h2>
+        <h2>Self-Hosted Playgrounds</h2>
         <div className="vendors-grid">
           {vendors.map((vendor, index) => (
             
@@ -150,11 +164,11 @@ const VendorSelection = () => {
               )
             
           ))}
-          <AddYourOwnCard style={{marginTop: "3rem"}}>
+          <AddYourOwnCard>
             <div className="add-your-own-content">
               {/* <h3>Other</h3> */}
               <p>
-                <i>Have a provider to list?</i>
+                <i>Have a self-hosted playground to list?</i>
               </p>
               <a
                 href="https://docs.meshery.io/extensibility/providers"

@@ -48,12 +48,7 @@ const Faq = (props) => {
       <Accordion allowMultipleExpanded="true" allowZeroExpanded="true">
         {faq_keys.map((key) => (
           <>
-            <h2
-              className="category_name"
-              style={{ paddingBottom: 25, textAlign: "center", fontSize: "1.5rem", fontWeight: "normal" }}
-            >
-              You are about to access Meshery Playground...
-            </h2>
+            <h2>FAQs</h2>
             {faqs[key].map((faq, index) => (
               <AccordionItem key={index}>
                 <AccordionTitle>
