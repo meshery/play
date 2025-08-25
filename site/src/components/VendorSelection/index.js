@@ -41,7 +41,16 @@ const VendorSelection = () => {
         "Host your own Meshery Playground on Google Cloud Platform (GKE)",
       url: "https://docs.meshery.io/installation/kubernetes/gke",
       logo: null, // We can add logos later
-      available: false,
+      available: true,
+      hosting: "self-hosted",
+    },
+    {
+      name: "Azure",
+      description:
+        "Host your own Meshery Playground on Microsoft Azure",
+      url: "https://docs.meshery.io/installation/kubernetes/aks",
+      logo: null, // We can add logos later
+      available: true,
       hosting: "self-hosted",
     },
   ];
