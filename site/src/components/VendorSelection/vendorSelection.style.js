@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const VendorSelectionWrapper = styled.div`
   padding: 1rem;
   text-align: center;
+  align-items: center;
 
   h2 {
     margin-bottom: 1rem;
@@ -18,8 +19,14 @@ export const VendorSelectionWrapper = styled.div`
   }
 
   .vendors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-bottom: 1rem;
   }
@@ -47,6 +54,7 @@ export const VendorCard = styled.div`
   border-radius: 12px;
   padding: 0.5rem;
   display: flex;
+  width: 300px;
   flex-direction: column;
   transition: all 0.3s ease;
   opacity: ${(props) => (props.available ? 1 : 0.7)};
@@ -85,17 +93,28 @@ export const VendorCard = styled.div`
         color: rgba(128, 128, 128, 0.7) !important;
         cursor: not-allowed;
       }
-
-      &:not(.disabled):hover {
-        background: rgba(255, 208, 25, 0.9) !important;
-        transform: translateY(-1px);
+      &.hosted {
+        background: rgb(235, 192, 23);
+        &:not(.disabled):hover {
+          background: rgba(0, 179, 159 0.9) !important;
+          transform: translateY(-1px);
+        }
+      }
+      &.self-hosted {
+        background: rgb(0, 179, 159);
+        &:not(.disabled):hover {
+          background: rgba(255, 208, 25, 0.9) !important;
+          transform: translateY(-1px);
+        }
       }
     }
+    
 
     a {
       text-decoration: none;
       display: block;
     }
+
   }
 `;
 
