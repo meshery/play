@@ -25,10 +25,9 @@ export const VendorSelectionWrapper = styled.div`
   
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
   }
 
   .disclaimer {

@@ -6,13 +6,12 @@ import {
   AddYourOwnCard,
 } from "./vendorSelection.style";
 
-
 // Meshery Extension Point
 // This component serves as a point of extension for adding new playground providers.
 // Add your provider by including it in the vendors array below.
 const VendorSelection = () => {
   const vendors = [
-        {
+    {
       name: "ID10",
       description: "Meshery Playground hosted by ID10",
       url: "https://id10.playground.meshery.io",
@@ -38,7 +37,8 @@ const VendorSelection = () => {
     },
     {
       name: "GCP",
-      description: "Host your own Meshery Playground on Google Cloud Platform (GKE)",
+      description:
+        "Host your own Meshery Playground on Google Cloud Platform (GKE)",
       url: "https://docs.meshery.io/installation/kubernetes/gke",
       logo: null, // We can add logos later
       available: false,
@@ -48,95 +48,108 @@ const VendorSelection = () => {
 
   return (
     <VendorSelectionWrapper>
-    <div>
-      <h2 style={{ marginTop: "3rem" }}>Hosted Playgrounds</h2>
+      <div>
+        <h2 style={{ marginTop: "3rem" }}>Hosted Playgrounds</h2>
         <div className="vendors-grid">
-        {vendors.map((vendor, index) => (
-          <div>
-          {vendor.hosting === "hosted" && (
-          <VendorCard key={vendor.name} available={vendor.available}>
-            <div className="vendor-info">
-              <p>{vendor.description}</p>
-            </div>
-            <div className="vendor-action">
-              {vendor.available ? (
-                <a href={vendor.url} target="_blank" rel="noopener noreferrer">
-                  <Button
-                    className={vendor.hosting === "hosted" ? "vendor-btn hosted" : "vendor-btn self-hosted"}
-                  >
-                    <ArrowIcon />
-                    {vendor.hosting === "hosted" ? "Launch Playground" : "Install Playground"}
-                  </Button>
-                </a>
-              ) : (
-                <Button className="vendor-btn disabled" disabled>
-                  Coming Soon
-                </Button>
-              )}
-            </div>
-          </VendorCard>       
-        )}
-        </div>
+          {vendors.map((vendor, index) => (
+            
+              vendor.hosting === "hosted" && (
+                <div>
+                <VendorCard key={vendor.name} available={vendor.available}>
+                  <div className="vendor-info">
+                    <p>{vendor.description}</p>
+                  </div>
+                  <div className="vendor-action">
+                    {vendor.available ? (
+                      <a
+                        href={vendor.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={
+                            vendor.hosting === "hosted"
+                              ? "vendor-btn hosted"
+                              : "vendor-btn self-hosted"
+                          }
+                        >
+                          <ArrowIcon />
+                          {vendor.hosting === "hosted"
+                            ? "Launch Playground"
+                            : "Install Playground"}
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button className="vendor-btn disabled" disabled>
+                        Coming Soon
+                      </Button>
+                    )}
+                  </div>
+                </VendorCard>
+                </div>
+              )
+          
           ))}
-          <AddYourOwnCard>
-          <div className="add-your-own-content">
-            {/* <h3>Other</h3> */}
-            <p><i>Have a provider to list?</i></p>
-            <a
-              href="https://docs.meshery.io/extensibility/providers"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="add-btn">+ Add your Playground here</Button>
-            </a>
-          </div>
-        </AddYourOwnCard>
-      </div>
+        </div>
 
-      <h2 style={{ marginTop: "3rem" }}>Self-Hosted Playgrounds</h2>
-      <div className="vendors-grid">
-        {vendors.map((vendor, index) => (
-          <div>
-          {vendor.hosting === "self-hosted" && (
-          <VendorCard key={vendor.name} available={vendor.available}>
-            <div className="vendor-info">
-              <p>{vendor.description}</p>
+        <h2 style={{ marginTop: "3rem" }}>Self-Hosted Playgrounds</h2>
+        <div className="vendors-grid">
+          {vendors.map((vendor, index) => (
+            
+              vendor.hosting === "self-hosted" && (
+                <div>
+                <VendorCard key={vendor.name} available={vendor.available}>
+                  <div className="vendor-info">
+                    <p>{vendor.description}</p>
+                  </div>
+                  <div className="vendor-action">
+                    {vendor.available ? (
+                      <a
+                        href={vendor.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={
+                            vendor.hosting === "hosted"
+                              ? "vendor-btn hosted"
+                              : "vendor-btn self-hosted"
+                          }
+                        >
+                          <ArrowIcon />
+                          {vendor.hosting === "hosted"
+                            ? "Launch Playground"
+                            : "Install Playground"}
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button className="vendor-btn disabled" disabled>
+                        Coming Soon
+                      </Button>
+                    )}
+                  </div>
+                </VendorCard>
+                </div>
+              )
+            
+          ))}
+          <AddYourOwnCard style={{marginTop: "3rem"}}>
+            <div className="add-your-own-content">
+              {/* <h3>Other</h3> */}
+              <p>
+                <i>Have a provider to list?</i>
+              </p>
+              <a
+                href="https://docs.meshery.io/extensibility/providers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="add-btn">+ Add your Playground here</Button>
+              </a>
             </div>
-            <div className="vendor-action">
-              {vendor.available ? (
-                <a href={vendor.url} target="_blank" rel="noopener noreferrer">
-                  <Button
-                    className={vendor.hosting === "hosted" ? "vendor-btn hosted" : "vendor-btn self-hosted"}
-                  >
-                    <ArrowIcon />
-                    {vendor.hosting === "hosted" ? "Launch Playground" : "Install Playground"}
-                  </Button>
-                </a>
-              ) : (
-                <Button className="vendor-btn disabled" disabled>
-                  Coming Soon
-                </Button>
-              )}
-            </div>
-          </VendorCard>
-        )}
+          </AddYourOwnCard>
+        </div>
       </div>
-    ))}
-    <AddYourOwnCard>
-      <div className="add-your-own-content">
-        {/* <h3>Other</h3> */}
-            <p><i>Have a provider to list?</i></p>
-            <a
-              href="https://docs.meshery.io/extensibility/providers"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="add-btn">+ Add your Playground here</Button>
-            </a>
-          </div>
-        </AddYourOwnCard>
-      </div>
-    </div>
     </VendorSelectionWrapper>
   );
 };
