@@ -12,6 +12,14 @@ import {
 const VendorSelection = () => {
   const vendors = [
     {
+      name: "DigitalOcean",
+      description: "Meshery Playground hosted by DigitalOcean",
+      url: "https://do.playground.meshery.io",
+      logo: null, // We can add logos later
+      available: false,
+      hosting: "hosted",
+    },
+    {
       name: "ID10",
       description: "Meshery Playground hosted by ID10",
       url: "https://id10.playground.meshery.io",
