@@ -9,6 +9,7 @@ export const VendorSelectionWrapper = styled.div`
     margin-bottom: 1rem;
     color: ${(props) => props.theme.text};
     font-size: 1.8rem;
+    margin-top: 3rem;
   }
 
   .selection-description {
@@ -18,11 +19,26 @@ export const VendorSelectionWrapper = styled.div`
     opacity: 0.8;
   }
 
+  .hosted-grid {
+    background: rgba(255, 208, 25, 0.1);
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+  }
   .vendors-grid {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
-  
+    padding: 1rem;
+    
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,7 +69,9 @@ export const VendorCard = styled.div`
   border-radius: 12px;
   padding: 0.5rem;
   display: flex;
-  width: 300px;
+  width: 315px;
+  justify-content: center;
+  min-height: 105px;
   flex-direction: column;
   transition: all 0.3s ease;
   opacity: ${(props) => (props.available ? 1 : 0.7)};
@@ -93,7 +111,7 @@ export const VendorCard = styled.div`
         cursor: not-allowed;
       }
       &.hosted {
-        background: rgb(235, 192, 23);
+        background: rgb(0, 179, 159);
         &:not(.disabled):hover {
           background: rgba(0, 179, 159 0.9) !important;
           transform: translateY(-1px);
@@ -126,11 +144,14 @@ export const AddYourOwnCard = styled.div`
   border: 2px dashed rgb(0, 179, 159);
   border-radius: 12px;
   padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
+  width: 315px;
   justify-content: center;
+  min-height: 105px;
+  display: flex;
   align-items: center;
   transition: all 0.3s ease;
+  justify-content: center;
+  min-height: 105px;
 
   &:hover {
     transform: translateY(-2px);

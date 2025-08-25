@@ -8,6 +8,15 @@ const FaqSectionWrapper = styled.section`
     display: none;
   }
 
+  h2 {
+    margin-bottom: 1rem;
+    color: ${(props) => props.theme.text};
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
   .category_name {
     margin: 0.5rem 0 0.5rem;
     font-style: italic;

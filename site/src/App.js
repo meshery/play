@@ -65,18 +65,32 @@ const App = () => {
                 overlayClassName="Overlay"
                 ariaHideApp={false}
                 contentLabel="Playground Selection"
+                width="2000px"
               >
                 <Button className="close-modal-btn" onClick={closeModal}>
                   &times;
                 </Button>
                 <div className="content">
+                  <h2
+                    className="category_name"
+                    style={{
+                      paddingBottom: 0,
+                      marginBottom: 0,
+                      textAlign: "center",
+                      fontSize: "1.5rem",
+                      fontWeight: "normal",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    You are about to access a Meshery Playground...
+                  </h2>
+                  <VendorSelection />
                   <Faq
                     category={[
                       "Cloud Native Playgrounds",
                       "Meshery Playground",
                     ]}
                   />
-                  <VendorSelection />
                 </div>
               </Modal>
             </div>
