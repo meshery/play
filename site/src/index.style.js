@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-right: -50%;
     transform: translate(-50%, -50%);
     max-width: 85%;
+    width:100%;
     max-height: 80vh;
     overflow-y: auto;
     &::-webkit-scrollbar {
