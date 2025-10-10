@@ -9,7 +9,7 @@ const DiscussCallout = () => {
       <div className="explain">
         <div className="cards">
           <div className="card">
-            <a href="https://discuss.layer5.io/">
+            <a href="https://discuss.layer5.io/" target="_blank" rel="noopener noreferrer">
               <div className="parentcard">
                 <div className="section-title">
                   <h2>Join the Conversation</h2>
