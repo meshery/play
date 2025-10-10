@@ -20,13 +20,18 @@ export const GlobalStyle = createGlobalStyle`
     padding: 20px;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    width: 85%;
+    height: 80vh;
     max-width: 85%;
     max-height: 80vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     &::-webkit-scrollbar {
         display: none;
     }
     @media (max-width: 59rem) {
+      width: 85%;
       max-width: 85%;
     }
     .close-modal-btn {
@@ -38,11 +43,22 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 5px;
       height: 2rem;
       padding: 0.25rem;
-      position: fixed;
+      position: absolute;
       right: 0.5rem;
       top: 0.75rem;
       font-size: 2.3rem;
       line-height: 1;
+      flex-shrink: 0;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      flex: 1;
+      h2 {
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
   .Overlay {

@@ -3,7 +3,8 @@ import styled from "styled-components";
 const FaqSectionWrapper = styled.section`
   margin: 0.5rem auto;
   position: relative;
-  overflow: scroll;
+  flex: 1;
+  min-height: 0;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -26,10 +27,7 @@ const FaqSectionWrapper = styled.section`
     border-color: transparent;
   }
   .reusecore__accordion {
-    overflow: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    overflow: visible;
   }
   .accordion__item {
     .accordion__header {

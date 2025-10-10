@@ -45,7 +45,7 @@ const Faq = (props) => {
 
   return (
     <FaqSectionWrapper>
-      <Accordion allowMultipleExpanded="true" allowZeroExpanded="true">
+      <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
         {faq_keys.map((key) => (
           <>
             <h2>FAQs</h2>
