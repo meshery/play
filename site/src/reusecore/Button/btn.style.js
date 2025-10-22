@@ -17,15 +17,15 @@ const ButtonStyle = styled.button`
     position: relative;
     color: ${props => props.theme.white };
     background-color: #00B39F;
-    // z-index: 999;
+    z-index: 999;
     &:hover,
     &:focus {
         color: white;
         background: ${props => props.theme.activeColor}; 
-        box-shadow: 0 2px 10px ${props => props.theme.DarkTheme ? "rgb(255 255 255 / 40%)" : "rgb(0 0 0 / 40%)"};
+        box-shadow: 0 2px 10px ${props => props.theme.whiteFourToBlackFour};
     }
     &:active{
-        box-shadow: 0 2px 10px ${props => props.theme.DarkTheme ? "rgb(0 0 0 / 40%)" : "rgb(255 255 255 / 40%)"};
+        box-shadow: 0 2px 10px ${props => props.theme.blackFourToWhiteFour};
         transform: scale(0.98);
     }
     .icon-left{
@@ -35,33 +35,48 @@ const ButtonStyle = styled.button`
         margin-left: 8px;
     }
 
-    ${props => props.primary && css`
-        color: ${props => props.theme.black};
+    ${props => props.$outlined && css`
+        background: transparent;
+        border: 2px solid ${props => props.theme.whiteToBlack};
+        color: ${props => props.theme.whiteToBlack};
+        &:hover{
+            box-shadow: 0 2px 10px ${props.theme.whiteFourToBlackFour};
+        }
+        &:active{
+            background: ${props => props.theme.lightGrey};
+            box-shadow: 0 2px 10px ${props.theme.blackFourToWhiteFour};
+            transform: scale(0.98);
+        }
+    `}
+
+
+    ${props => props.$primary && css`
+        color: ${props => props.theme.white};
         background: ${props => props.theme.highlightColor};
 
         &:hover{
             color: ${props.theme.black};
             background: ${props.theme.highlightColor}; 
-            box-shadow: 0 2px 10px ${props.theme.DarkTheme ? "rgb(255 255 255 / 40%)" : "rgb(0 0 0 / 40%)"};
+            box-shadow: 0 2px 10px ${props.theme.whiteFourToBlackFour};
         }
         &:active{
             background: ${props => props.theme.saffronColor};
-            box-shadow: 0 2px 10px ${props.theme.DarkTheme ? "rgb(0 0 0 / 40%)" : "rgb(255 255 255 / 40%)"};
+            box-shadow: 0 2px 10px ${props.theme.blackFourToWhiteFour};
             transform: scale(0.98);
         }
         
     `}
-    ${props => props.secondary && css`
+    ${props => props.$secondary && css`
         color: white; 
         background: ${props.theme.secondaryColor}; 
         &:hover{
             background: ${props.theme.caribbeanGreenColor};
-            box-shadow: 0 2px 10px ${props.theme.DarkTheme ? "rgb(255 255 255 / 40%)" : "rgb(0 0 0 / 40%)"};
+            box-shadow: 0 2px 10px ${props.theme.whiteFourToBlackFour};
         }
         &:active{
             color: #326d62;
             background: ${props.theme.secondaryColor};
-            box-shadow: 0 2px 10px ${props.theme.DarkTheme ? "rgb(0 0 0 / 40%)" : "rgb(255 255 255 / 40%)"};
+            box-shadow: 0 2px 10px ${props.theme.blackFourToWhiteFour};
             transform: scale(0.98);
         }
     `}
