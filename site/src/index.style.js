@@ -11,23 +11,17 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 .Modal {
-    position: fixed;
-    inset: 50% auto auto 50%;
-    border: 1px solid rgb(204, 204, 204);
     background: ${(props) => props.theme.body};
-    border-radius: 0.5rem;
     outline: none;
-    padding: 20px;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    max-width: 85%;
-    max-height: 80vh;
-    overflow-y: auto;
-    &::-webkit-scrollbar {
-        display: none;
-    }
     @media (max-width: 59rem) {
       max-width: 85%;
+    }
+    .content {
+      height: 100%;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     .close-modal-btn {
       min-width: 2rem;
