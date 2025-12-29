@@ -4,7 +4,7 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   background: #fff;
-  z-index: 9999;
+  z-index: ${({ theme }) => theme.zIndex.navbar};
 
 
   .dropdown_btn {
