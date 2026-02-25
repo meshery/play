@@ -1,6 +1,6 @@
 import React from "react";
 import DiscussWrapper from "./discuss.style";
-
+import { DISCUSS_FORUM_URL } from "../../constants/links";
 import Discuss from "../../assets/images/meshery-learn-logo-white.png";
 
 const DiscussCallout = () => {
@@ -9,7 +9,7 @@ const DiscussCallout = () => {
       <div className="explain">
         <div className="cards">
           <div className="card">
-            <a href="http://discuss.meshery.io/" target="_blank" rel="noreferrer">
+            <a href={DISCUSS_FORUM_URL} target="_blank" rel="noopener noreferrer">
               <div className="parentcard">
                 <div className="section-title">
                   <h2>Join the Conversation</h2>

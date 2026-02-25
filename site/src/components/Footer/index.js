@@ -9,6 +9,7 @@ import LinkedinIcon from "../../assets/images/social-icons/linkedin.png";
 import BlueskyIcon from "../../assets/images/social-icons/bluesky.svg";
 import { ReactComponent as TwitterLogo } from "../../assets/images/social-icons/twitter.svg";
 import FooterWrapper from "./Footer.styles";
+import { DISCUSS_FORUM_URL } from "../../constants/links";
 
 const Footer = () => {
   return (
@@ -105,7 +106,7 @@ const Footer = () => {
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="http://discuss.meshery.io/">
+              <a className="category-link" href={DISCUSS_FORUM_URL}>
                 Discussion Forum
               </a>
             </li>
