@@ -105,7 +105,7 @@ const Footer = () => {
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="http://discuss.meshery.io/">
+              <a className="category-link" href="https://discuss.layer5.io/">
                 Discussion Forum
               </a>
             </li>
