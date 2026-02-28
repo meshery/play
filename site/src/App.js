@@ -65,7 +65,6 @@ const App = () => {
                 overlayClassName="Overlay"
                 ariaHideApp={false}
                 contentLabel="Playground Selection"
-                width="2000px"
               >
                 <Button className="close-modal-btn" onClick={closeModal}>
                   &times;
