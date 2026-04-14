@@ -1,22 +1,47 @@
 name: Build and Deploy Site
+
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'site/**'
+      - 'Makefile'
+      - 'CNAME'
+      - '.github/workflows/build-and-deploy-site.yml'
+      - '.github/workflows/build-and-preview-site.yml'
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3.5.3
-      - name: Install and Build 🔧 
-        run: |
-          make setup-libs
-          make build
+      - name: Checkout site source
+        uses: actions/checkout@v6
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          branch: site # The branch the action should deploy to.
-          folder: site/build # The folder the action should deploy.
-          clean: true
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install and Build
+        run: |
+          make setup
+          make build
+          cp CNAME site/build/CNAME
+          touch site/build/.nojekyll
+
+      - name: Deploy site
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site/build
+          keep_files: true
