@@ -124,7 +124,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                 style={{ display: `${dropDown ? "block" : "none"}` }}
               >
                 <a
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="drop-item"
                   href={`https://cloud.layer5.io/user/${userData.id}`}
@@ -132,7 +132,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   <CloudIcon /> Cloud
                 </a>
                 <a
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="drop-item"
                   href="https://playground.meshery.io"
@@ -148,7 +148,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                     // Refresh the current page
                     window.location.reload();
                   }}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="drop-item"
                 >
                   <div className="drop-item-icon">

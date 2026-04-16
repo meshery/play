@@ -4,6 +4,9 @@ const FaqSectionWrapper = styled.section`
   margin: 0.5rem auto;
   position: relative;
   overflow: scroll;
+  width: 100%;
+  max-width: 900px; 
+  box-sizing: border-box;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -40,6 +43,7 @@ const FaqSectionWrapper = styled.section`
         font-size: 18px;
         position: relative;
         color: #ffffff;
+        padding-right: 3rem;
       }
       > div {
         &:focus {
