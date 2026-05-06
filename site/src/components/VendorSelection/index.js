@@ -28,8 +28,8 @@ const VendorSelection = () => {
       hosting: "hosted",
     },
     {
-      name: "Layer5",
-      description: "Meshery Playground hosted by Layer5",
+      name: "Meshery",
+      description: "Meshery Playground hosted by Meshery Authors",
       url: "https://playground.meshery.io",
       logo: null, // We can add logos later
       available: true,
