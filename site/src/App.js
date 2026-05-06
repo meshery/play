@@ -12,7 +12,6 @@ import Modal from "react-modal";
 import Faq from "./components/Faq/index.js";
 import Button from "./reusecore/Button/index.js";
 import ResourcesSection from "./Resources.js";
-import VendorSelection from "./components/VendorSelection";
 
 const App = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -52,11 +51,11 @@ const App = () => {
             <div>
               <Button
                 className="continue-btn open-playground-btn"
-                style={{ background: "rgb(235, 192, 23)" }}
+                style={{ background: "rgb(235, 192, 23)", textTransform: "none" }}
                 role="button"
                 onClick={openModal}
               >
-                Choose Your Playground
+                Access the Playground
               </Button>
               <Modal
                 isOpen={modalIsOpen}
@@ -64,7 +63,7 @@ const App = () => {
                 className="Modal"
                 overlayClassName="Overlay"
                 ariaHideApp={false}
-                contentLabel="Playground Selection"
+                contentLabel="Open Meshery Playground"
                 width="2000px"
               >
                 <Button className="close-modal-btn" onClick={closeModal}>
@@ -82,9 +81,18 @@ const App = () => {
                       fontStyle: "italic",
                     }}
                   >
-                    You are about to access a Meshery Playground...
+                    You are about to access the Meshery Playground...
                   </h2>
-                  <VendorSelection />
+                  {/* <VendorSelection /> */}
+                  <Button
+                className="continue-btn open-playground-btn"
+                style={{ background: "rgb(235, 192, 23)", 
+                  textTransform: "none", margin: "auto", display: "block", marginTop: "3rem" }}
+                role="button"
+                url="https://playground.meshery.io"
+              >
+                Launch ↗
+              </Button>
                   <Faq
                     category={[
                       "Cloud Native Playgrounds",
