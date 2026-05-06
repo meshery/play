@@ -6,7 +6,6 @@ import { Toggle } from "../Toggle";
 import axios from "axios";
 import DefaultAvatar from "./DefaultAvatar";
 import CloudIcon from "./CloudIcon";
-import KanvasIcon from "./KanvasIcon";
 import LogoutIcon from "./LogoutIcon";
 
 function Navigation({ theme, toggleTheme, showSignUpButton }) {
@@ -38,7 +37,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
 
   useEffect(() => {
     const CLOUD_USER_API =
-      "https://cloud.layer5.io/api/identity/users/profile";
+      "https://cloud.meshery.io/api/identity/users/profile";
     const fetchData = async () => {
       try {
         const token = getCookieValue("provider_token");
@@ -127,7 +126,7 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   rel="noopener noreferrer"
                   target="_blank"
                   className="drop-item"
-                  href={`https://cloud.layer5.io/user/${userData.id}`}
+                  href={`https://cloud.meshery.io/user/${userData.id}`}
                 >
                   <CloudIcon /> Cloud
                 </a>
@@ -137,13 +136,13 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
                   className="drop-item"
                   href="https://playground.meshery.io"
                 >
-                  <KanvasIcon /> Playground
+                  <CloudIcon /> Playground
                 </a>
                 <a
                   href="/"
                   onClick={() => {
                     removeCookie("token");
-                    window.open("https://cloud.layer5.io/logout", "_blank");
+                    window.open("https://cloud.meshery.io/logout", "_blank");
 
                     // Refresh the current page
                     window.location.reload();

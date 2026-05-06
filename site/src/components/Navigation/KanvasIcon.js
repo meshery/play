@@ -1,6 +1,6 @@
 import React from "react";
 
-function KanvasIcon() {
+function ExtensionIcon() {
   return (
     <svg
       width="24px"
@@ -120,4 +120,4 @@ function KanvasIcon() {
   );
 }
 
-export default KanvasIcon;
+export default ExtensionIcon;
