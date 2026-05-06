@@ -1,5 +1,5 @@
 import { Main } from "./App.style.js";
-import mesheryPlayground from "./assets/images/meshery-playground-kanvas.png";
+// import mesheryPlayground from "./assets/images/meshery-playground.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from "./index.style.js";
@@ -103,7 +103,7 @@ const App = () => {
               </Modal>
             </div>
           </section>
-          <section className="video">
+          {/* <section className="video">
             <ReactPlayer
               url="https://youtu.be/Do7htKrRzDA"
               playing
@@ -113,7 +113,7 @@ const App = () => {
               style={{ margin: "auto" }}
               className="embedVideo"
             />
-          </section>
+          </section> */}
           <section>
             <ResourcesSection />
           </section>
