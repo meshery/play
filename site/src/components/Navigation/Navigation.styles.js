@@ -4,7 +4,7 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   background: #fff;
-  z-index: 1001;
+  z-index: 1001; /* Ensure header stays above overlapping page elements */
 
   .dropdown_btn {
     display: none;
