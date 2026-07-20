@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from "./index.style.js";
 import { useDarkMode } from "./components/useDarkMode";
-import ReactPlayer from "react-player/youtube";
+// import ReactPlayer from "react-player/youtube";
 import Navigation from "./components/Navigation";
 import DiscussCallout from "./components/Discuss-Callout";
 import { useState } from "react";
@@ -86,7 +86,7 @@ const App = () => {
                   {/* <VendorSelection /> */}
                   <Button
                 className="continue-btn open-playground-btn"
-                style={{ background: "rgb(235, 192, 23)", 
+                style={{ background: "rgb(235, 192, 23)",
                   textTransform: "none", margin: "auto", display: "block", marginTop: "3rem" }}
                 role="button"
                 url="https://playground.meshery.io"
