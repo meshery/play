@@ -1,1 +1,1 @@
-export const DISCUSS_FORUM_URL = "https://meshery.io/community#discussion-forums";
+export const DISCUSS_FORUM_URL = "https://discuss.meshery.io";
