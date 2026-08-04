@@ -1,0 +1,93 @@
+name: Build Site Preview
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, closed]
+    paths:
+      - 'site/**'
+      - 'Makefile'
+      - 'CNAME'
+      - '.github/workflows/build-site-preview.yml'
+      - '.github/workflows/deploy-site-preview.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-site-preview:
+    runs-on: ubuntu-24.04
+    if: github.event.action != 'closed'
+
+    steps:
+      # `make setup` resolves npm dependencies, so registry.npmjs.org and
+      # objects.githubusercontent.com must be in allowed-endpoints if the
+      # harden-runner is ever promoted from audit to block.
+      - name: Harden Runner
+        uses: step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411 # v2.19.4
+        with:
+          egress-policy: audit
+
+      - name: Checkout PR
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Load-bearing, not documentary: this job runs PR-authored npm
+          # lifecycle scripts, so the token must not be left in .git/config.
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build PR preview
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+          make setup
+          make build
+
+          cat > site/build/robots.txt <<'ROBOTS'
+          User-agent: *
+          Disallow: /
+          ROBOTS
+
+          # CRA's "homepage": "." emits relative asset paths, so the bundle needs
+          # no baseurl injection to work under /pr-preview/pr-N/. Only the
+          # absolute og:url and the robots meta need patching, and this is a
+          # single-page build, so index.html is the only document.
+          preview_url="https://${REPO_OWNER}.github.io/${REPO_NAME}/pr-preview/pr-${PR_NUMBER}/"
+          perl -0pi -e \
+            's|<meta property="og:url" content="[^"]*" />|<meta property="og:url" content="'"$preview_url"'" />|;
+             s|</head>|    <meta name="robots" content="noindex, nofollow" />\n</head>|' \
+            site/build/index.html
+
+      - name: Save PR Metadata
+        run: |
+          mkdir -p ./pr
+          echo "${{ github.event.number }}" > ./pr/number
+          echo "${{ github.event.pull_request.head.sha }}" > ./pr/sha
+          echo "${{ github.event.action }}" > ./pr/action
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: site-preview-build
+          path: |
+            ${{ github.event.action != 'closed' && 'site/build' || '' }}
+            pr/
+          if-no-files-found: error
