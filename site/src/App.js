@@ -1,10 +1,10 @@
 import { Main } from "./App.style.js";
-import mesheryPlayground from "./assets/images/meshery-playground-kanvas.png";
+// import mesheryPlayground from "./assets/images/meshery-playground.png";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from "./index.style.js";
 import { useDarkMode } from "./components/useDarkMode";
-import ReactPlayer from "react-player/youtube";
+// import ReactPlayer from "react-player/youtube";
 import Navigation from "./components/Navigation";
 import DiscussCallout from "./components/Discuss-Callout";
 import { useState } from "react";
@@ -12,7 +12,6 @@ import Modal from "react-modal";
 import Faq from "./components/Faq/index.js";
 import Button from "./reusecore/Button/index.js";
 import ResourcesSection from "./Resources.js";
-import VendorSelection from "./components/VendorSelection";
 
 const App = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -52,11 +51,11 @@ const App = () => {
             <div>
               <Button
                 className="continue-btn open-playground-btn"
-                style={{ background: "rgb(235, 192, 23)" }}
+                style={{ background: "rgb(235, 192, 23)", textTransform: "none" }}
                 role="button"
                 onClick={openModal}
               >
-                Choose Your Playground
+                Access the Playground
               </Button>
               <Modal
                 isOpen={modalIsOpen}
@@ -64,7 +63,8 @@ const App = () => {
                 className="Modal"
                 overlayClassName="Overlay"
                 ariaHideApp={false}
-                contentLabel="Playground Selection"
+                contentLabel="Open Meshery Playground"
+                width="2000px"
               >
                 <Button className="close-modal-btn" onClick={closeModal}>
                   &times;
@@ -81,9 +81,18 @@ const App = () => {
                       fontStyle: "italic",
                     }}
                   >
-                    You are about to access a Meshery Playground...
+                    You are about to access the Meshery Playground...
                   </h2>
-                  <VendorSelection />
+                  {/* <VendorSelection /> */}
+                  <Button
+                className="continue-btn open-playground-btn"
+                style={{ background: "rgb(235, 192, 23)",
+                  textTransform: "none", margin: "auto", display: "block", marginTop: "3rem" }}
+                role="button"
+                url="https://playground.meshery.io"
+              >
+                Launch ↗
+              </Button>
                   <Faq
                     category={[
                       "Cloud Native Playgrounds",
@@ -94,7 +103,7 @@ const App = () => {
               </Modal>
             </div>
           </section>
-          <section className="video">
+          {/* <section className="video">
             <ReactPlayer
               url="https://youtu.be/Do7htKrRzDA"
               playing
@@ -104,7 +113,7 @@ const App = () => {
               style={{ margin: "auto" }}
               className="embedVideo"
             />
-          </section>
+          </section> */}
           <section>
             <ResourcesSection />
           </section>

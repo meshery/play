@@ -159,6 +159,9 @@ export const lightTheme = {
   toggleBorder: '#FFF',
   background: '#363537',
   btn: '#FFF',
+  zIndex: {
+    navbar: 1000,
+  },
 }
 export const darkTheme = {
   body: 'rgb(18, 18, 18)',
@@ -166,4 +169,7 @@ export const darkTheme = {
   toggleBorder: '#6B8096',
   background: '#999',
   btn: '#1E2117',
+  zIndex: {
+    navbar: 1000,
+  },
 }
