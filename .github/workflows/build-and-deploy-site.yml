@@ -9,10 +9,6 @@ on:
       - 'CNAME'
       - '.github/workflows/build-and-deploy-site.yml'
 
-concurrency:
-  group: "pages-deployment"
-  cancel-in-progress: true
-
 permissions:
   contents: write
 
@@ -41,9 +37,12 @@ jobs:
           cp CNAME site/build/CNAME
           touch site/build/.nojekyll
 
-      - name: Deploy site
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f #v4.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./site/build
+          folder: ./site/build
+          branch: gh-pages
+          clean: true
+          clean-exclude: |
+            pr-preview
+          force: false
