@@ -8,6 +8,7 @@ on:
       - 'Makefile'
       - 'CNAME'
       - '.github/workflows/build-and-deploy-site.yml'
+      - '.github/workflows/build-and-preview-site.yml'
 
 permissions:
   contents: write
@@ -21,12 +22,12 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout site source
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
+        uses: actions/checkout@v6
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "20"
           cache: "npm"
           cache-dependency-path: site/package-lock.json
 
@@ -37,12 +38,10 @@ jobs:
           cp CNAME site/build/CNAME
           touch site/build/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f #v4.8.0
+      - name: Deploy site
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          folder: ./site/build
-          branch: gh-pages
-          clean: true
-          clean-exclude: |
-            pr-preview
-          force: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site/build
+          keep_files: true
