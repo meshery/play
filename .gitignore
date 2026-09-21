@@ -1,0 +1,46 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# IDEs
+.vscode/*
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+site/node_modules
+site/.pnp
+site/.pnp.js
+
+# testing
+site/coverage
+
+# production
+site/build
+
+# misc
+site/.DS_Store
+site/.env.local
+site/.env.development.local
+site/.env.test.local
+site/.env.production.local
+
+site/npm-debug.log*
+site/yarn-debug.log*
+site/yarn-error.log*
+
+.DS_Store
+.github/.DS_Store
+
