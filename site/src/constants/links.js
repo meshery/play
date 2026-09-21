@@ -1,1 +1,0 @@
-export const DISCUSS_FORUM_URL = "https://discuss.layer5.io/";
