@@ -1,4 +1,5 @@
 const fs = require("fs");
+const crypto = require("crypto");
 const path = require("path");
 const esbuild = require("esbuild");
 const React = require("react");
@@ -186,7 +187,32 @@ async function generateLlmsFiles() {
     ]);
     const markdown = `${pageMarkdown}\n\n${faqMarkdown}`;
 
-    fs.writeFileSync(path.join(publicRoot, "llms.txt"), markdown, "utf8");
+    const outputPath = path.join(publicRoot, "llms.txt");
+    const temporaryPath = path.join(
+      publicRoot,
+      `.llms.txt-${process.pid}-${crypto.randomBytes(8).toString("hex")}.tmp`
+    );
+
+    try {
+      fs.writeFileSync(temporaryPath, markdown, {
+        encoding: "utf8",
+        flag: "wx",
+      });
+      fs.renameSync(temporaryPath, outputPath);
+    } catch (error) {
+      try {
+        fs.unlinkSync(temporaryPath);
+      } catch (cleanupError) {
+        if (cleanupError.code !== "ENOENT") {
+          console.error(
+            `Failed to remove temporary llms.txt file at ${temporaryPath}:`,
+            cleanupError
+          );
+        }
+      }
+
+      throw error;
+    }
 
     console.log("Generated llms.txt from the rendered React content.");
   } finally {
