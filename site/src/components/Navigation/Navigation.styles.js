@@ -4,7 +4,10 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   background: #fff;
-  z-index: ${({ theme }) => theme.zIndex.navbar};
+  z-index: ${({ theme }) => {
+    const val = theme?.zIndex?.navbar;
+    return (Number.isFinite(val) && val > 999) ? val : 1000;
+  }};
 
 
   .dropdown_btn {
