@@ -34,7 +34,8 @@ export const useDarkMode = () => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
     const handleSystemThemeChange = () => {
-      if (!window.localStorage.getItem(THEME_KEY)) {
+      const savedTheme = window.localStorage.getItem(THEME_KEY);
+      if (savedTheme !== 'light' && savedTheme !== 'dark') {
         setTheme(getSystemTheme());
       }
     };
