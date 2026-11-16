@@ -107,6 +107,10 @@ jobs:
             && 'Preview removed because the pull request was closed.'
             || format('🚀 Preview deployment: {0}', steps.preview.outputs.preview-url) }}
 
+            ${{ needs.read-metadata.outputs.action != 'closed'
+            && format('> *Note: Preview may take a moment (GitHub Pages deployment in progress). Please wait and refresh. Track deployment* *[here](https://github.com/{0}/actions/workflows/pages-build-deployment)*', github.repository)
+            || '' }}
+
   prune:
     # Both deploy and prune push to gh-pages, but only prune retries a lost race.
     # Running deploy first means a collision costs housekeeping, not the preview.
