@@ -13,8 +13,8 @@ const DiscussCallout = () => {
               <div className="parentcard">
                 <div className="section-title">
                   <h2>Join the Conversation</h2>
-                  <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
-                  <button><img className="logo" alt="Discussion Forum" src={Discuss} /></button>
+                  <p>Ask questions, find answers and share knowledge on one of our discussion forums</p>
+                  <button><img className="logo" alt="Discussions Forum" src={Discuss} /></button>
                 </div>
               </div>
             </a>
