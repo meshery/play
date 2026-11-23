@@ -19,20 +19,17 @@ setup-libs: site-setup
 ## Install site dependencies
 setup: site-setup
 
-site-setup: 
-	cd site; npm install; cd ..
+site-setup:
+	cd site && npm install
 
-## Build and run site in development environment
 site-dev:
-	cd site; npm run start; cd ..
+	cd site && npm run start
 
-## Build site; generate static site
 build:
-	cd site; npm run build; cd ..
+	cd site && npm run build
 
-## Build and run site
 site:
-	cd site; npm start; cd ..
+	cd site && npm start
 
 #-----------------------------------------------------------------------------
 # Docker-based Builds
