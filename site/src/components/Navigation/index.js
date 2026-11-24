@@ -67,7 +67,9 @@ setScroll((window.scrollY || window.pageYOffset) > 50)
   return (
     <Header>
       <nav className={scroll ? "scrolled" : ""}>
-        <img className="logo" src={Logo} alt="Meshery Logo" />
+        <a href="/" aria-label="Meshery Learn Home">
+          <img className="logo" src={Logo} alt="Meshery Logo" />
+        </a>
         <div style={{ display: "flex" }}>
           {userData && (
             <div className="dropdown_btn" onClick={handleNavOpen}>
