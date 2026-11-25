@@ -13,17 +13,7 @@ import Faq from "./components/Faq/index.js";
 import Button from "./reusecore/Button/index.js";
 import ResourcesSection from "./Resources.js";
 import NotFound from "./components/NotFound";
-
-// GitHub Pages serves build/404.html for unknown routes, and that file sets
-// window.__PLAY_404__ (see scripts/create-404.js). The dev server serves
-// index.html for every path, so there any path but the root counts as unknown.
-const isNotFoundPage = () => {
-  if (window.__PLAY_404__) return true;
-  if (process.env.NODE_ENV === "development") {
-    return !["/", "/index.html"].includes(window.location.pathname);
-  }
-  return false;
-};
+import { isNotFoundPage } from "./isNotFoundPage";
 
 const App = () => {
   const [theme, toggleTheme] = useDarkMode();
