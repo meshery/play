@@ -56,6 +56,9 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO_NAME: ${{ github.event.repository.name }}
           REPO_OWNER: ${{ github.repository_owner }}
+          # Previews live in a subfolder, so the generated 404.html keeps
+          # relative asset paths and is viewable at <preview-url>/404.html.
+          NOT_FOUND_BASE: ./
         run: |
           set -euo pipefail
           make setup
@@ -68,13 +71,13 @@ jobs:
 
           # CRA's "homepage": "." emits relative asset paths, so the bundle needs
           # no baseurl injection to work under /pr-preview/pr-N/. Only the
-          # absolute og:url and the robots meta need patching, and this is a
-          # single-page build, so index.html is the only document.
+          # absolute og:url and the robots meta need patching, in index.html
+          # and in the 404.html that the postbuild script generates from it.
           preview_url="https://${REPO_OWNER}.github.io/${REPO_NAME}/pr-preview/pr-${PR_NUMBER}/"
           perl -0pi -e \
             's|<meta property="og:url" content="[^"]*" />|<meta property="og:url" content="'"$preview_url"'" />|;
              s|</head>|    <meta name="robots" content="noindex, nofollow" />\n</head>|' \
-            site/build/index.html
+            site/build/index.html site/build/404.html
 
       - name: Save PR Metadata
         run: |
