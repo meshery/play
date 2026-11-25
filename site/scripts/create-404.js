@@ -15,8 +15,10 @@ const fs = require("fs");
 const path = require("path");
 
 // "./", or an absolute path made only of plain segments: "/", "/a/", "/a/b/".
+// "." and ".." segments are rejected, since the browser would resolve them
+// to a different base than the one written.
 const isValidBase = (base) =>
-  base === "./" || /^\/([A-Za-z0-9._~%-]+\/)*$/.test(base);
+  base === "./" || /^\/((?!\.{1,2}\/)[A-Za-z0-9._~-]+\/)*$/.test(base);
 
 // Returns the 404.html document for the given index.html and base. Throws if
 // the base is invalid or index.html lacks the <head> or <title> it rewrites,

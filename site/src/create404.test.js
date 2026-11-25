@@ -45,11 +45,23 @@ describe("createNotFoundHtml", () => {
 });
 
 describe("isValidBase", () => {
-  it.each(["./", "/", "/play/", "/pr-preview/pr-333/"])("accepts %s", (base) => {
+  it.each(["./", "/", "/play/", "/pr-preview/pr-333/", "/v1.2/", "/.well-known/"])("accepts %s", (base) => {
     expect(isValidBase(base)).toBe(true);
   });
 
-  it.each(["", "/play", "play/", "//example.com/", '/a"b/', "/a<b/", "../"])(
+  it.each([
+    "",
+    "/play",
+    "play/",
+    "//example.com/",
+    '/a"b/',
+    "/a<b/",
+    "../",
+    "/../",
+    "/./",
+    "/a/../",
+    "/%/",
+  ])(
     "rejects %s",
     (base) => {
       expect(isValidBase(base)).toBe(false);
